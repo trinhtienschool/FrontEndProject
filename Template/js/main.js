@@ -80,5 +80,20 @@ jQuery(document).ready(function($) {
             });
 
         });
+        /*-------------------------------------
+        	--> Data Background Image
+        ---------------------------------------*/
+        function bgImageSettings() {
+            $('.bg-image').each(function() {
+                var $this = $(this),
+                    $image = $this.data('bg');
+
+                $this.css({
+                    'background-image': 'url(' + $image + ')'
+                });
+            });
+        }
+
+        bgImageSettings();
     })(jQuery);
     })

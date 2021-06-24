@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-   
+
 </head>
+
 <body>
     <div class="site-wrapper" id="top">
-         <!--=================================
+        <!--=================================
         Hero Area
         ===================================== -->
         <section class="hero-area hero-slider-1">
@@ -24,9 +26,10 @@
                             "slidesToShow": 1,
                             "dots":true
                             }'>
+                            
                 <div class="single-slide bg-shade-whisper  ">
                     <div class="container">
-                        <div class="home-content text-center text-sm-left position-relative">
+                        <div class="home-content text-center text-sm-left position-relative  ">
                             <div class="hero-partial-image image-right">
                                 <img src="imgs/home/banner/banner1.png" alt="">
                             </div>
@@ -36,7 +39,7 @@
                                         <h1>Mua gì cũng có<br>
                                             Đồ chơi xịn xò</h1>
                                         <h2>Giảm sốc cùng hè</h2>
-                                        <a href="shop-grid.html" class="btn btn-outlined--primary">
+                                        <a href="shop-grid.html" class="btn btn-outline-primary btn-padding5">
                                             Mua ngay
                                         </a>
                                     </div>
@@ -45,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="single-slide bg-shade-whisper">
+                <div class="single-slide bg-pink-whisper">
                     <div class="container">
                         <div class="home-content text-center text-sm-left position-relative">
                             <div class="hero-partial-image image-left">
@@ -53,11 +56,11 @@
                             </div>
                             <div class="row align-items-center justify-content-start justify-content-md-end">
                                 <div class="col-lg-6 col-xl-7 col-md-6 col-sm-7">
-                                    <div class="home-content-inner content-right-side">
+                                    <div class="home-content-inner content-left-side">
                                         <h1>Mua gì cũng có <br>
                                             Đồ chơi xịn xò</h1>
                                         <h2>Giảm sốc cùng hè</h2>
-                                        <a href="shop-grid.html" class="btn btn-outlined--primary">
+                                        <a href="shop-grid.html" class="btn btn-outline-primary btn-padding5">
                                             Mua ngay
                                         </a>
                                     </div>
@@ -68,30 +71,1310 @@
                 </div>
             </div>
         </section>
-         <!--=================================
+        <!--=================================
         Promotion Section One
         ===================================== -->
-        <section class="section-margin">
+        <section class="section-margin" style="margin-top: 30px;">
             <!-- <h2 class="sr-only">Promotion Section</h2> -->
             <div class="container">
                 <div class="row space-db--30">
                     <div class="col-lg-6 col-md-6 mb--30">
-                        <a href="" class="promo-image promo-overlay">
+                        <a href="" class="promo-image promo-overlay margin-top-banner">
                             <img src="imgs/home/banner/banner4.png" alt="">
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-6 mb--30">
-                        <a href="" class="promo-image promo-overlay">
+                        <a href="" class="promo-image promo-overlay margin-top-banner">
                             <img src="imgs/home/banner/banner5.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+        <!--=================================
+        Home Slider Tab
+        ===================================== -->
+        <section class="section-padding">
+
+            <div class="container">
+                <div class="sb-custom-tab">
+                    <ul class="nav nav-tabs" style="margin-bottom: 10px" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="shop-tab" data-toggle="tab" href="#shop" role="tab"
+                                aria-controls="shop" aria-selected="true">
+                                Featured Products
+                            </a>
+                            <span class="arrow-icon"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="men-tab" data-toggle="tab" href="#men" role="tab"
+                                aria-controls="men" aria-selected="true">
+                                New Arrivals
+                            </a>
+                            <span class="arrow-icon"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="woman-tab" data-toggle="tab" href="#woman" role="tab"
+                                aria-controls="woman" aria-selected="false">
+                                Most view products
+                            </a>
+                            <span class="arrow-icon"></span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active" id="shop" role="tabpanel" aria-labelledby="shop-tab">
+                            <div class=" multiple-row  slider-border-multiple-row  sb-slick-slider" data-slick-setting='{
+                            "autoplay": true,
+                            "autoplaySpeed": 8000,
+                            "slidesToShow": 5,
+                            "rows":2,
+                            "dots":true
+                        }' data-slick-responsive='[
+                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },
+                            {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                           
+                            {"breakpoint":320, "settings": {"slidesToShow": 1} }
+                        ]'>
+                                <!-- {"breakpoint":480, "settings": {"slidesToShow": 1} },  tai day-->
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <div class="product-price col-sm-9 col-12">
+                                                <p
+                                                    class="card-text font-weight-bold text-muted text-center product-discount">
+                                                    420.000 VNĐ</p>
+                                                <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                                    420.000 VNĐ</p>
+                                            </div>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <div class="product-price col-sm-9 col-12">
+                                                <p
+                                                    class="card-text font-weight-bold text-muted text-center product-discount">
+                                                    420.000 VNĐ</p>
+                                                <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                                    420.000 VNĐ</p>
+                                            </div>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <div class="product-price col-sm-9 col-12">
+                                                <p
+                                                    class="card-text font-weight-bold text-muted text-center product-discount">
+                                                    420.000 VNĐ</p>
+                                                <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                                    420.000 VNĐ</p>
+                                            </div>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <div class="product-price col-sm-9 col-12">
+                                                <p
+                                                    class="card-text font-weight-bold text-muted text-center product-discount">
+                                                    420.000 VNĐ</p>
+                                                <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                                    420.000 VNĐ</p>
+                                            </div>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <div class="product-price col-sm-9 col-12">
+                                                <p
+                                                    class="card-text font-weight-bold text-muted text-center product-discount">
+                                                    420.000 VNĐ</p>
+                                                <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                                    420.000 VNĐ</p>
+                                            </div>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <div class="product-price col-sm-9 col-12">
+                                                <p
+                                                    class="card-text font-weight-bold text-muted text-center product-discount">
+                                                    420.000 VNĐ</p>
+                                                <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                                    420.000 VNĐ</p>
+                                            </div>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sua o day -->
+
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="men" role="tabpanel" aria-labelledby="men-tab">
+                            <div class="  sb-slick-slider" data-slick-setting='{
+                                        "autoplay": true,
+                                        "autoplaySpeed": 8000,
+                                        "slidesToShow": 5,
+                                        "rows":2,
+                                        "dots":true
+                                    }' data-slick-responsive='[
+                                        {"breakpoint":1200, "settings": {"slidesToShow": 3} },
+                                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                                
+                                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
+                                    ]'>
+                                <!-- {"breakpoint":480, "settings": {"slidesToShow": 1} }, -->
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="woman" role="tabpanel" aria-labelledby="woman-tab">
+                            <div class="  sb-slick-slider" data-slick-setting='{
+                                        "autoplay": true,
+                                        "autoplaySpeed": 8000,
+                                        "slidesToShow": 5,
+                                        "rows":2,
+                                        "dots":true
+                                    }' data-slick-responsive='[
+                                        {"breakpoint":1200, "settings": {"slidesToShow": 3} },
+                                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                                      
+                                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
+                                    ]'>
+                                <!-- {"breakpoint":480, "settings": {"slidesToShow": 1} }, -->
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner he sang san hang sale -->
+        <!-- <section class="section-margin ">
+           
+            </section> -->
+            <a href="" style="display: inline-block; width:100%" >
+                <img class="img-fluid" src="imgs/home/banner/banner-full.png" width="100%" alt="">
+            </a>
+
+        <!--=================================
+        Deal of the day 
+        ===================================== -->
+        <section class="section-margin">
+            <div class="container-fluid">
+                <!-- <div class="promo-section-heading">
+                    <h2>Sản phẩm giảm giá</h2>
+                </div> -->
+                <div class="with-countdown  slider-border-single-row sb-slick-slider" data-slick-setting='{
+                "autoplay": true,
+                "autoplaySpeed": 1000,
+                "slidesToShow": 6,
+                "dots":true
+            }' data-slick-responsive='[
+                {"breakpoint":1400, "settings": {"slidesToShow": 4} },
+                {"breakpoint":992, "settings": {"slidesToShow": 3} },
+                {"breakpoint":768, "settings": {"slidesToShow": 3} },
+                {"breakpoint":575, "settings": {"slidesToShow": 2} },
+                {"breakpoint":320, "settings": {"slidesToShow": 1} }
+            ]'>
+
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail  margin-img-tab"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+                            </h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================================
+        Best Seller Product
+        ===================================== -->
+        <section class="section-margin bg-image section-padding-top section-padding"
+            data-bg="https://phunubinhphuoc.org.vn/uploads/news/2021_03/image-20210319091559-1.jpeg">
+            <div class="container">
+                <div class="section-title section-title--bordered mb-0">
+                    <h2>Best BEST SELLER BOOKS</h2>
+                </div>
+                <div class="best-seller-block">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="banner-left">
+                                <img src="https://u6wdnj9wggobj.vcdn.cloud/media/wysiwyg/homepage/danh-muc-3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="sb-slick-slider product-slider product-list-slider multiple-row slider-border-multiple-row"
+                                data-slick-setting='{
+                                    "autoplay": false,
+                                    "autoplaySpeed": 8000,
+                                    "slidesToShow":3,
+                                    "rows":1,
+                                    "dots":true
+                                }' data-slick-responsive='[
+                                    {"breakpoint":1200, "settings": {"slidesToShow": 2} },
+                                    {"breakpoint":992, "settings": {"slidesToShow": 1} },
+                                    {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                                    {"breakpoint":575, "settings": {"slidesToShow": 2} },
+                                    {"breakpoint":350, "settings": {"slidesToShow": 1} }
+                                ]'>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/3/0/304037_3__1.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                            Bugatti Chiron</h5>
+                                        <div class="row">
+                                            <p
+                                                class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                                420.000 VNĐ</p>
+                                            <button href="#" class="btn col-sm-3 col-12 ">
+                                                <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=================================
+        Búp bê -robot
+        ===================================== -->
+        <section class="section-margin">
+            <div class="container">
+                <div class="section-title section-title--bordered">
+                    <h2>Búp bê - Robot</h2>
+                </div>
+                <div class="sb-slick-slider" data-slick-setting='{
+                                            "autoplay": true,
+                                            "autoplaySpeed": 8000,
+                                            "slidesToShow":4,
+                                            "rows":2,
+                                            "dots":true
+                                        }' data-slick-responsive='[
+                                        {"breakpoint":1200, "settings": {"slidesToShow": 3} },
+                                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                                       
+                                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
+                                        ]'>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail "
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail "
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <p class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                    420.000 VNĐ</p>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail "
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail "
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <p class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                    420.000 VNĐ</p>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail "
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <p class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                    420.000 VNĐ</p>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-margin ">
+            <a href="" >
+                <img class="img-fluid" src="imgs/home/banner/banner-full.png" alt="">
+            </a>
+            </section>
+            <!-- <div class="promo-wrapper promo-type-three">
+                <a href="#"  class="promo-image promo-overlay bg-image" style="height: 680px; display: block;" data-bg="imgs/home/banner/banner-full.png">
+                </a> -->
+                <!-- <div class="promo-text w-100 ml-0">
+                    <div class="container">
+                        <div class="row w-100">
+                            <div class="col-lg-7">
+                                <h2>I Love This Idea!</h2>
+                                <h3>Cover up front of book and
+                                    leave summary</h3>
+                                <a href="#" class="btn btn--yellow">$78.09 - Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div>
+        </section> -->
+        
+        <!--=================================
+        Búp bê -robot
+        ===================================== -->
+        <section class="section-margin">
+            <div class="container">
+                <div class="section-title section-title--bordered">
+                    <h2>Búp bê - Robot</h2>
+                </div>
+                <div class="sb-slick-slider" data-slick-setting='{
+                                            "autoplay": true,
+                                            "autoplaySpeed": 8000,
+                                            "slidesToShow":4,
+                                            "rows":2,
+                                            "dots":true
+                                        }' data-slick-responsive='[
+                                        {"breakpoint":1200, "settings": {"slidesToShow": 3} },
+                                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
+                                       
+                                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
+                                        ]'>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <p class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                    420.000 VNĐ</p>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <p class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                    420.000 VNĐ</p>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <p class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center">
+                                    420.000 VNĐ</p>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top rounded mx-auto d-block img-thumbnail"
+                            src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39900_39514/MT39900_39514_1.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp
+                                Bugatti Chiron</h5>
+                            <div class="row">
+                                <div class="product-price col-sm-9 col-12">
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
+                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
+                                        420.000 VNĐ</p>
+                                </div>
+                                <button href="#" class="btn col-sm-3 col-12 ">
+                                    <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--=================================
+            Promotion Section Three
+        ===================================== -->
+        <section class="section-margin">
+            <div class="promo-wrapper promo-type-three">
+                <a href="#" class="promo-image promo-overlay bg-image" style="height: 200px;" data-bg="imgs/home/banner/lastbanner.png">
+                </a>
+                <!-- <div class="promo-text w-100 ml-0">
+                    <div class="container">
+                        <div class="row w-100">
+                            <div class="col-lg-7">
+                                <h2>I Love This Idea!</h2>
+                                <h3>Cover up front of book and
+                                    leave summary</h3>
+                                <a href="#" class="btn btn--yellow">$78.09 - Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

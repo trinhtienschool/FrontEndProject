@@ -4,7 +4,7 @@ $color-blue: #46ccfd;
 $color-gray: #7b7b7b;
 @font-face {
   font-family: "Open Sans";
-  src: url(assets/webfonts/Open_Sans/OpenSans-Regular.ttf);
+  src: url(../webfonts/Open_Sans/OpenSans-Regular.ttf);
 }
 * {
   margin: 0;
@@ -107,12 +107,12 @@ h6 {
 .hero-area {
   .bg-shade-whisper {
     background: #dafcfb;
-    background-image: url(assets/imgs/home/banner/banner10.png) !important;
+    background-image: url(../imgs/home/banner/banner10.png) !important;
     background-repeat: no-repeat, repeat;
   }
   .bg-pink-whisper {
     background: #ffe0f1;
-    background-image: url(assets/imgs/home/banner/banner11.png) !important;
+    background-image: url(../imgs/home/banner/banner11.png) !important;
     background-repeat: no-repeat, repeat;
   }
   .home-content {

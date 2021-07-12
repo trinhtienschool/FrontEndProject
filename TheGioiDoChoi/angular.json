@@ -33,7 +33,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {
@@ -99,9 +101,23 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/fontawesome.min.css",
+              "src/assets/css/jquery-ui.min.css",
+              "src/assets/css/slick.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.js",
+              "src/assets/js/jquery-ui.min.js",
+              "src/assets/js/proper.min.js",
+              "src/assets/js/slick.min.js",
+              "src/assets/js/all.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/common.js",
+              "src/assets/js/main.js"
+
+            ]
           }
         }
       }

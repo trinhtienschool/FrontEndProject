@@ -1,0 +1,164 @@
+﻿{
+    "SheetJS": [
+        {
+            "name": "Thử thách IQ XOXO",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 444",
+            "description": "Về Smartgames:\r\nThương hiệu đồ chơi đến từ Bỉ (Châu Âu) với 25 năm lịch sử, nổi tiếng các dòng sản phẩm đồ chơi giáo dục và phát triển trí tuệ. Đồ chơi với nhiều cấp độ thử thách khác nhau, phù hợp với bé trai, bé gái và cả người lớn. Thiết kế nhỏ gọn, chất liệu cao cấp, màu sắc bắt mắt. \r\nĐồ chơi phát triển trí tuệ cho các bé từ 8 tuổi trở lên\r\nCác bé có thể luyện kỹ năng Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nBao gồm 120 thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq-xoxo_thumbnail_1_88f269c7076e4f9eb5c40b401020eb38_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ circuit",
+            "price": "279000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 467",
+            "description": "SmartGames là thương hiệu đồ chơi của Bỉ  - Châu Âu với lịch sử hình thành hơn 25 năm.\r\nĐặc điểm về các dòng sản phẩm Smartgames:\r\nMục tiêu: sáng tạo và phát triển các sản phẩm đồ chơi giáo dục và phát triển trí tuệ\r\nĐồ chơi đố trí nhiều cấp độ. Mỗi cấp độ là nhiều thử thách khác nhau.\r\nCó thể chơi đi chơi lại nhiều lần.\r\nPhát triển kĩ năng: Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nCó hướng dẫn luật chơi bằng tiếng việt\r\nPhù hợp với bé trai, bé gái và cả người lớn\r\nThiết kế nhỏ gọn, có hộp đựng, dễ mang theo\r\nChất liệu cao cấp, màu sắc bắt mắt",
+            "Img1": "https://product.hstatic.net/1000117512/product/upload_9ad4e5e0aab34a3c89299d66b2cfe22a_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Focus",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 422",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé từ 8 tuổi trở lên\r\nCác bé có thể luyện kỹ năng Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nBao gồm 120 thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames-iq-focus_thumbnail_2_45bb7ed1c4d74716bb80f3ba1944150c_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Arrows",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 424",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé từ 7 tuổi trở lên\r\nCác bé có thể luyện kỹ năng Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nBao gồm 120 thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq-arrows_thumbnail_0_7dbf7b8be4a34a879a51ea993846c38d_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Pro",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 455",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq_puzzler_pro_thumbnail_1_d66cd70f86a34e85acdc74ad5d208d52_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Fit",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 423",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq-fit_thumbnail_a9a90f07b1cc487cb88476e0dbae2f3d_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Blox",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 466",
+            "description": "Về Smartgames:\r\nThương hiệu đồ chơi đến từ Bỉ (Châu Âu) với 25 năm lịch sử, nổi tiếng các dòng sản phẩm đồ chơi giáo dục và phát triển trí tuệ. Đồ chơi với nhiều cấp độ thử thách khác nhau, phù hợp với bé trai, bé gái và cả người lớn. Thiết kế nhỏ gọn, chất liệu cao cấp, màu sắc bắt mắt. \r\nĐồ chơi phát triển trí tuệ cho các bé từ 8 tuổi trở lên\r\nCác bé có thể luyện kỹ năng Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nBao gồm 120 thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq_blox_thumbnail_390431e96e2944e09434e910153343d5_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Link",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 477",
+            "description": "Về Smartgames:\r\nThương hiệu đồ chơi đến từ Bỉ (Châu Âu) với 25 năm lịch sử, nổi tiếng các dòng sản phẩm đồ chơi giáo dục và phát triển trí tuệ. Đồ chơi với nhiều cấp độ thử thách khác nhau, phù hợp với bé trai, bé gái và cả người lớn. Thiết kế nhỏ gọn, chất liệu cao cấp, màu sắc bắt mắt. \r\nĐồ chơi phát triển trí tuệ cho các bé từ 8 tuổi trở lên\r\nCác bé có thể luyện kỹ năng Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nBao gồm 120 thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq_link_thumbnail_998c6ea7c5ba4b54b30ca4c732d4bbfc_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Twist",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 488",
+            "description": "Về Smartgames:\r\nThương hiệu đồ chơi đến từ Bỉ (Châu Âu) với 25 năm lịch sử, nổi tiếng các dòng sản phẩm đồ chơi giáo dục và phát triển trí tuệ. Đồ chơi với nhiều cấp độ thử thách khác nhau, phù hợp với bé trai, bé gái và cả người lớn. Thiết kế nhỏ gọn, chất liệu cao cấp, màu sắc bắt mắt. \r\nĐồ chơi phát triển trí tuệ cho các bé từ 8 tuổi trở lên\r\nCác bé có thể luyện kỹ năng Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nBao gồm 120 thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_iq_twist_thumbnail_979bec7007184999a119a4f6bcac029b_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách IQ Stars",
+            "price": "249000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 411",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/iq-stars-thumbnail_0_38b0f926261645829efcf51b47c0db81_1024x1024.jpg"
+        },
+        {
+            "name": "Thử thách quả táo xoắn não",
+            "price": "319000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 445",
+            "description": "SmartGames là thương hiệu đồ chơi của Bỉ - Châu Âu với lịch sử hình thành hơn 25 năm.\r\nĐặc điểm về các dòng sản phẩm Smartgames:\r\nMục tiêu: sáng tạo và phát triển các sản phẩm đồ chơi giáo dục và phát triển trí tuệ\r\nĐồ chơi đố trí nhiều cấp độ. Mỗi cấp độ là nhiều thử thách khác nhau.\r\nCó thể chơi đi chơi lại nhiều lần.\r\nPhát triển kĩ năng: Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nCó hướng dẫn luật chơi bằng tiếng việt\r\nPhù hợp với bé trai, bé gái và cả người lớn\r\nThiết kế nhỏ gọn, có hộp đựng, dễ mang theo\r\nChất liệu cao cấp, màu sắc bắt mắt",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_appletwist_product_78dd7dd35de849bbb8082ed82bab1177_1024x1024.png"
+        },
+        {
+            "name": "Thử thách đại chiến tàu hải tặc",
+            "price": "531000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 094",
+            "description": "SmartGames là thương hiệu đồ chơi của Bỉ - Châu Âu với lịch sử hình thành hơn 25 năm.\r\nĐặc điểm về các dòng sản phẩm Smartgames:\r\nMục tiêu: sáng tạo và phát triển các sản phẩm đồ chơi giáo dục và phát triển trí tuệ\r\nĐồ chơi đố trí nhiều cấp độ. Mỗi cấp độ là nhiều thử thách khác nhau.\r\nCó thể chơi đi chơi lại nhiều lần.\r\nPhát triển kĩ năng: Nhận biết không gian - Lên kế hoạch - Giải quyết vấn đề - Tập trung - Logic\r\nCó hướng dẫn luật chơi bằng tiếng việt\r\nPhù hợp với bé trai, bé gái và cả người lớn\r\nThiết kế nhỏ gọn, có hộp đựng, dễ mang theo\r\nChất liệu cao cấp, màu sắc bắt mắt",
+            "Img1": "https://product.hstatic.net/1000117512/product/smartgames_piratescrossfire_product_065431b584af4e498b547e54ef64e5de_1024x1024.png"
+        },
+        {
+            "name": "Ghép hình lập phương mở rộng",
+            "price": "449000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SGM 201",
+            "description": "Về Smartgames:\r\nThương hiệu đồ chơi đến từ Bỉ (Châu Âu) với 25 năm lịch sử, nổi tiếng các dòng sản phẩm đồ chơi giáo dục và phát triển trí tuệ. Đồ chơi với nhiều cấp độ thử thách khác nhau, phù hợp với bé trai, bé gái và cả người lớn. Thiết kế nhỏ gọn, chất liệu cao cấp, màu sắc bắt mắt.\r\nĐồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/2-smartgames-cubeduel_1_1_5125d7bc373e44b8a97a717f573c5d2b_1024x1024.jpg"
+        },
+        {
+            "name": "Hòn đảo khủng long huyền bí",
+            "price": "531000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 282",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sg_282_8009350acf0646329ae4d975dc592eb3_1024x1024.jpg"
+        },
+        {
+            "name": "Tàu Noah",
+            "price": "149000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SGT 240-8",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sgt_240-8_a7d16a0b9cb44091b8f627e2b2631465_1024x1024.jpg"
+        },
+        {
+            "name": "Mật mã màu sắc",
+            "price": "531000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 090",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sg_090_cea0d53ed2cf42bca79e7bb8feba3747_1024x1024.jpg"
+        },
+        {
+            "name": "Ghép hình lập phương",
+            "price": "359000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 412",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sg_412_515b4dc7760248debc928d003766198e_1024x1024.jpg"
+        },
+        {
+            "name": "Nhảy Qua Nào",
+            "price": "319000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 421",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sg_421_f1cf69163b6a463eaa5d2900d05b83f3_1024x1024.jpg"
+        },
+        {
+            "name": "Cô bé quàng khăn đỏ",
+            "price": "690000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 021",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sg_021_399ea9d2d6a24f998eebc85dc5089366_1024x1024.jpg"
+        },
+        {
+            "name": "Sóc lăn hạt",
+            "price": "319000",
+            "brand": "SmartGames",
+            "product_id": "SKU: SG 425",
+            "description": "Đồ chơi phát triển trí tuệ cho các bé độ tuổi mầm non\r\nCác bé có thể luyện kỹ năng tập trung và giải đố\r\nBao gồm 48 thử thách và cả sách truyện tranh thật hấp dẫn\r\nBao gồm thử thách ở 4 cấp độ Starter, Junior, Expert, and Master\r\nTừ thương hiệu Smartgames đạt giải Đồ chơi phát tư duy logic",
+            "Img1": "https://product.hstatic.net/1000117512/product/sg_425_9d4da7d14f0b4f2a8ab371fe385723a4_1024x1024.jpg"
+        }
+    ]
+}

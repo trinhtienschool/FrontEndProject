@@ -1,8 +1,8 @@
-jQuery(document).ready(function ($) {
-    (function ($) {
-        /*------------------------
-                   --> Slick Carousel
-               ------------------------*/
+jQuery(document).ready(function($) {
+    (function($){
+ /*------------------------
+        	--> Slick Carousel
+        ------------------------*/
 
         var $html = $('html');
         var $body = $('body');
@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
             $uptimoSlickSlider.attr("dir", "rtl");
         }
 
-        $uptimoSlickSlider.each(function () {
+        $uptimoSlickSlider.each(function() {
 
             /*Setting Variables*/
             var $this = $(this),
@@ -81,10 +81,10 @@ jQuery(document).ready(function ($) {
 
         });
         /*-------------------------------------
-            --> Data Background Image
+        	--> Data Background Image
         ---------------------------------------*/
         function bgImageSettings() {
-            $('.bg-image').each(function () {
+            $('.bg-image').each(function() {
                 var $this = $(this),
                     $image = $this.data('bg');
 
@@ -118,25 +118,26 @@ jQuery(document).ready(function ($) {
         // var x = 1000;
         // x = x.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
         // console.log(x);
-        formatCurrency = function (amount) {
-            amount = amount.toLocaleString('it-IT', { style: 'currency', currency: 'VND' });
+        formatCurrency = function(amount){
+            amount = amount.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
             return amount;
         }
-        console.log("Slider: "+$("#slider-range"));
-        if ($("#slider-range").length !== 0) {
-            $("#slider-range").slider({
-                range: true,
-                min: 10000,
-                max: 10000000,
-                values: [100000, 5000000],
-                slide: function (event, ui) {
-                    $("#cost-from").text(formatCurrency(ui.values[0]));
-                    $("#cost-to").text(formatCurrency(ui.values[1]));
-                }
-            });
-            $("#cost-from").text(formatCurrency($("#slider-range").slider("values", 0)));
-            $("#cost-to").text(formatCurrency($("#slider-range").slider("values", 1)));
-        }
+
+      if ($("#slider-range").length !== 0) {
+        $("#slider-range").slider({
+          range: true,
+          min: 10000,
+          max: 10000000,
+          values: [100000, 5000000],
+          slide: function (event, ui) {
+            $("#cost-from").text(formatCurrency(ui.values[0]));
+            $("#cost-to").text(formatCurrency(ui.values[1]));
+          }
+        });
+        $("#cost-from").text(formatCurrency($("#slider-range").slider("values", 0)));
+        $("#cost-to").text(formatCurrency($("#slider-range").slider("values", 1)));
+      }
+
 
     })(jQuery);
-})
+    })

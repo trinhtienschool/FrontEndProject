@@ -455,4 +455,9 @@
   .footer .social-block .single-social:hover a {
     color: #fff !important; }
 
+    .zoom{
+      image-rendering: pixelated !important;
+  image-rendering: -moz-crisp-edges !important;
+  image-rendering: crisp-edges !important;
+    }
 /*# sourceMappingURL=style.css.map */

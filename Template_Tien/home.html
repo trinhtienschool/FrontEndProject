@@ -128,7 +128,7 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane active" id="shop" role="tabpanel" aria-labelledby="shop-tab">
-                            <div class=" multiple-row  slider-border-multiple-row  sb-slick-slider" data-slick-setting='{
+                            <div class="sb-slick-slider" data-slick-setting='{
                             "autoplay": true,
                             "autoplaySpeed": 8000,
                             "slidesToShow": 4,
@@ -749,8 +749,8 @@
                 <!-- <div class="promo-section-heading">
                     <h2>Sản phẩm giảm giá</h2>
                 </div> -->
-                <div class="with-countdown  slider-border-single-row sb-slick-slider" data-slick-setting='{
-                "autoplay": true,
+                <div class="sb-slick-slider" data-slick-setting='{
+                "autoplay": false,
                 "autoplaySpeed": 1000,
                 "slidesToShow": 5,
                 "dots":true
@@ -774,10 +774,10 @@
                             </h5>
                             <div class="row">
                                 <div class="product-price col-sm-9 col-12">
-                                    <p class="card-text font-weight-bold text-muted text-center product-discount">
-                                        420.000 VNĐ</p>
-                                    <p class="card-text font-weight-bold text-primary size-16 text-center">
-                                        420.000 VNĐ</p>
+                                    <p class="card-text font-weight-bold text-muted text-center product-discount currency">
+                                        420000</p>
+                                    <p class="card-text font-weight-bold text-primary size-16 text-center currency">
+                                        420000</p>
                                 </div>
                                 <button href="#" class="btn col-sm-3 col-12 ">
                                     <img src="imgs/product/cart.png" class="shopping-cart-center" alt="">
@@ -992,7 +992,7 @@
                                     "autoplay": false,
                                     "autoplaySpeed": 8000,
                                     "slidesToShow":2,
-                                    "rows":1,
+                                    "rows":1,   
                                     "dots":true
                                 }' data-slick-responsive='[
                                     {"breakpoint":1200, "settings": {"slidesToShow": 2} },
@@ -1562,6 +1562,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
     <script src="js/main.js"></script>
 </body>
 

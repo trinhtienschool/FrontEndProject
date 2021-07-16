@@ -1,0 +1,22 @@
+//////////////Breadcrumb////////
+/*>>>>>>>> Reset <<<<<<<<<*/
+$color-bold-blue: #00afef;
+$color-blue: #46ccfd;
+$color-gray: #7b7b7b;
+.breadcrumb-contents {
+  .breadcrumb {
+    background-color: transparent;
+    padding: 20px 0;
+    .breadcrumb-item {
+      font-size: 14px;
+      color: #333;
+      a:hover {
+        color: $color-blue;
+      }
+    }
+
+    .breadcrumb-item.active a {
+      color: $color-blue;
+    }
+  }
+}

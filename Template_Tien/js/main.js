@@ -1,3 +1,5 @@
+const moment = require("./moment");
+
 jQuery(document).ready(function ($) {
     (function ($) {
         /*------------------------
@@ -118,9 +120,11 @@ jQuery(document).ready(function ($) {
         // var x = 1000;
         // x = x.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
         // console.log(x);
+      
         formatCurrency = function (amount) {
-            amount = amount.toLocaleString('it-IT', { style: 'currency', currency: 'VND' });
+            amount = amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
             return amount;
+           
         }
         console.log("Slider: "+$("#slider-range"));
         if ($("#slider-range").length !== 0) {
@@ -137,6 +141,14 @@ jQuery(document).ready(function ($) {
             $("#cost-from").text(formatCurrency($("#slider-range").slider("values", 0)));
             $("#cost-to").text(formatCurrency($("#slider-range").slider("values", 1)));
         }
+        $(".currency").map(function() {
+           let price = $(this).text();
+           price = parseInt(price);
+           this.innerHTML = formatCurrency(price);
+           console.log("có vào "+formatCurrency(price));
+        })
+        console.log(formatCurrency(50000));
 
+      
     })(jQuery);
 })

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,YAAa;EACX,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,cAAE;IACA,WAAW,EAAE,IAAI;IACjB,YAAY,EAAE,IAAI;IAClB,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,WAAW;EAEpB,iBAAK;IACH,OAAO,EAAE,KAAK;IACd,UAAU,EAAE,IAAI;IAChB,UAAU,EAAE,MAAM;IAClB,WAAW,EAAE,GAAG",
+"sources": ["age-area.component.scss"],
+"names": [],
+"file": "age-area.component.css"
+}

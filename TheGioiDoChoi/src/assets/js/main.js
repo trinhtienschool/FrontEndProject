@@ -119,9 +119,16 @@ jQuery(document).ready(function($) {
         // x = x.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
         // console.log(x);
         formatCurrency = function(amount){
-            amount = amount.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+            amount = amount.toLocaleString('vi-VN', {style : 'currency', currency : 'VND'});
             return amount;
         }
+      $(".currency").map(function() {
+        let price = $(this).text();
+        price = parseInt(price);
+        this.innerHTML = formatCurrency(price);
+        console.log("có vào "+formatCurrency(price));
+      })
+      console.log(formatCurrency(50000));
 
       if ($("#slider-range").length !== 0) {
         $("#slider-range").slider({

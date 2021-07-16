@@ -85,6 +85,9 @@ h6 {
 .container-fluid {
   padding: 0px !important; }
 
+.hero-area .slick-dots {
+  margin-top: -50px !important; }
+
 .sb-slick-slider .slick-dots {
   display: flex;
   justify-content: center; }
@@ -144,5 +147,73 @@ h6 {
   width: 100%;
   height: 2px;
   background: #46ccfd; }
+
+.left-sidebar-parent .left-sidebar-title {
+  border: none;
+  border-bottom: 1px solid gray;
+  background: transparent;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600; }
+.left-sidebar-parent span {
+  display: inline-block; }
+.left-sidebar-parent i {
+  display: inline-block; }
+.left-sidebar-parent .left-sidebar-item {
+  padding: 0px;
+  display: block;
+  border-bottom: 1px solid gray; }
+
+@media (max-width: 576px) {
+  .left-sidebar-title span {
+    text-align: center; }
+  .left-sidebar-title i {
+    text-align: center; }
+
+  .left-sidebar-item {
+    margin: 20px !important;
+    text-align: center; } }
+.single-block {
+  margin-bottom: 40px; }
+
+.single-block:last-child {
+  margin-bottom: 0; }
+
+.sidebar-title {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0 0 6px 0;
+  text-align: left;
+  font-weight: 700;
+  display: block;
+  line-height: 52px;
+  background: #00afef;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px; }
+
+.range-slider-widget .ui-widget-header {
+  background: #46ccfd !important; }
+.range-slider-widget span {
+  border-radius: 45px !important;
+  background: #46ccfd !important; }
+.range-slider-widget span:hover {
+  border-radius: 45px !important; }
+
+input.form-check-input {
+  width: 20px;
+  height: 20px;
+  background-color: #46ccfd;
+  margin-right: 50px; }
+
+.form-check-label {
+  margin-left: 20px; }
+
+.form-check {
+  border-bottom: 1px solid #7b7b7b;
+  padding-bottom: 10px; }
+
+.form-check-input:checked:before {
+  background-color: green; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './blog.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import {ShareModule} from "../share/share.module";
 
 
 
@@ -15,7 +16,8 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     BlogCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ShareModule
   ]
 })
 export class BlogModule { }

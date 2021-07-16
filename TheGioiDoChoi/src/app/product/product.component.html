@@ -14,69 +14,13 @@
       <!-- Categories -->
       <app-categories></app-categories>
       <!-- Price -->
-      <!--      <div class="single-block">-->
-      <!--        <h3 class="sidebar-title filter-sidebar">Fillter By Price</h3>-->
-
-      <!--        &lt;!&ndash;								<p>&ndash;&gt;-->
-      <!--        &lt;!&ndash;									<label for="amount">Price range:</label>&ndash;&gt;-->
-      <!--        &lt;!&ndash;									<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">&ndash;&gt;-->
-      <!--        &lt;!&ndash;								  </p>&ndash;&gt;-->
-      <!--        &lt;!&ndash;								   &ndash;&gt;-->
-      <!--        <div id="slider-range" class="range-slider-widget"></div>-->
-
-      <!--        <div class="range-slider-value">-->
-      <!--          <div id="cost-from">5000</div>-->
-      <!--          <div class="hyphen">-</div>-->
-      <!--          <div id="cost-to">5000</div>-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!-- Size -->
-      <div class="single-block">
-        <h3 class="sidebar-title">Độ tuổi</h3>
-        <div class="form-check m-1 mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="tren-12-tuoi">
-          <label class="form-check-label" for="tren-12-tuoi">
-            Trên 11 tuổi
-          </label>
-        </div>
-        <div class="form-check m-1 mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="tu-6-11-tuoi">
-          <label class="form-check-label" for="tu-6-11-tuoi">
-            Từ 6 - 11 tuổi
-          </label>
-        </div>
-        <div class="form-check m-1 mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="tu-1-6-tuoi">
-          <label class="form-check-label" for="tu-1-6-tuoi">
-            Từ 1 - 6 tuổi
-          </label>
-        </div>
-      </div>
-      <div class="single-block">
-        <h3 class="sidebar-title">Giới tính</h3>
-        <div class="form-check m-1 mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="gt-nam">
-          <label class="form-check-label" for="gt-nam">
-            Nam
-          </label>
-        </div>
-        <div class="form-check m-1 mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="gt-nu">
-          <label class="form-check-label" for="gt-nu">
-            Nữ
-          </label>
-        </div>
-        <div class="form-check m-1 mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="gt-ca2">
-          <label class="form-check-label" for="gt-ca2">
-            Cả 2
-          </label>
-        </div>
-      </div>
+      <app-product-range-slide></app-product-range-slide>
+      <app-age-gender [title]="'Độ tuổi'" [content]="[['tu-1-6','Từ 1-6 tuổi'],['tu-6-11','Từ 6 đến 11 tuổi'],['tren-11','Trên 11 tuổi']]" ></app-age-gender>
+      <app-age-gender [title]="'Giới tính'" [content]="[['nam','Nam'],['nu','Nữ'],['both','Cả 2']]"></app-age-gender>
       <!-- Promotion Block -->
       <div class="single-block">
-        <a href="" class="promo-image sidebar">
-          <img src="image/others/home-side-promo.jpg" alt="">
+        <a href="" class="sale-img">
+          <img src="assets/imgs/product/sale.png" alt="">
         </a>
       </div>
     </div>

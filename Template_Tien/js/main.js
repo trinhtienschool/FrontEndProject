@@ -1,4 +1,4 @@
-const moment = require("./moment");
+
 
 jQuery(document).ready(function ($) {
     (function ($) {

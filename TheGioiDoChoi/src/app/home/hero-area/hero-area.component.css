@@ -183,7 +183,8 @@
   @media (min-width: 1200px) {
     .hero-area .home-content a {
       padding-top: 5px !important; } }
-.hero-area .slick-dots {
+
+.slick-dots {
   margin-top: -50px !important; }
 
 /*# sourceMappingURL=hero-area.component.css.map */

@@ -1,1 +1,9 @@
-<p>blog works!</p>
+<div class="container">
+  <app-breadcrumb [parent_title]="'Trang chủ'" child_title="Bài viết"></app-breadcrumb>
+  <div class="row blog-list">
+    <div *ngFor="let blog of blogs" class="col-lg-3 col-sm-6 col-md-4 blog-item">
+      <app-blog-card [blog]="blog"></app-blog-card>
+    </div>
+  </div>
+  <app-pagination></app-pagination>
+</div>

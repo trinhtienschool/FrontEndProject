@@ -6,6 +6,8 @@ import {ShareModule} from "../share/share.module";
 import { ShopToolbarComponent } from './shop-toolbar/shop-toolbar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { ProductRangeSlideComponent } from './product-range-slide/product-range-slide.component';
+import { AgeGenderComponent } from './age-gender/age-gender.component';
 
 
 
@@ -16,6 +18,8 @@ import { CategoriesComponent } from './categories/categories.component';
     ShopToolbarComponent,
     ProductListComponent,
     CategoriesComponent,
+    ProductRangeSlideComponent,
+    AgeGenderComponent,
   ],
   imports: [
     CommonModule,

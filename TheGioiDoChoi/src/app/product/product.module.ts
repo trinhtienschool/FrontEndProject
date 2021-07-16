@@ -21,8 +21,9 @@ import { CategoriesComponent } from './categories/categories.component';
     CommonModule,
     ShareModule
   ],
-  exports:[
+  exports: [
     ProductCardSaleComponent,
+    ProductComponent,
   ]
 })
 export class ProductModule {

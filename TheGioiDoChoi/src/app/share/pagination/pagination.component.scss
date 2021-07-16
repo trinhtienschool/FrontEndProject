@@ -1,0 +1,65 @@
+$color-bold-blue: #00afef;
+$color-blue: #46ccfd;
+$color-gray: #7b7b7b;
+.pagination-block {
+  font-size: 12px;
+  font-weight: 400;
+  border: 2px solid #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+
+  .pagination-btns {
+    display: flex;
+    justify-content: center;
+    flex: 100%;
+    line-height: 28px;
+    flex-wrap: wrap;
+
+    @media (min-width: 480px) {
+      line-height: normal;
+    }
+  }
+}
+
+/////////////pagination-block//////////////
+.pagination-block {
+  margin: 10px;
+  .pagination-btns {
+    li {
+      position: relative;
+    }
+    li.active {
+      .page {
+        color: $color-blue;
+        border: 2px solid $color-blue;
+      }
+    }
+    .p-btn {
+      color: #555;
+      background: none;
+      font-size: 16px;
+      border: none;
+      padding: 0;
+      font-weight: 600;
+      width: 54px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      margin: 5px 5px;
+      border: 2px solid $color-gray;
+      border-radius: 3px;
+    }
+    .page {
+      border: 2px solid $color-gray;
+    }
+    .page:hover {
+      color: $color-blue;
+      border: 2px solid $color-blue;
+    }
+    .prev-btn,
+    .next-btn {
+      color: $color-blue;
+      border: 2px solid $color-blue;
+    }
+  }
+}

@@ -7,8 +7,10 @@ import {Categories} from "../../model/categories";
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
-
-  constructor(public categories = new Categories()) {}
+  public categories: Categories|undefined;
+  constructor() {
+    this.categories = new Categories();
+  }
 
   ngOnInit(): void {
   }

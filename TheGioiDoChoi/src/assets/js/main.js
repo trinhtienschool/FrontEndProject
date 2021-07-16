@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
     (function($){
+ //     Tien
  /*------------------------
         	--> Slick Carousel
         ------------------------*/
@@ -144,7 +145,12 @@ jQuery(document).ready(function($) {
         $("#cost-from").text(formatCurrency($("#slider-range").slider("values", 0)));
         $("#cost-to").text(formatCurrency($("#slider-range").slider("values", 1)));
       }
+    //Thy
 
+
+
+
+      //Nhuan
 
     })(jQuery);
     })

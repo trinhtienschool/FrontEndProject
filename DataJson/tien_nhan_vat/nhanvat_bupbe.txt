@@ -10,7 +10,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6937_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6937_4.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6937_2.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6937_3.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6937_3.jpg",
+            "age": "1",
+            "gender": "2"
         },
         {
             "name": "Bé Mina đáng yêu",
@@ -22,7 +24,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9422_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9422_2.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9422_3.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9422_4.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9422_4.jpg",
+            "age": "3",
+            "gender": "1"
         },
         {
             "name": "Bé Misu đáng yêu",
@@ -34,7 +38,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9423_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9423_2.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9423_3.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9423_4.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/9/e9423_4.jpg",
+            "age": "1",
+            "gender": "3"
         },
         {
             "name": "Làm kem cùng bé Candy",
@@ -46,7 +52,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/f/1/f1680_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/f/1/f1680_2.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/f/1/f1680_3.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/f/1/f1680_4.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/f/1/f1680_4.jpg",
+            "age": "2",
+            "gender": "2"
         },
         {
             "name": "Bé Olivia",
@@ -58,7 +66,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60584_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60584_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60584_3_.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "1",
+            "gender": "2"
         },
         {
             "name": "Bé Elizabeth",
@@ -70,7 +80,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60370_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60370_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60370_3_.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "2",
+            "gender": "3"
         },
         {
             "name": "Bé Tasha tập nói",
@@ -82,7 +94,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60290_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60290_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/6/0/60290_3_.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "3",
+            "gender": "1"
         },
         {
             "name": "Búp bê LOL phiên bản trang điểm tóc - Version 2",
@@ -90,11 +104,13 @@
             "price_sale": "0",
             "brand": "LOL SURPRISE",
             "product_id": "572657EUC",
-            "description": "\"LOL SURPRISE Búp bê LOL thay đổi kiểu tóc đã quay lại với phiên bản lấp lánh hoàn toàn mới.<br>Mỗi sản phẩm bao gồm 15 điều bất ngờ:<br>- Gương<br>- Ghế salon<br>- Lược<br>- Chai nước thời trang, <br>- Giày<br>- Sticker trang trí<br>Bé có thể thỏa sức phối kiểu tóc và trang trí tóc cho búp bê.<br>Bé hãy khám phá sự thay đổi màu sắc bất ngờ bằng cách nhúng búp bê vào nước, nhưng cẩn thận không làm ướt tóc nhé!<br>Hộp sản phẩm mô phỏng như một salon, có tay cầm để bé tiện mang theo bên mình<br>Có 9 nhân vật đáng yêu cho bé sưu tập<br>Thông tin sản phẩm:<br>Thương hiệu: LOL SURPRISE<br>Xuất xứ thương hiệu: Mỹ<br>Trọng lượng (gr): 290<br>Kích thước sản phẩm (cm): 9.04 x 9.04 x 17.15<br>Tuổi: 6 tuổi trở lên<br>Chất liệu: Nhựa cao cấp<br>\".",
+            "description": "LOL SURPRISE Búp bê LOL thay đổi kiểu tóc đã quay lại với phiên bản lấp lánh hoàn toàn mới.<br>Mỗi sản phẩm bao gồm 15 điều bất ngờ:<br>- Gương<br>- Ghế salon<br>- Lược<br>- Chai nước thời trang, <br>- Giày<br>- Sticker trang trí<br>Bé có thể thỏa sức phối kiểu tóc và trang trí tóc cho búp bê.<br>Bé hãy khám phá sự thay đổi màu sắc bất ngờ bằng cách nhúng búp bê vào nước, nhưng cẩn thận không làm ướt tóc nhé!<br>Hộp sản phẩm mô phỏng như một salon, có tay cầm để bé tiện mang theo bên mình<br>Có 9 nhân vật đáng yêu cho bé sưu tập<br>Thông tin sản phẩm:<br>Thương hiệu: LOL SURPRISE<br>Xuất xứ thương hiệu: Mỹ<br>Trọng lượng (gr): 290<br>Kích thước sản phẩm (cm): 9.04 x 9.04 x 17.15<br>Tuổi: 6 tuổi trở lên<br>Chất liệu: Nhựa cao cấp<br>.",
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/1/0/10_14.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/8/08_226.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/1/1/11_13.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/9/09_212.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/9/09_212.jpg",
+            "age": "2",
+            "gender": "1"
         },
         {
             "name": "Đồ chơi trổ tài tạo mẫu tóc cùng Candy",
@@ -106,7 +122,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_2.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_3.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_3.jpg",
+            "age": "2",
+            "gender": "1"
         },
         {
             "name": "Đồ chơi trổ tài tạo mẫu tóc cùng Candy",
@@ -118,7 +136,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_2.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_3.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572008euc_3.jpg",
+            "age": "3",
+            "gender": "3"
         },
         {
             "name": "FRZ 2 Búp bê mini Finale Elsa",
@@ -130,7 +150,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/8/e8687_e5505_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/8/e8687_e5505_2_.jpg",
             "img3": "",
-            "img4": ""
+            "img4": "",
+            "age": "1",
+            "gender": "1"
         },
         {
             "name": "FRZ 2 Búp bê mini Kristoff",
@@ -142,7 +164,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6307_e5505_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6307_e5505_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6307_e5505_3_.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "2",
+            "gender": "2"
         },
         {
             "name": "FRZ 2 Búp bê mini Finale Anna",
@@ -154,7 +178,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/8/e8681_e5505_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/8/e8681_e5505_2_.jpg",
             "img3": "",
-            "img4": ""
+            "img4": "",
+            "age": "2",
+            "gender": "3"
         },
         {
             "name": "Cô nàng búp bê thời trang OMG - Sweets ngọt ngào",
@@ -166,7 +192,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572763euc_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572763euc_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572763euc_3_.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572763euc_4_.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572763euc_4_.jpg",
+            "age": "2",
+            "gender": "3"
         },
         {
             "name": "Cô nàng búp bê thời trang OMG - Spicy cá tính",
@@ -178,7 +206,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572770euc_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572770euc_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572770euc_3_.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572770euc_4_.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/7/572770euc_4_.jpg",
+            "age": "2",
+            "gender": "1"
         },
         {
             "name": "Búp bê LOL phiên bản hộp quà bí ẩn",
@@ -190,7 +220,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/8/08_227.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/9/09_213.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/6/06_241.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/7/07_228.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/7/07_228.jpg",
+            "age": "1",
+            "gender": "2"
         },
         {
             "name": "Búp bê đổi màu Chelsea - Phiên bản Color Block",
@@ -202,7 +234,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/w/gwc60_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/w/gwc60_4.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/w/gwc60_2.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/w/gwc60_3.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/w/gwc60_3.jpg",
+            "age": "3",
+            "gender": "3"
         },
         {
             "name": "Bé cưng khóc nhè",
@@ -214,7 +248,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8130/DW8130_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8130/DW8130_2.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8130/DW8130_3.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8130/DW8130_4.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8130/DW8130_4.jpg",
+            "age": "1",
+            "gender": "1"
         },
         {
             "name": "Tắm cùng bé Grace",
@@ -226,7 +262,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8811/DW8811_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DOLLSWORLD/DW8811/DW8811_2.jpg",
             "img3": "",
-            "img4": ""
+            "img4": "",
+            "age": "3",
+            "gender": "1"
         },
         {
             "name": "Tiệm salon tóc Rainbow High",
@@ -238,7 +276,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569329e7c_2_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569329e7c_3_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569329e7c_4_1.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569329e7c_5_1.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569329e7c_5_1.jpg",
+            "age": "2",
+            "gender": "3"
         },
         {
             "name": "Cô nàng thời trang Rainbow High- Violet Willow",
@@ -250,7 +290,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569602e7c_1_1.jpeg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569602e7c_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569602e7c-2.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569602e7c-3.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569602e7c-3.jpg",
+            "age": "2",
+            "gender": "2"
         },
         {
             "name": "Búp bê thời trang - Tie Dye Dress",
@@ -262,7 +304,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grb51.fbr37-mykingdom.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grb51_fbr37_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grb51_fbr37_2.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "1",
+            "gender": "1"
         },
         {
             "name": "Búp bê thời trang - Puff Sleeve Plaid Blazer Dress",
@@ -274,7 +318,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grb53.fbr37-mykingdom.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grb53_fbr37_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grb53_fbr37_2.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "2",
+            "gender": "3"
         },
         {
             "name": "Búp bê đổi màu Barbie - Phiên bản Color Block",
@@ -286,7 +332,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/t/gtr94_2.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/t/gtr94_3.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/t/gtr94_1.jpg",
-            "img4": ""
+            "img4": "",
+            "age": "2",
+            "gender": "1"
         },
         {
             "name": "Búp bê Barbie Extra BLUE CURLY HAIR",
@@ -298,7 +346,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grn30_grn27_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grn30_grn27_4_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grn30_grn27_2_.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grn30_grn27_3_.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/grn30_grn27_3_.jpg",
+            "age": "2",
+            "gender": "1"
         },
         {
             "name": "Cô nàng thời trang Rainbow High- Sunny Madison",
@@ -310,7 +360,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569626e7c_2.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569626e7c_1_1.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569626e7c-2.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569626e7c-3.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/5/6/569626e7c-3.jpg",
+            "age": "1",
+            "gender": "1"
         },
         {
             "name": "Bé Cherry tiểu thư",
@@ -322,7 +374,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6943_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6943_2.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6943_3.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6943_4.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/6/e6943_4.jpg",
+            "age": "2",
+            "gender": "3"
         },
         {
             "name": "Shimmer - Công chúa Ariel",
@@ -334,7 +388,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/4/e4156_e4020_1_.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/4/e4156_e4020_2_.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/4/e4156_e4020_3_.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/4/e4156_e4020_4_.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/e/4/e4156_e4020_4_.jpg",
+            "age": "1",
+            "gender": "2"
         },
         {
             "name": "Shimmer - Công chúa Pocahontas",
@@ -346,7 +402,9 @@
             "img1": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DISNEY_PRINCESS/E4022_E4165/E4022_E4165_1.jpg",
             "img2": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DISNEY_PRINCESS/E4022_E4165/E4022_E4165_2.jpg",
             "img3": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DISNEY_PRINCESS/E4022_E4165/E4022_E4165_3.jpg",
-            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DISNEY_PRINCESS/E4022_E4165/E4022_E4165_4.jpg"
+            "img4": "https://www.mykingdom.com.vn/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/magento/DISNEY_PRINCESS/E4022_E4165/E4022_E4165_4.jpg",
+            "age": "1",
+            "gender": "3"
         }
     ]
 }

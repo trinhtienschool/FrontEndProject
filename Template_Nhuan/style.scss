@@ -25012,7 +25012,7 @@ input[type="number"] {
     padding: 30px;
   }
 }
-.checkout-cart-total h4 {
+.checkout-cart-total h4{
   line-height: 23px;
   font-weight: 600;
   font-size: 18px;
@@ -25052,6 +25052,7 @@ input[type="number"] {
   color: inherit;
   float: right;
 }
+
 .checkout-cart-total ul li span.left {
   float: left;
   width: 70%;
@@ -25065,6 +25066,31 @@ input[type="number"] {
   border-bottom: 1px solid #dfdfdf;
   margin: 0;
 }
+.hidden-responsive{
+  line-height: 23px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+}
+@media (max-width: 510px){
+  .float-left-must {
+    float: none !important;
+  }
+  
+  .float-right-must{
+    float: none !important;
+  }
+  .total-must{
+    display: block !important;
+    margin: 0 !important;
+    float: none !important;
+  }
+  .hidden-responsive{
+    display: none !important;
+    
+  }
+}
+
 .checkout-cart-total p span {
   float: right;
 }

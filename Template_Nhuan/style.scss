@@ -25090,6 +25090,13 @@ input[type="number"] {
     
   }
 }
+@media (max-width: 510px) {
+  .pay-directly-must h4 {
+    display: block !important;
+    margin: 0 !important;
+    font-size: 5px !important;
+  }
+}
 
 .checkout-cart-total p span {
   float: right;

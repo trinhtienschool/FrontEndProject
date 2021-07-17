@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { CartTableComponent } from './cart/cart-table/cart-table.component';
 import { CartTotalComponent } from './cart/cart-total/cart-total.component';
 import { ProductLikeComponent } from './cart/product-like/product-like.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,11 @@ import { ProductLikeComponent } from './cart/product-like/product-like.component
     HomeModule,
     ProductModule,
     BlogModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+  ],
+  exports:[
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

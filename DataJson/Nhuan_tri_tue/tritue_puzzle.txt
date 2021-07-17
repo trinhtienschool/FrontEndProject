@@ -1,0 +1,204 @@
+﻿{
+    "SheetJS": [
+        {
+            "name": "Ghép hình con vật Farm Animals Block Puzzle Hape",
+            "price": "279000",
+            "brand": "Hape",
+            "product_id": "8935238212753",
+            "description": " - Được làm bằng gỗ cao cấp, an toàn<br> - Kích thước hộp sản phẩm: 18 x 6 x18 cm<br> - Gồm 8 hình khối in hình 1 phần của các con vật<br> - Mỗi hình khối có kích thước khoảng 5 x 5 x 5 cm<br> - Màu sắc đa dạng, họa tiết sinh động, bắt mắt<br> - Bé sẽ phải sắp xếp, lắp ghép để tạo thành hình đúng<br> - Đồ chơi cho bé 24 tháng tuổi trở lên",
+            "age": "1",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/g/h/ghep-hinh-con-vat-farm-animals-block-puzzle-hape-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle công trình xây dựng 60 miếng",
+            "price": "450000",
+            "brand": "Hape",
+            "product_id": "4005556095254",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/p/u/puzzle-cong-trinh-xay-dung-60-mieng-ghep-1.jpg"
+        },
+        {
+            "name": "Bộ xếp hình puzzle 60 miếng Thomas and Spencer",
+            "price": "450000",
+            "brand": "Hape",
+            "product_id": "4005556096121",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/d/o/do-choi-tranh-ghep-thomas-spencer-60-mieng-ghep-2.jpg|https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/d/o/do-choi-tranh-ghep-thomas-spencer-60-mieng-ghep-1.jpg"
+        },
+        {
+            "name": "Puzzle 3 nàng công chúa 15 miếng ghép",
+            "price": "320000",
+            "brand": "Hape",
+            "product_id": "4005556060634",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/p/u/puzzle-3-nang-cong-chua-15-mieng-ghep-1.jpg"
+        },
+        {
+            "name": "Puzzle trạm cứu hỏa",
+            "price": "620000",
+            "brand": "Hape",
+            "product_id": "657092699553",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "3",
+            "gender": "1",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/p/u/puzzle-tram-cuu-hoa-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle Frozen Paranoma 200 mảnh RAVENSBURGER",
+            "price": "419000",
+            "brand": "Hape",
+            "product_id": "4005556128013",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "1",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/p/u/puzzle-frozen-200-mieng-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle Anna, Elsa và những người bạn 2 bộ 24 mảnh RAVENSBURGER",
+            "price": "249000",
+            "brand": "Hape",
+            "product_id": "4005556090747",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-anna-elsa-va-nhung-nguoi-ban-2-bo-24-manh-1.jpg"
+        },
+        {
+            "name": "Bộ xếp hinh puzzle Cars nhung cuoc phieu luu 3 bo 49 manh",
+            "price": "349000",
+            "brand": "Hape",
+            "product_id": "4005556080014",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "3",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-cars-nhung-cuoc-phieu-luu-3-bo-49-manh-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle Frozen 3 bộ 49 mảnh Ravensburger 09269",
+            "price": "349000",
+            "brand": "Hape",
+            "product_id": "4005556092697",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "1",
+            "gender": "1",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-frozen-3-bo-49-manh-1.jpg"
+        },
+        {
+            "name": "RV07057 2 Xếp hình puzzle Paw Patrol 3 bộ 3 bộ 25/36/49 mảnh Ravensburger",
+            "price": "349000",
+            "brand": "Hape",
+            "product_id": "4005556070572",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "1",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-paw-patrol-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle cuộc phiêu lưu của Nemo 2 bộ 12 mảnh Ravensburger 07556",
+            "price": "229000",
+            "brand": "Hape",
+            "product_id": "4005556075560",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-cuoc-phieu-luu-cua-nemo-2-bo-24-manh-1.jpeg"
+        },
+        {
+            "name": "Xếp hình puzzle Cars cuộc phiêu lưu mới 2 bộ 24 mảnh",
+            "price": "249000",
+            "brand": "Hape",
+            "product_id": "4005556089598",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-cars-cuoc-phieu-luu-moi-2-bo-24-manh-3.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle công chúa Disney 3 bộ 25/36/49 mảnh Ravensburger 07008",
+            "price": "349000",
+            "brand": "Hape",
+            "product_id": "4005556070084",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-cong-chua-disney-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle cứu hỏa",
+            "price": "445000",
+            "brand": "Hape",
+            "product_id": "4005556073320",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "1",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-puzzle-cuu-hoa-2.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle công chúa Disney 3 bộ 49 mảnh Ravensburger RV093502",
+            "price": "349000",
+            "brand": "Hape",
+            "product_id": "4005556093502",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/x/e/xep-hinh-cong-chua-disney-1.jpg"
+        },
+        {
+            "name": "RV22099 1 Luyện trí nhớ chủ đề khủng long Ravensburger",
+            "price": "485000",
+            "brand": "Hape",
+            "product_id": "4005556220991",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/r/a/ravensburger-dinosaurussen-memory-various-1_.jpg"
+        },
+        {
+            "name": "RV45027- Khủng long vui nhộn",
+            "price": "69000",
+            "brand": "Hape",
+            "product_id": "4010070349578",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "3",
+            "gender": "1",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/k/l/klb2.jpg"
+        },
+        {
+            "name": "RV45144 - Khủng long vui nhộn",
+            "price": "99000",
+            "brand": "Hape",
+            "product_id": "4010070325923",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "2",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/k/l/klcv.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle Frozen 100 mảnh",
+            "price": "389000",
+            "brand": "Hape",
+            "product_id": "4005556069255",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "1",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/4/0/4005556069255-1.jpg"
+        },
+        {
+            "name": "Xếp hình puzzle Công chúa Disney 200 mảnh Ravensburger 12745",
+            "price": "419000",
+            "brand": "Hape",
+            "product_id": "4005556127450",
+            "description": "Đối tượng sử dụng: Trên 8 tuổi -Không sử dụng pin",
+            "age": "1",
+            "gender": "2",
+            "Img1": "https://kidsland.vn/pub/media/catalog/product/cache/3b05cf5261e318c966e9ee3ae34c394f/w/e/webp.net-resizeimage_48_.jpg"
+        }
+    ]
+}

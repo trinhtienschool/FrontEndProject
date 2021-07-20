@@ -12,11 +12,15 @@ import { CartComponent } from './cart/cart.component';
 import { CartTableComponent } from './cart/cart-table/cart-table.component';
 import { CartTotalComponent } from './cart/cart-total/cart-total.component';
 import { ProductLikeComponent } from './cart/product-like/product-like.component';
+
+import {HttpClientModule} from "@angular/common/http";
+
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {ShareModule} from "./share/share.module";
 import { DetailComponent } from './product-detail/detail/detail.component';
 import { DescriptionComponent } from './product-detail/description/description.component';
 import { RelatedProductComponent } from './product-detail/related-product/related-product.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { RelatedProductComponent } from './product-detail/related-product/relate
     ProductModule,
     BlogModule,
     AppRoutingModule,
-    ShareModule
+    ShareModule,
+    HttpClientModule
+  ],
+  exports:[
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

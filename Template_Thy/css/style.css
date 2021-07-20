@@ -185,7 +185,9 @@
     font-weight: bold;
     margin-bottom: 20px; }
   .cart .container .table-product {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    margin-left: 0;
+    margin-right: 0; }
     .cart .container .table-product thead tr {
       font-size: 16px;
       color: #000;
@@ -455,9 +457,4 @@
   .footer .social-block .single-social:hover a {
     color: #fff !important; }
 
-    .zoom{
-      image-rendering: pixelated !important;
-  image-rendering: -moz-crisp-edges !important;
-  image-rendering: crisp-edges !important;
-    }
 /*# sourceMappingURL=style.css.map */

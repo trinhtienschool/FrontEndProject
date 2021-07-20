@@ -33,7 +33,12 @@ $gray: #7b7b7b;
       margin-bottom: 14px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      @media (max-width: 767px) {
+        display: block;
+      }
+
+    }
     .label {
       color: #333;
       font-size: 15px;

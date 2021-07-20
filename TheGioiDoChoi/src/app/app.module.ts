@@ -13,6 +13,15 @@ import { CartTableComponent } from './cart/cart-table/cart-table.component';
 import { CartTotalComponent } from './cart/cart-total/cart-total.component';
 import { ProductLikeComponent } from './cart/product-like/product-like.component';
 
+import {HttpClientModule} from "@angular/common/http";
+
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import {ShareModule} from "./share/share.module";
+import { DetailComponent } from './product-detail/detail/detail.component';
+import { DescriptionComponent } from './product-detail/description/description.component';
+import { RelatedProductComponent } from './product-detail/related-product/related-product.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +31,22 @@ import { ProductLikeComponent } from './cart/product-like/product-like.component
     CartTableComponent,
     CartTotalComponent,
     ProductLikeComponent,
+    ProductDetailComponent,
+    DetailComponent,
+    DescriptionComponent,
+    RelatedProductComponent,
   ],
   imports: [
     BrowserModule,
     HomeModule,
     ProductModule,
     BlogModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareModule,
+    HttpClientModule
+  ],
+  exports:[
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

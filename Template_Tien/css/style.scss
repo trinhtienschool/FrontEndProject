@@ -688,30 +688,40 @@ h6 {
   }
 }
 
+// .pagination-block {
+//   font-size: 12px;
+//   font-weight: 400;
+//   border: 2px solid #ebebeb;
+//   display: flex;
+//   flex-wrap: wrap;
+
+//   .pagination-btns {
+//     display: flex;
+//     justify-content: center;
+//     flex: 100%;
+//     line-height: 28px;
+//     flex-wrap: wrap;
+
+//     @media (min-width: 480px) {
+//       line-height: auto;
+//     }
+//   }
+// }
+
+/////////////pagination-block//////////////
 .pagination-block {
+  margin: 10px;
   font-size: 12px;
   font-weight: 400;
   border: 2px solid #ebebeb;
   display: flex;
   flex-wrap: wrap;
-
   .pagination-btns {
     display: flex;
     justify-content: center;
     flex: 100%;
     line-height: 28px;
     flex-wrap: wrap;
-
-    @media (min-width: 480px) {
-      line-height: auto;
-    }
-  }
-}
-
-/////////////pagination-block//////////////
-.pagination-block {
-  margin: 10px;
-  .pagination-btns {
     li {
       position: relative;
     }

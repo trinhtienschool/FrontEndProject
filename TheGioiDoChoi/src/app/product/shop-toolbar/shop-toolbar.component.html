@@ -1,18 +1,19 @@
+<div *ngIf="pagination !==undefined">
 <div class="row shop-toolbar">
   <div class="col-xl-7 col-md-6 col-sm-5  mt-md-3">
-    Showing 1 to 9 of 14 (2 Pages)
+    Hiển thị từ {{pagination.getStart()+1}} đến {{pagination.getEnd()}} của {{pagination.sumOfItems}} ({{pagination.numOfPage()}} Trang)
   </div>
   <div class="col-lg-5 col-md-6 col-sm-7 ">
     <div class="sorting-selection row">
-      <span class="col-sm-5 col-lg-4 ml-0 pl-0">Sort By:</span>
+      <span class="col-sm-5 col-lg-4 ml-0 pl-0">Sắp xếp theo:</span>
 
-      <select class="col-sm-7 col-lg-5 form-control sort-select ml-0 pl-0">
-        <option value="" selected="selected">Chọn</option>
-        <option class="small-option" value="">Giá tăng dần</option>
-        <option class="small-option" value="">Giá giảm dần</option>
+      <select #selectElement class="col-sm-7 col-lg-5 form-control sort-select ml-0 pl-0" (change)="sort(selectElement.value)">
+        <option value="" disabled selected="selected">Chọn</option>
+        <option class="small-option" value="increase" >Giá tăng dần</option>
+        <option class="small-option" value="decrease" >Giá giảm dần</option>
 
       </select>
-
+    </div>
     </div>
   </div>
 </div>

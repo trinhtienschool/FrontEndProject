@@ -16,11 +16,12 @@ export class PaginationService {
     console.log(this._pagination.current);
     this.behaviorSubject.next(this._pagination);
   }
- setSumOfItems(sum: number){
+  setUpPagination(sumOfItems: number,itemsPerPage: number){
     this._pagination.current = 1;
-    this._pagination.sumOfItems = sum;
+    this._pagination.itemsPerPage = itemsPerPage;
+    this._pagination.sumOfItems =sumOfItems;
     this.behaviorSubject.next(this._pagination);
- }
+  }
   get pagination(): Pagination {
     return this._pagination;
   }

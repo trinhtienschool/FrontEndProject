@@ -5,42 +5,24 @@
         <div class="product-imgs">
           <div class="img-display">
             <div class="img-showcase">
-              <img class="zoom" src="assets/imgs/products/toy1.jpg">
-              <img src="assets/imgs/products/toy2.jpg">
-              <img src="assets/imgs/products/toy3.jpg">
-              <img src="assets/imgs/products/toy4.jpg">
+              <img class="zoom" src="{{imgZoom}}">
             </div>
           </div>
           <div class="img-select">
-            <div class="img-item">
-              <a href="#" data-id="1">
-                <img  src="assets/imgs/products/toy1.jpg">
-              </a>
-            </div>
-            <div class="img-item">
-              <a href="#" data-id="1">
-                <img src="assets/imgs/products/toy2.jpg">
-              </a>
-            </div>
-            <div class="img-item">
-              <a href="#" data-id="1">
-                <img src="assets/imgs/products/toy3.jpg">
-              </a>
-            </div>
-            <div class="img-item">
-              <a href="#" data-id="1">
-                <img src="assets/imgs/products/toy4.jpg">
-              </a>
+            <div class="img-item" *ngFor="let img of product.images">
+              <p>
+                <img (click)="selectImg(img)" src="{{img}}">
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-7">
         <div class="product-content">
-          <h2 class="product-title ">Bộ dụng cụ trang điểm màu hồng</h2>
+          <h2 class="product-title ">{{product.name}}</h2>
           <div class="product-detail">
-            <div>Thương hiệu<span>Make it real</span></div>
-            <div>Mã sản phẩm<span>SKU 2506MIR</span></div>
+            <div>Thương hiệu<span>{{product.brand}}</span></div>
+            <div>Mã sản phẩm<span>{{product.product_id}}</span></div>
             <div>Tình trạng<span>Còn hàng</span></div>
 
             <!--                            <div class="detail-left">-->
@@ -55,7 +37,7 @@
             <!--                            </div>-->
           </div>
           <div class="product-price">
-            <p class="last-price ">447.000 VNĐ <span class="sale-price">559.000 VNĐ</span></p>
+            <p class="last-price ">{{product.price}} VNĐ <span class="sale-price">{{product.price_sale}} VNĐ</span></p>
           </div>
           <div class="product-rating">
             <i class="fas fa-star"></i>

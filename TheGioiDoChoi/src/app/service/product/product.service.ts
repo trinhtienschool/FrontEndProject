@@ -71,8 +71,7 @@ export class ProductService {
       this.setData(value.xe, this.xe);
       // console.log("length: "+this.allProductsArr.length);
 
-      this.paginationService.setSumOfItems(this.allProductsArr.length);
-      this.behaviorSubject.next(this.allProductsArr);
+      this.notify(this.allProductsArr);
     })
   }
 
@@ -89,8 +88,7 @@ export class ProductService {
     for (let p of this.allProductsArr) {
       if (p.search(searchTxt)) this.currentProducts.push(p);
     }
-    this.paginationService.setSumOfItems(this.currentProducts.length);
-    this.behaviorSubject.next(this.currentProducts);
+    this.notify(this.currentProducts);
   }
 
   filterCategory(category: string) {
@@ -158,11 +156,11 @@ export class ProductService {
     }
     if(this.sortType == 'increase') this.sortArrIncrease(products);
     else if(this.sortType == 'decrease') this.sortArrDecrease(products);
-    else this.notify(products);
+    this.notify(products);
 
   }
    notify(arr: Product[]){
-     this.paginationService.setSumOfItems(arr.length);
+     this.paginationService.setUpPagination(arr.length,9);
      this.behaviorSubject.next(arr);
    }
   // filterByPrice(startPrice: number, endPrice: number) {
@@ -207,8 +205,6 @@ export class ProductService {
       let b_price = (b.price_sale>0 && b.price>b.price_sale)?b.price_sale:b.price;
       return a_price-b_price;
     })
-    this.paginationService.setSumOfItems(arr.length);
-    this.behaviorSubject.next(arr);
   }
   // sortDecrease(){
   //   if (this.currentProducts.length != 0) {
@@ -223,8 +219,6 @@ export class ProductService {
       let b_price = (b.price_sale>0 && b.price>b.price_sale)?b.price_sale:b.price;
       return a_price-b_price;
     })
-    this.paginationService.setSumOfItems(arr.length);
-    this.behaviorSubject.next(arr);
   }
 
 }

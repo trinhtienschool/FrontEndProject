@@ -25,6 +25,9 @@ $gray: #7b7b7b;
     @media only screen and (max-width: 479px){
       padding: 25px 30px;
     }
+    @media (max-width: 216px) {
+      padding-bottom: 50px;
+    }
     h4{
       font-size: 20px;
       line-height: 23px;
@@ -69,11 +72,8 @@ $gray: #7b7b7b;
       -ms-flex-pack: start;
       justify-content: flex-start;
     }
-    @media only screen and (max-width: 575px){
-      display: flex;
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
+    @media (max-width: 223px){
+      display: grid;
     }
     .c-btn{
       margin-top: 10px;
@@ -107,6 +107,13 @@ $gray: #7b7b7b;
       @media only screen and (max-width: 479px){
         width: 130px;
       }
+      @media only screen and (max-width: 216px){
+        display: block;
+      }
+      @media only screen and (max-width: 177px) {
+        width: 100px;
+        padding: 5px;
+      }
     }
     .c-btn:hover{
       color: #fff;
@@ -127,6 +134,7 @@ $gray: #7b7b7b;
         color: #fff;
         background-color: $blue;
         border-color: $blue;
+
       }
       .checkout-btn:hover{
         background: $black;

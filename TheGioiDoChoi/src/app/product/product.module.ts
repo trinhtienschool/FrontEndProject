@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductRangeSlideComponent } from './product-range-slide/product-range-slide.component';
 import { AgeGenderComponent } from './age-gender/age-gender.component';
+import {ProductRoutingModule} from "./product-routing.module";
 
 
 
@@ -23,7 +24,8 @@ import { AgeGenderComponent } from './age-gender/age-gender.component';
   ],
   imports: [
     CommonModule,
-    ShareModule
+    ShareModule,
+    ProductRoutingModule
   ],
   exports: [
     ProductCardSaleComponent,

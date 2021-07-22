@@ -85,6 +85,9 @@ h6 {
 .container-fluid {
   padding: 0px !important; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 .hero-area .slick-dots {
   margin-top: -50px !important; }
 

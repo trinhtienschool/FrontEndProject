@@ -5,8 +5,16 @@ export class Product{
               private _brand: string,
               private _product_id: string,
               private _description: string,
+              private _age: string,
+              private _gender: string,
               private _images: string[],
-              ) { }
+              ) {
+    if(this._price<this._price_sale){
+      const temp = this._price;
+      this._price = this._price_sale;
+      this._price_sale = temp;
+    }
+  }
   get percentSale(): number{
     if(this._price_sale==0) return 0;
     return Math.round((this._price - this._price_sale)*100/this._price);
@@ -66,5 +74,60 @@ export class Product{
 
   set images(value: string[]) {
     this._images = value;
+  }
+
+  get age(): string {
+    return this._age;
+  }
+
+  set age(value: string) {
+    this._age = value;
+  }
+
+  get gender(): string {
+    return this._gender;
+  }
+
+  set gender(value: string) {
+    this._gender = value;
+  }
+  search(txt: string): boolean{
+    const arr = txt.split(" ");
+    for(let letter of arr){
+      if(this._name.includes(letter)) return true;
+    }
+    return false;
+  }
+  filterPrice(startPrice: number,endPrice: number){
+    let price = (this._price_sale>0 && this._price>this._price_sale)? this._price_sale:this._price;
+    if(price>=startPrice && price<=endPrice) return true;
+    else return false;
+  }
+  filterAge_Gender(para: string, type: string){
+    // console.log("para: "+para+" ; type"+type+" : this.age: "+this._age+" ; this.gender: "+this._gender);
+    if(type == 'age'){
+      if(para == this._age) return true;
+    }else if(type == 'gender'){
+      if(para == this._gender) return true;
+    }
+    return false;
+  }
+  toString(){
+    return "name: "+this._name+" , "+"img1: "+this._images;
+  }
+
+  filter(priceStartFilter: number, priceEndFilter: number, ageFilter: string[], genderFilter: string[]) {
+    let check = this.filterPrice(priceStartFilter,priceEndFilter);
+    if(ageFilter.length != 0) check &&=this.filterAge_Gender_Arr(ageFilter,'age');
+    if(genderFilter.length != 0) check &&= this.filterAge_Gender_Arr(genderFilter,'gender');
+
+    return check;
+  }
+  filterAge_Gender_Arr(arr: string[],type: string){
+    let check = false;
+    for(let ele of arr){
+      check ||=this.filterAge_Gender(ele,type);
+    }
+    return check;
   }
 }

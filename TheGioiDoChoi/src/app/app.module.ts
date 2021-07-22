@@ -20,8 +20,12 @@ import {ShareModule} from "./share/share.module";
 import { DetailComponent } from './product-detail/detail/detail.component';
 import { DescriptionComponent } from './product-detail/description/description.component';
 import { RelatedProductComponent } from './product-detail/related-product/related-product.component';
+import { registerLocaleData} from "@angular/common";
+import localeVi from '@angular/common/locales/vi';
+import { ProductItemComponent } from './cart/product-like/product-item/product-item.component';
+import { CartItemComponent } from './cart/cart-table/cart-item/cart-item.component';
 
-
+registerLocaleData(localeVi,'vi-VN')
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +39,8 @@ import { RelatedProductComponent } from './product-detail/related-product/relate
     DetailComponent,
     DescriptionComponent,
     RelatedProductComponent,
+    ProductItemComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule,

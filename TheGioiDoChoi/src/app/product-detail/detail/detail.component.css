@@ -39,12 +39,20 @@
         margin-left: 1.2rem;
         font-weight: bold;
         text-transform: uppercase; }
+        @media (max-width: 270px) {
+          .product-details .product-content .product-detail div:nth-child(1) span {
+            display: block;
+            margin-left: 0; } }
     .product-details .product-content .product-detail div {
       font-size: 14px; }
       .product-details .product-content .product-detail div span {
         color: #00AFEF;
         margin-left: 1rem;
         text-transform: capitalize; }
+        @media (max-width: 270px) {
+          .product-details .product-content .product-detail div span {
+            display: block;
+            margin-left: 0; } }
   .product-details .product-content .product-price {
     margin: 1rem 0;
     font-size: 14px;

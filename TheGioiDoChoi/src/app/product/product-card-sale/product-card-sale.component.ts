@@ -9,11 +9,11 @@ import {Product} from "../../model/product";
 export class ProductCardSaleComponent implements OnInit {
  @Input() product: Product|undefined;
   constructor() {
-   console.log("Dang vao product card sale");
+
   }
 
   ngOnInit(): void {
-    console.log("Dang vao product card sale component");
+
   }
 
 

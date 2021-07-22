@@ -32,6 +32,6 @@ import { AgeGenderComponent } from './age-gender/age-gender.component';
 })
 export class ProductModule {
   constructor() {
-    console.log("Dang vao ProductModule")
+    // console.log("Dang vao ProductModule")
   }
 }

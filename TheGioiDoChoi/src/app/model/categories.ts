@@ -1,8 +1,8 @@
 export class Categories {
-  private _dc_vandong: string[] = ['Đồ chơi dã ngoại','Đồ chơi nhà bếp','Đồ chơi dưới nước','Xe đạp'];
-  private _dc_tritue: string[] = ['Rubik','Smart game','Puzzle'];
-  private _dc_ptgt: string[] = ['Xe mô hình','Máy bay, tên lửa','Xe cứu hỏa'];
-  private _dc_nv: string[] = ['Búp bê','Robot'];
+  private _dc_vandong: any[] = [['Đồ chơi dã ngoại','dochoidangoai'],['Đồ dùng nhà bếp','dodungnhabep'],['Đồ chơi dưới nước','dochoiduoinuoc'],['Xe','xe']];
+  private _dc_tritue: any[] = [['Lego','lego'],['Smart game','smartgame'],['Puzzle','puzzle']];
+  private _dc_ptgt: any[] = [['Mô hình xe','mohinhxe'],['Máy bay tên lửa','maybaytenlua'],['Xe điều khiển','xedieukhien']];
+  private _dc_nv: any[] = [['Búp bê','bupbe'],['Robot','robot']];
 
   constructor() {}
 

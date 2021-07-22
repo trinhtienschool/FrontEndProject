@@ -35,7 +35,8 @@
     text-align: center;
     margin: 5px 5px;
     border: 2px solid #7b7b7b;
-    border-radius: 3px; }
+    border-radius: 3px;
+    cursor: pointer; }
   .pagination-block .pagination-btns .page {
     border: 2px solid #7b7b7b; }
   .pagination-block .pagination-btns .page:hover {

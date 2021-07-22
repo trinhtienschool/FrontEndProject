@@ -40,7 +40,7 @@
 
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
-            <div *ngFor="let productCard of featureHightLightProduct">
+            <div *ngFor="let productCard of hightlight">
               <app-product-card-sale [product]="productCard"></app-product-card-sale>
             </div>
           </div>
@@ -59,7 +59,7 @@
 
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
-            <div *ngFor="let productCard of featureLatestProduct">
+            <div *ngFor="let productCard of latest">
               <app-product-card-sale [product]="productCard"></app-product-card-sale>
 
             </div>
@@ -79,7 +79,7 @@
 
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
-            <div *ngFor="let productCard of featureBestSallerProduct">
+            <div *ngFor="let productCard of bestsaller">
               <app-product-card-sale [product]="productCard"></app-product-card-sale>
             </div>
           </div>

@@ -22,6 +22,7 @@ import { DescriptionComponent } from './product-detail/description/description.c
 import { RelatedProductComponent } from './product-detail/related-product/related-product.component';
 import { registerLocaleData} from "@angular/common";
 import localeVi from '@angular/common/locales/vi';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 registerLocaleData(localeVi,'vi-VN')
 @NgModule({
@@ -37,15 +38,17 @@ registerLocaleData(localeVi,'vi-VN')
     DetailComponent,
     DescriptionComponent,
     RelatedProductComponent,
+    NotFoundComponent,
   ],
+
   imports: [
     BrowserModule,
     HomeModule,
+    ShareModule,
     ProductModule,
     BlogModule,
-    AppRoutingModule,
-    ShareModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   exports:[
     HttpClientModule,

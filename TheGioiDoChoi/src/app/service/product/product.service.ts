@@ -138,6 +138,10 @@ export class ProductService {
     // this.notify(this.currentProducts);
   }
 
+  // addCart(product: Product){
+  //   this.products.push(product);
+  //   this.behaviorSubject.next(this.products);
+  // }
   filter(){
     console.log("ageFilter: "+this.ageFilter);
     console.log("genderFilter: "+this.genderFilter);

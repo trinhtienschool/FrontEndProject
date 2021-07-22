@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BlogComponent } from './blog.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import {ShareModule} from "../share/share.module";
+import {BlogRoutingModule} from "./blog-routing.module";
 
 
 
@@ -17,7 +18,8 @@ import {ShareModule} from "../share/share.module";
   ],
   imports: [
     CommonModule,
-    ShareModule
+    ShareModule,
+    BlogRoutingModule
   ]
 })
 export class BlogModule { }

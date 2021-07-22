@@ -11,6 +11,7 @@ import { BestSallerComponent } from './best-saller/best-saller.component';
 import { PersonTrafficComponent } from './person-traffic/person-traffic.component';
 import { BlogAreaComponent } from './blog-area/blog-area.component';
 import {BlogModule} from "../blog/blog.module";
+import {ShareModule} from "../share/share.module";
 
 
 
@@ -33,7 +34,7 @@ import {BlogModule} from "../blog/blog.module";
   imports: [
     CommonModule,
     ProductModule,
-    BlogModule
+    BlogModule,
   ]
 })
 export class HomeModule { }

@@ -1,7 +1,6 @@
-
-$(document).ready(function(){
+onloadFunction = function(){
   setTimeout(run,1000);
-});
+}
 run = function(){
   // Tien
   /*------------------------

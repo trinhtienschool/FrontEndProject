@@ -1,0 +1,24 @@
+.margin-top-50 {
+  margin-top: -30px; }
+
+.filter-sidebar {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.range-slider-value {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .range-slider-value div {
+    font-weight: 600; }
+
+@media (min-width: 200px) {
+  .range-slider-value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+  #cost-from,
+  #cost-to {
+    display: inline-block; } }
+
+/*# sourceMappingURL=product-range-slide.component.css.map */

@@ -1,0 +1,25 @@
+<div class="site-wrapper" id="top">
+  <app-breadcrumb [parent_title]="'Trang chủ'" child_title="Thanh toán"></app-breadcrumb>
+  <main id="content" class="page-section inner-page-sec-padding-bottom space-db--20">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Checkout Form s-->
+          <div class="checkout-form">
+            <div class="row row-40">
+              <div class="col-lg-7 mb--20">
+                <app-billing-address></app-billing-address>
+              </div>
+              <div class="col-lg-5">
+                <div class="row">
+                  <!-- Cart Total -->
+                  <app-cart-total></app-cart-total>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,26 @@
+$small: 300px;
+$medium: 992px;
+$black: #000;
+$blue: #00AFEF;
+$gray: #7b7b7b;
+.describe-product{
+  margin-top: 3rem;
+  .describe-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    h2{
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $blue;
+      border-bottom: 3px solid $blue;
+      padding-bottom: 0.4rem;
+    }
+  }
+  .describe-content{
+    margin-top: 1rem;
+  }
+
+}

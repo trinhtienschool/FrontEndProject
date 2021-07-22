@@ -1,0 +1,16 @@
+<!-- Price -->
+<div class="single-block">
+  <h3 class="sidebar-title filter-sidebar">Lọc theo giá</h3>
+
+<!--  <p class="margin-top-50">-->
+<!--    <input type="text" id="amount" readonly style="border:0; font-weight:bold;">-->
+<!--  </p>-->
+
+  <div id="slider-range" (click)="click(from_html.innerText,to_html.innerText)" class="range-slider-widget cursor-pointer"></div>
+
+  <div class="range-slider-value">
+    <div id="cost-from" #from_html></div>
+    <div class="hyphen">-</div>
+    <div id="cost-to" #to_html></div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<!-- Categories -->
+<div class="single-block">
+  <h3 class="sidebar-title">Danh mục</h3>
+  <div *ngIf="categories !==undefined">
+
+    <div class="left-sidebar-parent">
+      <a class="left-sidebar-title row m-1 mt-3 " data-toggle="collapse" href="#do-choi-van-dong" role="button"
+         aria-expanded="false" aria-controls="do-choi-van-dong">
+        <span class="col-xl-10 col-lg-9  col-sm-11 col-12">Đồ chơi vận động</span>
+        <i class="fas fa-angle-down col-xl-2 col-lg-3   col-sm-1 col-12"></i>
+      </a>
+      <div class="collapse" [class.show] = 'category_show=="dc_vandong"?true:false' id="do-choi-van-dong" *ngFor="let dc_vd of categories.dc_vandong">
+        <p (click)="filterByCategory(dc_vd[1],'dc_vandong')" [style.font-weight]="choosing==dc_vd[1]?600:null"  class="cursor-pointer left-sidebar-item m-3">{{dc_vd[0]}}</p>
+      </div>
+    </div>
+
+  <div class="left-sidebar-parent">
+    <a class="left-sidebar-title row m-1 mt-3 " data-toggle="collapse" href="#do-choi-tri-tue" role="button"
+       aria-expanded="false" aria-controls="do-choi-van-dong">
+      <span class="col-xl-10 col-lg-9  col-sm-11 col-12">Đồ chơi trí tuệ</span>
+      <i class="fas fa-angle-down col-xl-2 col-lg-3  col-sm-1 col-12"></i>
+    </a>
+    <div class="collapse" [class.show] = 'category_show=="dc_tritue"?true:false' id="do-choi-tri-tue" *ngFor="let dc_vd of categories.dc_tritue">
+      <p (click)="filterByCategory(dc_vd[1],'dc_tritue')" [style.font-weight]="choosing==dc_vd[1]?600:null" class="cursor-pointer left-sidebar-item m-3">{{dc_vd[0]}}</p>
+    </div>
+  </div>
+  <div class="left-sidebar-parent">
+    <a class="left-sidebar-title row m-1 mt-3 " data-toggle="collapse" href="#phuong-tien-giao-thong" role="button"
+       aria-expanded="false" aria-controls="do-choi-van-dong">
+      <span class="col-xl-10 col-lg-9  col-sm-11 col-12">Phương tiện giao thông</span>
+      <i class="fas fa-angle-down col-xl-2 col-lg-3  col-sm-1 col-12"></i>
+    </a>
+    <div class="collapse" [class.show] = 'category_show=="dc_ptgt"?true:false' id="phuong-tien-giao-thong" *ngFor="let dc_vd of categories.dc_ptgt">
+      <p (click)="filterByCategory(dc_vd[1],'dc_ptgt')" [style.font-weight]="choosing==dc_vd[1]?600:null" class="cursor-pointer left-sidebar-item m-3">{{dc_vd[0]}}</p>
+    </div>
+  </div>
+  <div class="left-sidebar-parent">
+    <a class="left-sidebar-title row m-1 mt-3 " data-toggle="collapse" href="#nhan-vat" role="button"
+       aria-expanded="false" aria-controls="do-choi-van-dong">
+      <span class="col-xl-10 col-lg-9  col-sm-11 col-12">Nhân vật</span>
+      <i class="fas fa-angle-down col-xl-2 col-lg-3  col-sm-1 col-12"></i>
+    </a>
+    <div class="collapse" [class.show] = 'category_show=="dc_nv"?true:false' id="nhan-vat" *ngFor="let dc_vd of categories.dc_nv">
+      <p (click)="filterByCategory(dc_vd[1],'dc_nv')" [style.font-weight]="choosing==dc_vd[1]?600:null" class="cursor-pointer left-sidebar-item m-3">{{dc_vd[0]}}</p>
+    </div>
+  </div>
+  </div>
+</div>

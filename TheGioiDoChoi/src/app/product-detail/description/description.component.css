@@ -1,0 +1,18 @@
+.describe-product {
+  margin-top: 3rem; }
+  .describe-product .describe-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .describe-product .describe-title h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #00AFEF;
+      border-bottom: 3px solid #00AFEF;
+      padding-bottom: 0.4rem; }
+  .describe-product .describe-content {
+    margin-top: 1rem; }
+
+/*# sourceMappingURL=description.component.css.map */

@@ -1,0 +1,21 @@
+<div class="single-block">
+  <h3 class="sidebar-title age-gender">{{title}}</h3>
+  <div class="form-check m-1 mt-3" *ngFor="let sub_title of content">
+    <input #checkboxValue  class="form-check-input cursor-pointer" type="checkbox"  (change)="check(checkboxValue.value,checkboxValue)" value="{{sub_title[1]}}" id="{{sub_title[0]}}">
+    <label class="form-check-label cursor-pointer"  for="{{sub_title[0]}}">
+      {{sub_title[1]}}
+    </label>
+  </div>
+<!--  <div class="form-check m-1 mt-3">-->
+<!--    <input class="form-check-input" type="checkbox" value="" id="tu-6-11-tuoi">-->
+<!--    <label class="form-check-label" for="tu-6-11-tuoi">-->
+<!--      Từ 6 - 11 tuổi-->
+<!--    </label>-->
+<!--  </div>-->
+<!--  <div class="form-check m-1 mt-3">-->
+<!--    <input class="form-check-input" type="checkbox" value="" id="tu-1-6-tuoi">-->
+<!--    <label class="form-check-label" for="tu-1-6-tuoi">-->
+<!--      Từ 1 - 6 tuổi-->
+<!--    </label>-->
+<!--  </div>-->
+</div>

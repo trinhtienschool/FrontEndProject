@@ -1,0 +1,48 @@
+.shop-toolbar {
+  border: 2px solid #eeeeee;
+  padding: 14px 20px 9px 20px;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .shop-toolbar {
+      padding: 2.5px 20px; } }
+  @media (max-width: 200px) {
+    .shop-toolbar {
+      padding: 0 !important;
+      margin: 0 0 20px 0 !important; } }
+  .shop-toolbar .sorting-selection {
+    padding: 6px 0px 6px 0px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    font-size: 14px; }
+    @media (max-width: 200px) {
+      .shop-toolbar .sorting-selection {
+        padding: 0 !important;
+        margin: 20px 0 0 !important; } }
+    @media (min-width: 992px) {
+      .shop-toolbar .sorting-selection {
+        justify-content: flex-end; } }
+    .shop-toolbar .sorting-selection .form-control {
+      border: 1px solid transparent;
+      border-radius: 4px;
+      line-height: 24px;
+      font-size: 14px;
+      margin: 0;
+      right: 0;
+      height: 36px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      color: #333333; }
+      @media (max-width: 230px) {
+        .shop-toolbar .sorting-selection .form-control {
+          width: 70px;
+          padding: 0 !important;
+          margin: 0 !important; } }
+
+@media (max-width: 230px) {
+  .small-option {
+    width: 70px; } }
+
+/*# sourceMappingURL=shop-toolbar.component.css.map */

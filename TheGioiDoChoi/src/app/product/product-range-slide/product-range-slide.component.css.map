@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIA,cAAc;EACZ,UAAU,EAAE,KAAK;;AAGnB,eAAgB;EACd,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;;AAErB,mBAAoB;EAClB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;EACnB,uBAAI;IACF,WAAW,EAAE,GAAG;;AAGpB,yBAA0B;EACxB,mBAAoB;IAClB,OAAO,EAAE,IAAI;IACb,SAAS,EAAE,IAAI;IACf,eAAe,EAAE,YAAY;;EAE/B;UACS;IACP,OAAO,EAAE,YAAY",
-"sources": ["product-range-slide.component.scss"],
-"names": [],
-"file": "product-range-slide.component.css"
-}

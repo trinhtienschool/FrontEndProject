@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,4BAA4B;AAK1B,gCAAY;EACV,gBAAgB,EAAE,WAAW;EAC7B,OAAO,EAAE,MAAM;EACf,iDAAiB;IACf,SAAS,EAAE,IAAI;IACf,KAAK,EAAE,IAAI;IACX,yDAAQ;MACN,KAAK,EAVA,OAAO;EAchB,0DAA0B;IACxB,KAAK,EAfE,OAAO",
-"sources": ["breadcrumb.component.scss"],
-"names": [],
-"file": "breadcrumb.component.css"
-}

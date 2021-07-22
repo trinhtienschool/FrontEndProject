@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAME,gBAAW;EACT,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI",
-"sources": ["cart.component.scss"],
-"names": [],
-"file": "cart.component.css"
-}

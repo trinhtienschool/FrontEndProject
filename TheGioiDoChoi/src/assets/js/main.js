@@ -1,5 +1,5 @@
 onloadFunction = function(){
-  setTimeout(run,1000);
+  setTimeout(run,2000);
 }
 run = function(){
   // Tien

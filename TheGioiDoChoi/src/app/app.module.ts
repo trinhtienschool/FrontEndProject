@@ -65,9 +65,10 @@ registerLocaleData(localeVi,'vi-VN')
     HttpClientModule,
     AppRoutingModule
   ],
-  exports:[
-    HttpClientModule,
-  ],
+    exports: [
+        HttpClientModule,
+        BlogDetailComponent,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

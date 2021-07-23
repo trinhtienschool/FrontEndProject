@@ -4,22 +4,22 @@
     <div class="container">
       <div class="blog-post post-details mb--50">
         <div class="blog-image">
-          <img src="image/car.jpg" alt="">
+          <img src="{{blog.img1}}" alt="">
         </div>
         <div class="blog-content mt--30">
           <header>
-            <h3 class="blog-title"> 1.Đồ Chơi Mô Hình Lắp Ráp Audi R8 V10 Plus Tỉ Lệ 1:24</h3>
+            <h3 class="blog-title"> {{blog.name}}</h3>
             <div class="post-meta">
                                 <span class="post-author">
                                     <i class="fa fa-user"></i>
                                     <span class="text-gray">Posted by : </span>
-                                    admin
+                                  {{blog.author}}
                                 </span>
               <span class="post-separator">|</span>
               <span class="post-date">
                                     <i class="far fa-calendar-alt"></i>
                                     <span class="text-gray">On : </span>
-                                    March 10, 2015
+                {{blog.date}}
                                 </span>
             </div>
           </header>
@@ -29,9 +29,7 @@
               Thương hiệu: MAISTO<br>
               SKU 39510/MT39900
             </b>
-            <p>với màu đỏ hiện đại cùng lớp sơn tĩnh điện bóng đẹp. Tuy chỉ là đồ chơi trẻ em nhưng
-              thiết kế tinh xảo đến từng chi tiết. Nhờ đó mà bé dễ dàng hình dung và khám phá chiếc
-              xe ô tô ngoài đời thật.</p>
+            <p>{{blog.content}}</p>
           </article>
 
         </div>

@@ -2,7 +2,7 @@
   <h3>Bạn có thể thích</h3>
 </div>
 <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let product of [1,2,3]">
-    <app-product-item></app-product-item>
+  <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let product of listProducts; let i=index">
+    <app-product-item [productItem]="product"></app-product-item>
   </div>
 </div>

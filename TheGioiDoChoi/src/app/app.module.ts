@@ -23,7 +23,14 @@ import { RelatedProductComponent } from './product-detail/related-product/relate
 import { registerLocaleData} from "@angular/common";
 import localeVi from '@angular/common/locales/vi';
 import { ProductItemComponent } from './cart/product-like/product-item/product-item.component';
-import { CartItemComponent } from './cart/cart-table/cart-item/cart-item.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ContactComponent } from './contact/contact.component';
+import { BillingAddressComponent } from './checkout/billing-address/billing-address.component';
+import { ContactAddressComponent } from './contact/contact-address/contact-address.component';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 
 registerLocaleData(localeVi,'vi-VN')
 @NgModule({
@@ -40,16 +47,23 @@ registerLocaleData(localeVi,'vi-VN')
     DescriptionComponent,
     RelatedProductComponent,
     ProductItemComponent,
-    CartItemComponent,
+    NotFoundComponent,
+    BlogDetailComponent,
+    CheckoutComponent,
+    ContactComponent,
+    BillingAddressComponent,
+    ContactAddressComponent,
+    ContactFormComponent,
   ],
+
   imports: [
     BrowserModule,
     HomeModule,
+    ShareModule,
     ProductModule,
     BlogModule,
-    AppRoutingModule,
-    ShareModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   exports:[
     HttpClientModule,

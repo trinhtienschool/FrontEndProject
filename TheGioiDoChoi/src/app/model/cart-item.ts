@@ -4,8 +4,7 @@ export class CartItem{
   constructor(private _name: string,
               private _image: string,
               private _price: number,
-              private _quantity: number,
-              private _price_total: number) {
+              private _quantity: number) {
   }
   get name(): string {
     return this._name;
@@ -39,11 +38,7 @@ export class CartItem{
     this._quantity = value;
   }
 
-  get price_total(): number {
-    return this._price_total;
-  }
-
-  set price_total(value: number) {
-    this._price_total = value;
+  totalPrice(): number{
+    return this._price*this._quantity;
   }
 }

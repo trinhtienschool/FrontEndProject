@@ -4,7 +4,7 @@ import {isArray} from "rxjs/internal-compatibility";
 import {Product} from "../model/product";
 import {Blog} from "../model/blog";
 import {Util} from "../model/util";
-
+declare const onloadFunction: any;
 
 @Component({
   selector: 'app-home',
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   ptgt: Product[] = [];
   blog: Blog[] = [];
 
-  constructor(private httpData: LoadJsonService) { }
+  constructor(private httpData: LoadJsonService) {}
 
   ngOnInit(): void {
     this.httpData.getData("home.json").subscribe(value => {
@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
       Util.convertObj2ProArr(value.ptgt,this.ptgt);
       Util.convertObj2BlogArr(value.blog,this.blog);
     })
+    onloadFunction();
   }
 
 

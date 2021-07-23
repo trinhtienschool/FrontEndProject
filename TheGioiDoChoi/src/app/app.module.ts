@@ -22,7 +22,7 @@ import { DescriptionComponent } from './product-detail/description/description.c
 import { RelatedProductComponent } from './product-detail/related-product/related-product.component';
 import { registerLocaleData} from "@angular/common";
 import localeVi from '@angular/common/locales/vi';
-
+import { ProductItemComponent } from './cart/product-like/product-item/product-item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
@@ -31,7 +31,6 @@ import { ContactComponent } from './contact/contact.component';
 import { BillingAddressComponent } from './checkout/billing-address/billing-address.component';
 import { ContactAddressComponent } from './contact/contact-address/contact-address.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
-
 
 registerLocaleData(localeVi,'vi-VN')
 @NgModule({
@@ -47,7 +46,7 @@ registerLocaleData(localeVi,'vi-VN')
     DetailComponent,
     DescriptionComponent,
     RelatedProductComponent,
-
+    ProductItemComponent,
     NotFoundComponent,
     BlogDetailComponent,
     CheckoutComponent,
@@ -55,7 +54,6 @@ registerLocaleData(localeVi,'vi-VN')
     BillingAddressComponent,
     ContactAddressComponent,
     ContactFormComponent,
-
   ],
 
   imports: [

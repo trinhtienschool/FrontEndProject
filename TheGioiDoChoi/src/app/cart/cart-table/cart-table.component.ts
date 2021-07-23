@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-table.component.scss']
 })
 export class CartTableComponent implements OnInit {
+  // public products: Product[] =[];
+  cartItems = []
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

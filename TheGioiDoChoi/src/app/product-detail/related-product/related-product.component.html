@@ -4,19 +4,19 @@
       <h2>Sản phẩm tương tự</h2>
     </div>
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3" *ngFor="let product of listProducts">
         <div class="product-item">
           <div class="product-img">
-            <img src="assets/imgs/products/toy1.jpg">
+            <img src="{{product.images[0]}}">
           </div>
           <div class="product-card card-body">
-            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>
+            <h5 class="card-title text-center">{{product.name}}</h5>
             <div class="row">
               <div class="col-sm-9 col-12">
                 <p class="product-price text-center card-text">
-                  420.000 VNĐ</p>
+                  {{product.price}} VNĐ</p>
                 <p class="product-price-discount text-center card-text">
-                  420.000 VNĐ</p>
+                  {{product.price_sale}} VNĐ</p>
               </div>
               <button href="#" class="btn col-sm-3 col-12 btn-cart">
                 <i class="fas fa-shopping-cart"></i>
@@ -25,69 +25,69 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
-        <div class="product-item">
-          <div class="product-img">
-            <img src="assets/imgs/products/toy1.jpg">
-          </div>
-          <div class="product-card card-body">
-            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>
-            <div class="row">
-              <div class="col-sm-9 col-12">
-                <p class="product-price  text-center card-text">
-                  420.000 VNĐ</p>
-                <p class="product-price-discount text-center card-text">
-                  420.000 VNĐ</p>
-              </div>
-              <button href="#" class="btn col-sm-3 col-12 btn-cart ">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="product-item">
-          <div class="product-img">
-            <img src="assets/imgs/products/toy1.jpg">
-          </div>
-          <div class="product-card card-body">
-            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>
-            <div class="row">
-              <div class="col-sm-9 col-12">
-                <p class="product-price  text-center card-text">
-                  420.000 VNĐ</p>
-                <p class="product-price-discount text-center card-text">
-                  420.000 VNĐ</p>
-              </div>
-              <button href="#" class="btn col-sm-3 col-12 btn-cart ">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="product-item">
-          <div class="product-img">
-            <img src="assets/imgs/products/toy1.jpg">
-          </div>
-          <div class="product-card card-body">
-            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>
-            <div class="row">
-              <div class="col-sm-9 col-12">
-                <p class="product-price  text-center card-text">
-                  420.000 VNĐ</p>
-                <p class="product-price-discount text-center card-text">
-                  420.000 VNĐ</p>
-              </div>
-              <button href="#" class="btn col-sm-3 col-12 btn-cart ">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--      <div class="col-lg-3">-->
+<!--        <div class="product-item">-->
+<!--          <div class="product-img">-->
+<!--            <img src="assets/imgs/products/toy1.jpg">-->
+<!--          </div>-->
+<!--          <div class="product-card card-body">-->
+<!--            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>-->
+<!--            <div class="row">-->
+<!--              <div class="col-sm-9 col-12">-->
+<!--                <p class="product-price  text-center card-text">-->
+<!--                  420.000 VNĐ</p>-->
+<!--                <p class="product-price-discount text-center card-text">-->
+<!--                  420.000 VNĐ</p>-->
+<!--              </div>-->
+<!--              <button href="#" class="btn col-sm-3 col-12 btn-cart ">-->
+<!--                <i class="fas fa-shopping-cart"></i>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-3">-->
+<!--        <div class="product-item">-->
+<!--          <div class="product-img">-->
+<!--            <img src="assets/imgs/products/toy1.jpg">-->
+<!--          </div>-->
+<!--          <div class="product-card card-body">-->
+<!--            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>-->
+<!--            <div class="row">-->
+<!--              <div class="col-sm-9 col-12">-->
+<!--                <p class="product-price  text-center card-text">-->
+<!--                  420.000 VNĐ</p>-->
+<!--                <p class="product-price-discount text-center card-text">-->
+<!--                  420.000 VNĐ</p>-->
+<!--              </div>-->
+<!--              <button href="#" class="btn col-sm-3 col-12 btn-cart ">-->
+<!--                <i class="fas fa-shopping-cart"></i>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-3">-->
+<!--        <div class="product-item">-->
+<!--          <div class="product-img">-->
+<!--            <img src="assets/imgs/products/toy1.jpg">-->
+<!--          </div>-->
+<!--          <div class="product-card card-body">-->
+<!--            <h5 class="card-title text-center">Bộ dụng cụ trang điểm</h5>-->
+<!--            <div class="row">-->
+<!--              <div class="col-sm-9 col-12">-->
+<!--                <p class="product-price  text-center card-text">-->
+<!--                  420.000 VNĐ</p>-->
+<!--                <p class="product-price-discount text-center card-text">-->
+<!--                  420.000 VNĐ</p>-->
+<!--              </div>-->
+<!--              <button href="#" class="btn col-sm-3 col-12 btn-cart ">-->
+<!--                <i class="fas fa-shopping-cart"></i>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
 </section>

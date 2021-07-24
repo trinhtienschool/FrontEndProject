@@ -83,25 +83,25 @@
                 <div class="cart-block">
                   <div class="cart-total">
                                             <span class="text-number">
-                                                1
+                                                {{numberOfListProduct()}}
                                             </span>
                     <span class="text-item">
                                                 Giỏ hàng
                                             </span>
                     <span class="price">
-                                                250.000vnđ
+                                                {{totalPriceOfAllProduct()+30000| currency:'VND':'symbol':'1.0-0':'vi-VN'}}
                                                 <i class="fa fa-chevron-down"></i>
                                             </span>
                   </div>
                   <div class="cart-dropdown-block">
-                    <div class=" single-cart-block ">
+                    <div  *ngFor="let ch of cartItemHeader"  class=" single-cart-block ">
                       <div class="cart-product">
                         <a href="product-details.html" class="image">
-                          <img src="image/products/cart-product-1.jpg" alt="">
+                          <img src="{{ch.image}}" alt="">
                         </a>
                         <div class="content">
-                          <h3 class="title"><a href="product-details.html">1.Đồ Chơi Mô Hình Lắp Ráp Audi R8 V10 Plus Tỉ Lệ 1:24</a></h3>
-                          <p class="price"><span class="qty">1 ×</span>250.000vnđ</p>
+                          <h3 class="title"><a href="product-details.html">{{ch.name}}</a></h3>
+                          <p class="price"><span class="qty">{{ch.quantity}} ×</span>{{ch.price| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
                           <button class="cross-btn"><i class="fa fa-times"></i></button>
                         </div>
                       </div>
@@ -129,7 +129,7 @@
         <div class="row align-items-sm-end align-items-center">
           <div class="col-md-4 col-7">
             <a href="index.html" class="site-brand">
-              <img src="image/logo.PNG" alt="">
+              <img src="assets/imgs/logo/logo.png" alt="">
             </a>
           </div>
           <div class="col-md-5 order-3 order-md-2">

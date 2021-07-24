@@ -3,18 +3,17 @@
   @media (max-width: 299px) {
     .contact_adress .ct_title {
       font-size: 15px !important; } }
-
-.address_wrapper .address {
+.contact_adress .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px; }
-  .address_wrapper .address .icon {
+  .contact_adress .address .icon {
     min-width: 35px; }
-    .address_wrapper .address .icon i {
+    .contact_adress .address .icon i {
       color: #555555;
       font-size: 22px; }
-  .address_wrapper .address .icon-address i {
+  .contact_adress .address .icon-address i {
     margin-top: 10px;
     font-size: 30px; }
 

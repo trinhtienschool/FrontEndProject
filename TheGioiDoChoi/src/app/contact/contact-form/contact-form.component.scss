@@ -1,48 +1,40 @@
-.contact_form{
+.contact_form_have{
   .ct_title{
     margin-top: 50px;
     @media (max-width: 299px) {
       font-size: 15px !important;
     }
   }
-  .form-contact-must{
-    .row{
-      .col-lg-6{
-        .form-btn{
-          .btn-black{
-            height: 50px;
-            padding: 0 30px;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            color: #fff;
-            background: #333;
-            font-size: 13px;
-            font-weight: 500;
-            font-family: Rubik, Arial, Helvetica, sans-serif;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            border-radius: 3px;
-            border: none;
-            outline: none;
-            text-shadow: none;
-            text-transform: uppercase;
-            -webkit-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-            vertical-align: middle;
-            white-space: nowrap;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-          }
-          .btn-black:hover {
-            background: #00afef;
-            color: #fff; }
-        }
-      }
-    }
+  .btn-black{
+    height: 50px;
+    padding: 0 30px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    background: #333;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
   }
+  .btn-black:hover {
+    background: #00afef!important;
+    color: #fff; }
 
 }

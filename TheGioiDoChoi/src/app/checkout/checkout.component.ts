@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../model/cart-item";
-
+declare const onloadFunction: any;
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -32,6 +32,7 @@ export class CheckoutComponent implements OnInit {
 
   }
   ngOnInit(): void {
+    onloadFunction();
   }
 
 }

@@ -1,9 +1,9 @@
-.contact_form .ct_title {
+.contact_form_have .ct_title {
   margin-top: 50px; }
   @media (max-width: 299px) {
-    .contact_form .ct_title {
+    .contact_form_have .ct_title {
       font-size: 15px !important; } }
-.contact_form .form-contact-must .row .col-lg-6 .form-btn .btn-black {
+.contact_form_have .btn-black {
   height: 50px;
   padding: 0 30px;
   display: -ms-inline-flexbox;
@@ -30,8 +30,8 @@
   white-space: nowrap;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px; }
-.contact_form .form-contact-must .row .col-lg-6 .form-btn .btn-black:hover {
-  background: #00afef;
+.contact_form_have .btn-black:hover {
+  background: #00afef !important;
   color: #fff; }
 
 /*# sourceMappingURL=contact-form.component.css.map */

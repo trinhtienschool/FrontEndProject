@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../model/cart-item";
-
+declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -33,6 +33,7 @@ export class HeaderComponent implements OnInit {
     return number;
   }
   ngOnInit(): void {
+    onloadFunction();
   }
 
 }

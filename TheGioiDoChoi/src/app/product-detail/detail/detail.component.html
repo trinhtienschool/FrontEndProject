@@ -26,7 +26,9 @@
             <div>Tình trạng<span>Còn hàng</span></div>
           </div>
           <div class="product-price">
-            <p class="last-price ">{{product.price}} VNĐ <span class="sale-price">{{product.price_sale}} VNĐ</span></p>
+            <p class="last-price ">{{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}
+              <span class="sale-price">{{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span>
+            </p>
           </div>
           <div class="product-rating">
             <i class="fas fa-star"></i>

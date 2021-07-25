@@ -11,7 +11,8 @@
         <p class="product-price-discount text-center card-text">
           {{productItem.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
       </div>
-      <button href="#" class="btn col-sm-3 col-12 btn-cart ">
+      <button href="#" class="btn col-sm-3 col-12 btn-cart "
+        (click)="handleAddToCart()">
         <i class="fas fa-shopping-cart"></i>
       </button>
     </div>

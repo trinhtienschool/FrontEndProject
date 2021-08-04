@@ -31,16 +31,16 @@ export class ProductService {
   public dodungnhabep: Product[] = [];
   public xe: Product[] = [];
   private behaviorSubject: BehaviorSubject<any> = new BehaviorSubject('');
-  public pagination$: Observable<any> = this.behaviorSubject.asObservable();
+  public products$: Observable<any> = this.behaviorSubject.asObservable();
   public behaviorProductId: BehaviorSubject<any> = new BehaviorSubject<any>('');
   // Thy begin
   products: Product[] = [
-    new Product("Bộ câu cá dã ngoại",449000, 449000,"BATTAT","SKUBT2540Z","mô tả","2", "2",
+    new Product("Bộ câu cá dã ngoại",449000, 449000,"BATTAT","4","mô tả","2", "2",
       ['https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z_1.jpg',
         'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z.jpg',
         'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z_2.jpg',
         'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z_3.jpg']),
-    new Product("Chuyến dã ngoại mùa hè", 1599000, 449000, "LEGO FRIENDS", "SKU41681", "mô tả","1", "3",
+    new Product("Chuyến dã ngoại mùa hè", 1599000, 449000, "LEGO FRIENDS", "26", "mô tả","1", "3",
       ['https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_1_.jpg',
         'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_7_.jpg',
         'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_2_.jpg',
@@ -161,42 +161,6 @@ export class ProductService {
      this.paginationService.setUpPagination(arr.length,9);
      this.behaviorSubject.next(arr);
    }
-  // filterByPrice(startPrice: number, endPrice: number) {
-  //   let products: Product[] = [];
-  //   if (this.currentProducts.length != 0) {
-  //     for (let p of this.currentProducts) {
-  //       if (p.filterPrice(startPrice, endPrice)) products.push(p);
-  //     }
-  //   } else if (this.allProductsArr.length != 0) {
-  //     for (let p of this.allProductsArr) {
-  //       if (p.filterPrice(startPrice, endPrice)) products.push(p);
-  //     }
-  //   }
-  //   this.paginationService.setSumOfItems(products.length);
-  //   this.behaviorSubject.next(products);
-  // }
-  //
-  // filterByAge_Gender(para: string, type: string) {
-  //   let products: Product[] = [];
-  //   if (this.currentProducts.length != 0) {
-  //     for (let p of this.currentProducts) {
-  //       if (p.filterAge_Gender(para, type)) products.push(p);
-  //     }
-  //   } else if (this.allProductsArr.length != 0) {
-  //     for (let p of this.allProductsArr) {
-  //       if (p.filterAge_Gender(para, type)) products.push(p);
-  //     }
-  //   }
-  //   this.paginationService.setSumOfItems(products.length);
-  //   this.behaviorSubject.next(products);
-  // }
-  // sortIncrease(){
-  //   if (this.currentProducts.length != 0) {
-  //     this.sortArrIncrease(this.currentProducts);
-  //   } else if (this.allProductsArr.length != 0) {
-  //    this.sortArrIncrease(this.allProductsArr);
-  //   }
-  // }
   private sortArrIncrease(arr:Product[]){
     arr.sort(function(a,b){
       let a_price = (a.price_sale>0 && a.price>a.price_sale)?a.price_sale:a.price;
@@ -225,35 +189,7 @@ export class ProductService {
   findProductById(id: string|null):Observable<Product>{
     return timer(500).pipe(switchMap(_=>of(this.findProduct(id))));
   }
-  // findProductById(id: string|null):Observable<Product>{
-  //   console.log("All product: "+id);
-  //   console.log(this.allProductsArr);
-    // if(this.allProductsArr !=undefined && this.allProductsArr.length !=0 && this.allProductsArr !=null) {
-    //   console.log('co vaoooooooooooooooooooooooooooo');
-    //   console.log(this.allProductsArr);
-    //   const product =this.allProductsArr.find(p => {
-    //     console.log("ProductId: " + p.product_id);
-    //     return p.product_id == id
-    //   });
-    //
-    //   console.log("Product choose: ");
-    //   console.log(product);
-    //   if (product) {
-    //     return of(product);
-    //   } else {
-    //     return throwError(new Error('404 Not Found'));
-    //   }
-    // }else{
-    //
-    //   return throwError(new Error('505'));
-    // }
 
-
-
-  // }
-  // findProductByIdWait(){
-  //
-  // }
   // Thy
   getProducts(): Product[]{
     return this.products;

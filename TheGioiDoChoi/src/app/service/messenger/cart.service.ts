@@ -15,7 +15,7 @@ export class CartService {
   }
 
   // Todo: Thêm sản phẩm vào giỏ hàng và khi sản phẩm bị trùng sẽ tăng số lượng
-  addCart(product: Product){
+  addCart(product: Product, quan: number){
     var productName = product.name
     let index=-1
     for(let i=0; i<this.cart.length; i++){
@@ -26,7 +26,7 @@ export class CartService {
       }
     }
     if(index == -1){
-      this.cart.push(new CartItem(product.name,product.images[0],product.price,1));
+      this.cart.push(new CartItem(product.name,product.images[0],product.price,quan));
       this.behaviorSubject.next(this.cart);
     }
   }

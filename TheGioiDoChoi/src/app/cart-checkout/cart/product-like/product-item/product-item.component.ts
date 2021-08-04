@@ -18,7 +18,7 @@ export class ProductItemComponent implements OnInit {
 
   handleAddToCart(){
     if(this.productItem != undefined){
-      this.cartService.addCart(this.productItem);
+      this.cartService.addCart(this.productItem, 1);
     }
   }
 }

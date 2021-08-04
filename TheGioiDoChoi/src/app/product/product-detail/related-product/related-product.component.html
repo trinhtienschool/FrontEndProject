@@ -4,23 +4,27 @@
       <h2>Sản phẩm tương tự</h2>
     </div>
     <div class="row">
-      <div class="col-lg-3" *ngFor="let product of listProducts">
-        <div class="product-item">
-          <div class="product-img">
-            <img src="{{product.images[0]}}">
-          </div>
-          <div class="product-card card-body">
-            <h5 class="card-title text-center">{{product.name}}</h5>
-            <div class="row">
-              <div class="col-sm-9 col-12">
-                <p class="product-price text-center card-text">
-                  {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
-                <p class="product-price-discount text-center card-text">
-                  {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>
+      <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let product of listProducts; let i=index">
+        <div *ngIf="i<4">
+          <div class="product-item">
+            <div class="product-img">
+              <a [routerLink]="['/product',product.product_id]">
+                <img src="{{product.images[0]}}">
+              </a>
+            </div>
+            <div class="product-card card-body">
+              <h5 class="card-title text-center">{{product.name}}</h5>
+              <div class="row">
+                <div class="col-sm-9 col-12">
+                  <p class="product-price text-center card-text">
+                    {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
+                  <p class="product-price-discount text-center card-text">
+                    {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>
+                </div>
+                <button class="btn col-sm-3 col-12 btn-cart" (click)="handleAddToCart(product)">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
               </div>
-              <button href="#" class="btn col-sm-3 col-12 btn-cart">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
             </div>
           </div>
         </div>

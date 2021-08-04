@@ -32,7 +32,6 @@ export class CartTableComponent implements OnInit {
     item.quantity += 1;
   }
 
-
   deleteItem(item: CartItem) {
    this.cartService.deleteItemProduct(item)
     // alert("da vao xóa " + item)

@@ -33,21 +33,6 @@ export class ProductService {
   private behaviorSubject: BehaviorSubject<any> = new BehaviorSubject('');
   public pagination$: Observable<any> = this.behaviorSubject.asObservable();
   public behaviorProductId: BehaviorSubject<any> = new BehaviorSubject<any>('');
-  // Thy begin
-  products: Product[] = [
-    new Product("Bộ câu cá dã ngoại",449000, 449000,"BATTAT","SKUBT2540Z","mô tả","2", "2",
-      ['https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z_1.jpg',
-        'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z.jpg',
-        'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z_2.jpg',
-        'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/b/t/bt2540z_3.jpg']),
-    new Product("Chuyến dã ngoại mùa hè", 1599000, 449000, "LEGO FRIENDS", "SKU41681", "mô tả","1", "3",
-      ['https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_1_.jpg',
-        'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_7_.jpg',
-        'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_2_.jpg',
-        'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/4/1/41681_3_.jpg']
-    )
-  ]
-  // Thy end
   constructor(private httpData: LoadJsonService,
               private paginationService: PaginationService) {
     httpData.getData("search2.json").subscribe(value => {
@@ -254,8 +239,4 @@ export class ProductService {
   // findProductByIdWait(){
   //
   // }
-  // Thy
-  getProducts(): Product[]{
-    return this.products;
-  }
 }

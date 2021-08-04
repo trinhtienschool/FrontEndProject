@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Product} from "../../model/product";
+import {CartItem} from "../../model/cart-item";
+import {CartService} from "../../service/cart/cart.service";
 
 @Component({
   selector: 'app-detail',
@@ -56,12 +58,21 @@ export class DetailComponent implements OnInit {
       'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/4/04_225.jpg',
       'https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/0/3/03_227.jpg']);
   public imgZoom: string = this.product.images[0];
-  constructor() { }
+  public carts: CartItem[]=[]
+  constructor(private cartService:CartService) {
+    this.cartService.cart$.subscribe(cart => {
+      this.carts=cart
+    })
+  }
 
   ngOnInit(): void {
   }
 
   selectImg(img: string) {
     this.imgZoom = img;
+  }
+
+  handleAddToCart(productItem:Product){
+    this.cartService.addCart(productItem);
   }
 }

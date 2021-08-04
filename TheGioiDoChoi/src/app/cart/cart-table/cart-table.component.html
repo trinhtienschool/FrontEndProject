@@ -27,7 +27,7 @@
               <div class="col-12">
                 <div class="product-quantity">
                   <span class="decrease quantity-btn" (click)="decreaseQuantity(item)">-</span>
-                  <input type="number" value="{{item.quantity}}">
+                  <input #inputQuantityElement type="number" value="{{item.quantity}}" (input)="updateQuantity(item,inputQuantityElement)">
                   <span class="increase quantity-btn" (click)="increaseQuantity(item)">+</span>
                 </div>
               </div>

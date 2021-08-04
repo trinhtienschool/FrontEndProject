@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../../model/cart-item";
-import {CartService} from "../../service/messenger/cart.service";
+import {CartService} from "../../service/cart/cart.service";
 import {Product} from "../../model/product";
 
 @Component({
@@ -36,5 +36,9 @@ export class CartTableComponent implements OnInit {
   deleteItem(item: CartItem) {
    this.cartService.deleteItemProduct(item)
     // alert("da vao xóa " + item)
+  }
+
+  updateQuantity(item: CartItem, element: HTMLInputElement) {
+    item.quantity = parseInt(element.value)
   }
 }

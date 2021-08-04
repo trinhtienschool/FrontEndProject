@@ -22,8 +22,8 @@
               {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
 
           </div>
-          <button href="#" class="btn col-sm-3 col-12 ">
-            <img src="/src/assets/imgs/product/cart.png" class="shopping-cart-center" alt="">
+          <button class="btn col-sm-3 col-12 " (click)="handleAddToCart()">
+            <img src="/assets/imgs/product/cart.png" class="shopping-cart-center" alt="">
           </button>
         </div>
       </div>
@@ -31,8 +31,8 @@
         <div class="row">
           <p
             class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center currency">{{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
-          <button href="#" class="btn col-sm-3 col-12 ">
-            <img src="/src/assets/imgs/product/cart.png" class="shopping-cart-center" alt="">
+          <button class="btn col-sm-3 col-12 " (click)="handleAddToCart()">
+            <img src="/assets/imgs/product/cart.png" class="shopping-cart-center" alt="">
           </button>
         </div>
       </ng-template>

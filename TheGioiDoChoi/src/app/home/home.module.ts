@@ -10,6 +10,7 @@ import { BestSallerComponent } from './best-saller/best-saller.component';
 import { PersonTrafficComponent } from './person-traffic/person-traffic.component';
 import { BlogAreaComponent } from './blog-area/blog-area.component';
 import {ShareModule} from "../share/share.module";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -29,9 +30,10 @@ import {ShareModule} from "../share/share.module";
     HomeComponent,
     SaleAreaComponent
   ],
-  imports: [
-    CommonModule,
-    ShareModule
-  ]
+    imports: [
+        CommonModule,
+        ShareModule,
+        RouterModule
+    ]
 })
 export class HomeModule { }

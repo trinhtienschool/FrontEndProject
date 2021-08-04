@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
 import {LoadJsonService} from "../load-json/load-json.service";
-import {BehaviorSubject, Observable} from "rxjs";
+import {BehaviorSubject, Observable, of, throwError, timer} from "rxjs";
 import {Pagination} from "../../model/pagination";
 import {Product} from "../../model/product";
 import {Util} from "../../model/util";
 import {PaginationService} from "../pagination/pagination.service";
+import {delay, find, switchMap} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -31,6 +32,7 @@ export class ProductService {
   public xe: Product[] = [];
   private behaviorSubject: BehaviorSubject<any> = new BehaviorSubject('');
   public pagination$: Observable<any> = this.behaviorSubject.asObservable();
+  public behaviorProductId: BehaviorSubject<any> = new BehaviorSubject<any>('');
   // Thy begin
   products: Product[] = [
     new Product("Bộ câu cá dã ngoại",449000, 449000,"BATTAT","SKUBT2540Z","mô tả","2", "2",
@@ -48,29 +50,7 @@ export class ProductService {
   // Thy end
   constructor(private httpData: LoadJsonService,
               private paginationService: PaginationService) {
-    httpData.getData("search.json").subscribe(value => {
-      // Util.convertObj2ProArr(value.lego,this.lego);
-      // Util.convertObj2ProArr(value.puzzle,this.puzzle);
-      // Util.convertObj2ProArr(value.smartgame,this.smartgame);
-      // Util.convertObj2ProArr(value.bupbe,this.bupbe);
-      // Util.convertObj2ProArr(value.robot,this.robot);
-      // Util.convertObj2ProArr(value.maybaytenlua,this.maybaytenlua);
-      // Util.convertObj2ProArr(value.mohinhxe,this.mohinhxe);
-      // Util.convertObj2ProArr(value.xedieukhien,this.xedieukhien);
-      // Util.convertObj2ProArr(value.dochoidangoai,this.dochoidangoai);
-      // Util.convertObj2ProArr(value.dochoiduoinuoc,this.dochoiduoinuoc);
-      // Util.convertObj2ProArr(value.dodungnhabep,this.dodungnhabep);
-      // if(this.lego !==undefined) this.allProductsArr?.push(this.lego);
-      // if(this.puzzle !==undefined) this.allProductsArr?.push(this.puzzle);
-      // if(this.smartgame !==undefined) this.allProductsArr?.push(this.smartgame);
-      // if(this.bupbe !==undefined) this.allProductsArr?.push(this.bupbe);
-      // if(this.robot !==undefined) this.allProductsArr?.push(this.robot);
-      // if(this.maybaytenlua !==undefined) this.allProductsArr?.push(this.maybaytenlua);
-      // if(this.mohinhxe !==undefined) this.allProductsArr?.push(this.mohinhxe);
-      // if(this.xedieukhien !==undefined) this.allProductsArr?.push(this.xedieukhien);
-      // if(this.dochoidangoai !==undefined) this.allProductsArr?.push(this.dochoidangoai);
-      // if(this.dochoiduoinuoc !==undefined) this.allProductsArr?.push(this.dochoiduoinuoc);
-      // if(this.dodungnhabep !==undefined) this.allProductsArr?.push(this.dodungnhabep);
+    httpData.getData("search2.json").subscribe(value => {
       this.setData(value.lego, this.lego);
       this.setData(value.puzzle, this.puzzle);
       this.setData(value.smartgame, this.smartgame);
@@ -238,7 +218,42 @@ export class ProductService {
       return a_price-b_price;
     })
   }
+  findProduct(id: string|null): Product{
+    const product = this.allProductsArr.find(p=>p.product_id == id);
+    return <Product>product;
+  }
+  findProductById(id: string|null):Observable<Product>{
+    return timer(500).pipe(switchMap(_=>of(this.findProduct(id))));
+  }
+  // findProductById(id: string|null):Observable<Product>{
+  //   console.log("All product: "+id);
+  //   console.log(this.allProductsArr);
+    // if(this.allProductsArr !=undefined && this.allProductsArr.length !=0 && this.allProductsArr !=null) {
+    //   console.log('co vaoooooooooooooooooooooooooooo');
+    //   console.log(this.allProductsArr);
+    //   const product =this.allProductsArr.find(p => {
+    //     console.log("ProductId: " + p.product_id);
+    //     return p.product_id == id
+    //   });
+    //
+    //   console.log("Product choose: ");
+    //   console.log(product);
+    //   if (product) {
+    //     return of(product);
+    //   } else {
+    //     return throwError(new Error('404 Not Found'));
+    //   }
+    // }else{
+    //
+    //   return throwError(new Error('505'));
+    // }
 
+
+
+  // }
+  // findProductByIdWait(){
+  //
+  // }
   // Thy
   getProducts(): Product[]{
     return this.products;

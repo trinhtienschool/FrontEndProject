@@ -2,20 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import {BlogCardComponent} from "./blog-card/blog-card.component";
+import {ProductCardSaleComponent} from "./product-card-sale/product-card-sale.component";
 
 
 
 @NgModule({
   declarations: [
     BreadcrumbComponent,
-    PaginationComponent
+    PaginationComponent,
+    BlogCardComponent,
+    ProductCardSaleComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     BreadcrumbComponent,
-    PaginationComponent
+    PaginationComponent,
+    BlogCardComponent,
+    ProductCardSaleComponent
   ]
 })
 export class ShareModule { }

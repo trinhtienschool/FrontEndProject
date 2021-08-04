@@ -6,31 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {HomeModule} from "./home/home.module";
 import { FooterComponent } from './footer/footer.component';
-import {ProductModule} from "./product/product.module";
-import {BlogModule} from "./blog/blog.module";
-import { CartComponent } from './cart/cart.component';
-import { CartTableComponent } from './cart/cart-table/cart-table.component';
-import { CartTotalComponent } from './cart/cart-total/cart-total.component';
-import { ProductLikeComponent } from './cart/product-like/product-like.component';
 
 import {HttpClientModule} from "@angular/common/http";
 
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {ShareModule} from "./share/share.module";
-import { DetailComponent } from './product-detail/detail/detail.component';
-import { DescriptionComponent } from './product-detail/description/description.component';
-import { RelatedProductComponent } from './product-detail/related-product/related-product.component';
 import { registerLocaleData} from "@angular/common";
 import localeVi from '@angular/common/locales/vi';
-import { ProductItemComponent } from './cart/product-like/product-item/product-item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
-import { BlogDetailComponent } from './blog-detail/blog-detail.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { ContactComponent } from './contact/contact.component';
-import { BillingAddressComponent } from './checkout/billing-address/billing-address.component';
-import { ContactAddressComponent } from './contact/contact-address/contact-address.component';
-import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 
 registerLocaleData(localeVi,'vi-VN')
 @NgModule({
@@ -38,36 +20,18 @@ registerLocaleData(localeVi,'vi-VN')
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CartComponent,
-    CartTableComponent,
-    CartTotalComponent,
-    ProductLikeComponent,
-    ProductDetailComponent,
-    DetailComponent,
-    DescriptionComponent,
-    RelatedProductComponent,
-    ProductItemComponent,
     NotFoundComponent,
-    BlogDetailComponent,
-    CheckoutComponent,
-    ContactComponent,
-    BillingAddressComponent,
-    ContactAddressComponent,
-    ContactFormComponent,
   ],
 
   imports: [
     BrowserModule,
     HomeModule,
     ShareModule,
-    ProductModule,
-    BlogModule,
     HttpClientModule,
     AppRoutingModule
   ],
     exports: [
         HttpClientModule,
-        BlogDetailComponent,
     ],
   providers: [],
   bootstrap: [AppComponent]

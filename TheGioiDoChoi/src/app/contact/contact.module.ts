@@ -4,7 +4,7 @@ import {ContactAddressComponent} from "./contact-address/contact-address.compone
 import {ContactFormComponent} from "./contact-form/contact-form.component";
 import {ContactComponent} from "./contact.component";
 import {ContactRoutingModule} from "./contact-routing.module";
-
+import {ShareModule} from "../share/share.module";
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import {ContactRoutingModule} from "./contact-routing.module";
   ],
   imports: [
     CommonModule,
-    ContactRoutingModule
+    ContactRoutingModule,
+    ShareModule
   ]
 })
 export class ContactModule { }

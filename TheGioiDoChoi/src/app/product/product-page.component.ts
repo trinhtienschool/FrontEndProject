@@ -3,6 +3,7 @@ import {ActivatedRoute} from "@angular/router";
 import {query} from "@angular/animations";
 import {Categories} from "../model/categories";
 
+
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',
@@ -11,8 +12,14 @@ import {Categories} from "../model/categories";
 export class ProductPageComponent implements OnInit {
   public category: string|undefined;
   constructor(private activateRoute: ActivatedRoute) {
-    this.activateRoute.queryParams.subscribe(params=>this.category = params.category);
-    console.log('category: ',this.category);
+    let params = this.activateRoute.queryParams.subscribe(params =>{console.log(params.sp)});
+    console.log('params',params);
+    let arr: string[] = [];
+    let arr1 =['xoai','oi','tao'];
+    arr = arr.concat(arr1);
+    console.log(arr);
+
+
   }
 
   ngOnInit(): void {

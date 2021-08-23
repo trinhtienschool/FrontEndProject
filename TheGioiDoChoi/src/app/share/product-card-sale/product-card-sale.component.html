@@ -9,7 +9,7 @@
          src="{{product.images[0]}}"
          alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+      <h5 class="card-title size-16 font-weight-bolder">{{product.name}}
       </h5>
       <div *ngIf="product.percentSale !=0; else elseBlock">
         <div class="row">

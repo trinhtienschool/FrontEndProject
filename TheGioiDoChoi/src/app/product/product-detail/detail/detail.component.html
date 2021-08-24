@@ -1,4 +1,4 @@
-<section class="product-details">
+<section class="product-details" *ngIf="product != undefined">
   <div class="container">
     <div class="row  mb--60">
       <div class="col-lg-5 mb--30">
@@ -45,14 +45,14 @@
             <div class="row">
               <div class="col-lg-4 col-md-5 col-sm-4">
                 <div class="product-quantity">
-                  <span class="decrease quantity-btn">-</span>
-                  <input type="number" value="1">
-                  <span class="increase quantity-btn">+</span>
+                  <span class="decrease quantity-btn" (click)="decreaseQuantity()">-</span>
+                  <input type="number" value="{{quantity}}">
+                  <span class="increase quantity-btn" (click)="increaseQuantity()">+</span>
                 </div>
               </div>
               <div class="col-lg-8 col-sm-8">
                 <div class="product-cart">
-                  <button type="button" class="btn-cart">
+                  <button type="button" class="btn-cart" (click)="handleAddToCart()">
                     Thêm vào giỏ hàng
                     <i class="fas fa-shopping-cart"></i>
                   </button>

@@ -27,6 +27,10 @@ $gray: #7b7b7b;
         position: relative;
         img{
           width: 90%;
+          height: 200px;
+          @media (min-width: 300px) and (max-width: 767px) {
+            height: 350px;
+          }
         }
       }
       .product-img:hover{

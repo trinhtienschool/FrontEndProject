@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-3 ">
-            <a href="index.html" class="site-brand">
+            <a [routerLink]="['/home']" class="site-brand">
               <img src="assets/imgs/logo/logo.png" alt="">
             </a>
           </div>
@@ -27,14 +27,14 @@
                 </li>
                 <!-- Shop -->
                 <li class="menu-item has-children mega-menu">
-                  <a href="javascript:void(0)">Mua sắm</a>
+                  <a [routerLink]="['/product']" >Mua sắm</a>
                 </li>
                 <!-- Pages -->
                 <li class="menu-item has-children">
-                  <a href="javascript:void(0)">Bài viết</a>
+                  <a [routerLink]="['/blog']" >Bài viết</a>
                 </li>
                 <li class="menu-item">
-                  <a href="contact.html">Liên hệ</a>
+                  <a [routerLink]="['/contact']" >Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -52,16 +52,16 @@
                   class="fa fa-bars"></i>Danh mục đồ chơi</a>
                 <ul class="category-menu">
                   <li class="cat-item has-children">
-                    <a href="#">Đồ chơi vận động</a>
+                    <a [routerLink]="['/product']">Đồ chơi vận động</a>
                   </li>
                   <li class="cat-item has-children">
-                    <a href="#">Đồ chơi trí tuệ</a>
+                    <a [routerLink]="['/product']">Đồ chơi trí tuệ</a>
                   </li>
                   <li class="cat-item has-children">
-                    <a href="#">Phương tiện giao thông</a>
+                    <a [routerLink]="['/product']">Phương tiện giao thông</a>
                   </li>
                   <li class="cat-item has-children">
-                    <a href="#">Nhân vật</a>
+                    <a [routerLink]="['/product']">Nhân vật</a>
                   </li>
                 </ul>
               </div>
@@ -108,9 +108,9 @@
                     </div>
                     <div class=" single-cart-block ">
                       <div class="btn-block">
-                        <a href="cart.html" class="btn">Giỏ hàng<i
+                        <a [routerLink]="['/cart']" class="btn">Giỏ hàng<i
                           class="fa fa-chevron-right"></i></a>
-                        <a href="checkout.html" class="btn btn--primary">Thanh toán <i
+                        <a [routerLink]="['/cart/checkout']"class="btn btn--primary">Thanh toán <i
                           class="fa fa-chevron-right"></i></a>
                       </div>
                     </div>
@@ -128,7 +128,7 @@
       <div class="container">
         <div class="row align-items-sm-end align-items-center">
           <div class="col-md-4 col-7">
-            <a href="index.html" class="site-brand">
+            <a [routerLink]="['/home']" class="site-brand">
               <img src="assets/imgs/logo/logo.png" alt="">
             </a>
           </div>
@@ -139,16 +139,16 @@
                   class="fa fa-bars"></i>Danh mục đồ chơi</a>
                 <ul class="category-menu">
                   <li class="cat-item has-children">
-                    <a href="#">Đồ chơi vận động</a>
+                    <a [routerLink]="['/product']">Đồ chơi vận động</a>
                   </li>
                   <li class="cat-item has-children">
-                    <a href="#">Đồ chơi trí tuệ</a>
+                    <a [routerLink]="['/product']">Đồ chơi trí tuệ</a>
                   </li>
                   <li class="cat-item has-children">
-                    <a href="#">Phương tiện giao thông</a>
+                    <a [routerLink]="['/product']">Phương tiện giao thông</a>
                   </li>
                   <li class="cat-item has-children">
-                    <a href="#">Nhân vật</a>
+                    <a [routerLink]="['/product']">Nhân vật</a>
                   </li>
                 </ul>
               </div>
@@ -158,7 +158,7 @@
             <div class="mobile-header-btns header-top-widget">
               <ul class="header-links">
                 <li class="sin-link">
-                  <a href="cart.html" class="cart-link link-icon"><i class="fa fa-shopping-bag"></i></a>
+                  <a [routerLink]="['/cart']" class="cart-link link-icon"><i class="fa fa-shopping-bag"></i></a>
                 </li>
                 <li class="sin-link">
                   <a href="javascript:" class="link-icon hamburgur-icon off-canvas-btn"><i class="fa fa-compass"></i></a>
@@ -189,16 +189,16 @@
           <nav class="off-canvas-nav">
             <ul class="mobile-menu main-mobile-menu">
               <li class="menu-item-has-children">
-                <a href="#">Trang chủ</a>
+                <a [routerLink]="['/home']" >Trang chủ</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="#">Mua sắm</a>
+                <a [routerLink]="['/product']" >Mua sắm</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="#">Bài viết</a>
+                <a [routerLink]="['/blog']">Bài viết</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="#">Liên hệ</a>
+                <a [routerLink]="['/contact']">Liên hệ</a>
               </li>
             </ul>
           </nav>

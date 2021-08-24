@@ -19,6 +19,10 @@ const  routes: Routes = [
     loadChildren:() => import('./blog/blog-page.module').then(blogModule => blogModule.BlogPageModule)
   },
   {
+    path:'contact',
+    loadChildren:() => import('./contact/contact.module').then(contactModule=>contactModule.ContactModule)
+  },
+  {
     path:'cart',
     loadChildren:() => import('./cart-checkout/cart-checkout.module').then(cartCheckout=>cartCheckout.CartCheckoutModule)
   },

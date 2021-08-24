@@ -14,7 +14,7 @@ export class ProductLikeComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.listProducts = this.productService.getProducts();
+    this.listProducts = this.productService.allProductsArr;
   }
 
 }

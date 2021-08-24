@@ -8,9 +8,9 @@ declare const onloadFunction: any;
 })
 export class CheckoutComponent implements OnInit {
   public cartItem: CartItem[]=[
-    new CartItem("Do choi1","Img1",2000,2),
-    new CartItem("Do choi2","Img2",2000,3),
-    new CartItem("Do choi3","Img3",2000,5)
+    new CartItem("Do choi1","Img1",2000,2,"20UJ"),
+    new CartItem("Do choi2","Img2",2000,3,"24HU"),
+    new CartItem("Do choi3","Img3",2000,5,"25HF")
   ]
 
   constructor() { }

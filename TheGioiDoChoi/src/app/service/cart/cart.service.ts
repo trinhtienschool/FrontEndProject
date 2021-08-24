@@ -10,11 +10,11 @@ export class CartService {
   public cart: CartItem[] = [];
   behaviorSubject: BehaviorSubject<any> = new BehaviorSubject('');
   cart$: Observable<any> = this.behaviorSubject.asObservable();
-  deleteCart$: Observable<any> = this.behaviorSubject.asObservable();
+
   constructor() {
   }
 
-  // Todo: Thêm sản phẩm vào giỏ hàng và khi sản phẩm bị trùng sẽ tăng số lượng
+  // Thêm sản phẩm vào giỏ hàng và khi sản phẩm bị trùng sẽ tăng số lượng
   addCart(product: Product, quan: number){
     var productName = product.name
     let index=-1
@@ -26,7 +26,7 @@ export class CartService {
       }
     }
     if(index == -1){
-      this.cart.push(new CartItem(product.name,product.images[0],product.price,quan));
+      this.cart.push(new CartItem(product.name,product.images[0],product.price,quan,product.product_id));
       this.behaviorSubject.next(this.cart);
     }
   }

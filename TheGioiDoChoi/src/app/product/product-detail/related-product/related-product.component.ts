@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Product} from "../../../model/product";
 import {ProductService} from "../../../service/product/product.service";
-import {CartService} from "../../../service/messenger/cart.service";
+import {CartService} from "../../../service/cart/cart.service";
 
 @Component({
   selector: 'app-related-product',

@@ -3,7 +3,7 @@ import {Product} from "../../../model/product";
 import {map, switchMap} from "rxjs/operators";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ProductService} from "../../../service/product/product.service";
-import {CartService} from "../../../service/messenger/cart.service";
+import {CartService} from "../../../service/cart/cart.service";
 import {CartItem} from "../../../model/cart-item";
 
 @Component({

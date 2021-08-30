@@ -27,7 +27,6 @@ export class ProductListComponent implements OnInit {
       else if(Array.isArray(initCheckAge)) this.productService.ageFilter = this.productService.ageFilter.concat(initCheckAge);
       if(typeof initCheckGender =='string') this.productService.genderFilter.push(initCheckGender);
       else if(Array.isArray(initCheckGender)) this.productService.genderFilter = this.productService.genderFilter.concat(initCheckGender);
-      this.productService.filter();
       if(initCategory !==undefined){
       let categoryFilter ='';
       switch (initCategory) {
@@ -45,6 +44,7 @@ export class ProductListComponent implements OnInit {
           break;
       }
       this.productService.filterCategory(categoryFilter);
+      this.productService.filter();
       }
     })
     productService.products$.subscribe(products =>{

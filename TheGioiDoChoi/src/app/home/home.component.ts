@@ -5,6 +5,7 @@ import {Product} from "../model/product";
 import {Blog} from "../model/blog";
 import {Util} from "../model/util";
 declare const onloadFunction: any;
+declare const preloader:any;
 
 @Component({
   selector: 'app-home',
@@ -35,6 +36,7 @@ export class HomeComponent implements OnInit {
       Util.convertObj2BlogArr(value.blog,this.blog);
     })
     onloadFunction();
+    preloader();
   }
 
 

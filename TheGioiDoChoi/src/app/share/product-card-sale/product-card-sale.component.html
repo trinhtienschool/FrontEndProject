@@ -1,5 +1,5 @@
 <div *ngIf="product">
-  <div class="card product-coupon">
+  <div class="card product-coupon" >
 
     <div class="coupon margin-img-tab" *ngIf="product.percentSale !=0">
       -{{product.percentSale}}%
@@ -7,16 +7,16 @@
 
     <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
          src="{{product.images[0]}}"
-         alt="Card image cap">
+         alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
     <div class="card-body">
-      <h5 class="card-title size-16 font-weight-bolder">Đồ chơi mô hình lắp ráp Bugatti Chiron
+      <h5 class="card-title size-16 font-weight-bolder text-truncate" data-toggle="tooltip" data-placement="top" title="{{product.name}}">{{product.name}}
       </h5>
       <div *ngIf="product.percentSale !=0; else elseBlock">
         <div class="row">
 
           <div class="product-price col-sm-9 col-12">
 
-            <p class="card-text font-weight-bold text-muted text-center product-discount currency">
+            <p class="card-text font-weight-bold text-muted text-center product-discount currency" style="margin-top: -10px">
               {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
             <p class="card-text font-weight-bold text-primary size-16 text-center currency">
               {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>

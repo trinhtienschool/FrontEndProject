@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../../model/cart-item";
-import {CartService} from "../../service/messenger/cart.service";
+import {CartService} from "../../service/cart/cart.service";
 declare const onloadFunction: any;
 @Component({
   selector: 'app-checkout',
@@ -8,6 +8,7 @@ declare const onloadFunction: any;
   styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent implements OnInit {
+
   public cartItem: CartItem[]=[]
 
   constructor(private service:CartService) {
@@ -28,7 +29,7 @@ export class CheckoutComponent implements OnInit {
     return number;
   }
   public deleteAcartItem(){
-
+    
   }
   ngOnInit(): void {
     onloadFunction();

@@ -3,7 +3,10 @@
   .product-item .product-img {
     position: relative; }
     .product-item .product-img img {
-      width: 90%; }
+      width: 90%;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto; }
   .product-item .product-img:hover .overplay {
     opacity: 1;
     transition: 0.5s; }

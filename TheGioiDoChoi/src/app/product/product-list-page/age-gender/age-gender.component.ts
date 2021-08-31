@@ -1,7 +1,7 @@
 import {AfterViewChecked, Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Product} from "../../../model/product";
 import {ProductService} from "../../../service/product/product.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-age-gender',
@@ -14,6 +14,7 @@ export class AgeGenderComponent implements OnInit {
   public initCheckAge : string |undefined;
   public initCheckGender: string|undefined;
   constructor(private productService: ProductService,
+              private router: Router,
               private activateRoute: ActivatedRoute) {
     this.activateRoute.queryParams.subscribe(param =>{
      this.initCheckAge = param.age;

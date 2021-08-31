@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e39eb638-3f8b-4e8f-8def-27c9b8f390cc" name="Default Changelist" comment="" />
+    <list default="true" id="e39eb638-3f8b-4e8f-8def-27c9b8f390cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../TheGioiDoChoi/src/assets/js/slickSliderHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex/Template/Origin/css/plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex/Template/Origin/css/plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex/Template/Origin/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex/Template/Origin/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheGioiDoChoi/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TheGioiDoChoi/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheGioiDoChoi/src/app/home/hero-area/hero-area.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TheGioiDoChoi/src/app/home/hero-area/hero-area.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheGioiDoChoi/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TheGioiDoChoi/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheGioiDoChoi/src/assets/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheGioiDoChoi/src/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TheGioiDoChoi/src/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheGioiDoChoi/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TheGioiDoChoi/src/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +47,7 @@
       <workItem from="1625325805007" duration="44000" />
       <workItem from="1625383249209" duration="294000" />
       <workItem from="1625383601591" duration="592000" />
+      <workItem from="1630253718491" duration="6000" />
     </task>
     <servers />
   </component>

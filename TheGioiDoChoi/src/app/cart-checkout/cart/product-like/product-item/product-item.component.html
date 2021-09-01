@@ -1,19 +1,23 @@
 <div class="product-item" *ngIf="productItem != undefined">
   <div class="product-img">
     <a [routerLink]="['/product',productItem.product_id]">
-    <img class="center" src="{{productItem.images[0]}}">
+    <img class="center" src="{{productItem.images[0]}}" alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{productItem.name}}">
     </a>
   </div>
   <div class="product-card card-body">
-    <h5 class="card-title text-center">
+    <h5 class="card-title text-center text-truncate" data-toggle="tooltip" data-placement="top" title="{{productItem.name}}">
       <a [routerLink]="['/product',productItem.product_id]">{{productItem.name}}</a>
     </h5>
     <div class="row">
-      <div class="col-sm-9 col-12">
+      <div class="col-sm-9 col-12" *ngIf="productItem.price_sale != 0">
+        <p class="product-price  text-center card-text">
+          {{productItem.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>
+        <p class="product-price-discount text-center card-text">
+          {{productItem.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
+      </div>
+      <div class="col-sm-9 col-12" *ngIf="productItem.price_sale == 0">
         <p class="product-price  text-center card-text">
           {{productItem.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>
-        <p class="product-price-discount text-center card-text">
-          {{productItem.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
       </div>
       <button  class="btn col-sm-3 col-12 btn-cart "
         (click)="handleAddToCart()">

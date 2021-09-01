@@ -28,9 +28,9 @@ export class CartTotalComponent implements OnInit {
     return result;
   }
 
-  // todo Tổng cộng
+  // Todo: Tổng cộng (Tạm tính + Phí vận chuyển:30000)
   grandTotal():number{
-    return this.subTotal() + 20000
+    return this.subTotal() + 30000
   }
 
 }

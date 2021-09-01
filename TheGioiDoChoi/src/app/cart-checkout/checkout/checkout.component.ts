@@ -29,7 +29,7 @@ export class CheckoutComponent implements OnInit {
     return number;
   }
   public deleteAcartItem(){
-    
+
   }
   ngOnInit(): void {
     onloadFunction();

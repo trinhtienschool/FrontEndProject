@@ -6,7 +6,6 @@ import {CartTableComponent} from "./cart/cart-table/cart-table.component";
 import {CartTotalComponent} from "./cart/cart-total/cart-total.component";
 import {ProductLikeComponent} from "./cart/product-like/product-like.component";
 import {CheckoutComponent} from "./checkout/checkout.component";
-import {BillingAddressComponent} from "./checkout/billing-address/billing-address.component";
 import {ShareModule} from "../share/share.module";
 import {CartComponent} from "./cart/cart.component";
 import {ProductItemComponent} from "./cart/product-like/product-item/product-item.component";
@@ -22,7 +21,6 @@ import {ProductItemComponent} from "./cart/product-like/product-item/product-ite
     CartTotalComponent,
     ProductLikeComponent,
     CheckoutComponent,
-    BillingAddressComponent
   ],
   imports: [
     CommonModule,

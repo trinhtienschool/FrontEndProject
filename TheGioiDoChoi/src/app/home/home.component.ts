@@ -7,6 +7,7 @@ import {Util} from "../model/util";
 declare const onloadFunction: any;
 declare const preloader:any;
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -25,14 +26,15 @@ export class HomeComponent implements OnInit {
   constructor(private httpData: LoadJsonService) {}
 
   ngOnInit(): void {
+
     this.httpData.getData("home.json").subscribe(value => {
-      Util.convertObj2ProArr(value.bestsaller,this.bestsaller);
-      Util.convertObj2ProArr(value.hightlight,this.hightlight);
-      Util.convertObj2ProArr(value.latest,this.latest);
-      Util.convertObj2ProArr(value.sale,this.sale);
-      Util.convertObj2ProArr(value.bestsaller_area,this.bestsaller_area);
-      Util.convertObj2ProArr(value.bupbe_robot,this.bupbe_robot);
-      Util.convertObj2ProArr(value.ptgt,this.ptgt);
+      Util.convertObj2ProArr(value.bestsaller,this.bestsaller,'khong-xac-dinh');
+      Util.convertObj2ProArr(value.hightlight,this.hightlight,'khong-xac-dinh');
+      Util.convertObj2ProArr(value.latest,this.latest,'khong-xac-dinh');
+      Util.convertObj2ProArr(value.sale,this.sale,'khong-xac-dinh');
+      Util.convertObj2ProArr(value.bestsaller_area,this.bestsaller_area,'khong-xac-dinh');
+      Util.convertObj2ProArr(value.bupbe_robot,this.bupbe_robot,'khong-xac-dinh');
+      Util.convertObj2ProArr(value.ptgt,this.ptgt,'khong-xac-dinh');
       Util.convertObj2BlogArr(value.blog,this.blog);
     })
     onloadFunction();

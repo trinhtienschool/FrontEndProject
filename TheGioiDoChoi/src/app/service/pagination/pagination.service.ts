@@ -16,8 +16,8 @@ export class PaginationService {
     console.log(this._pagination.current);
     this.behaviorSubject.next(this._pagination);
   }
-  setUpPagination(sumOfItems: number,itemsPerPage: number){
-    this._pagination.current = 1;
+  setUpPagination(currentPage: number,sumOfItems: number,itemsPerPage: number){
+    this._pagination.current = currentPage;
     this._pagination.itemsPerPage = itemsPerPage;
     this._pagination.sumOfItems =sumOfItems;
     this.behaviorSubject.next(this._pagination);

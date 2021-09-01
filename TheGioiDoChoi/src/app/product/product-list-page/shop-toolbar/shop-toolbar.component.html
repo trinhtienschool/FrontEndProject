@@ -7,10 +7,10 @@
     <div class="sorting-selection row">
       <span class="col-sm-5 col-lg-4 ml-0 pl-0">Sắp xếp theo:</span>
 
-      <select #selectElement class="col-sm-7 col-lg-5 form-control sort-select ml-0 pl-0" (change)="sort(selectElement.value)">
-        <option value="" disabled selected="selected">Chọn</option>
-        <option class="small-option" value="increase" >Giá tăng dần</option>
-        <option class="small-option" value="decrease" >Giá giảm dần</option>
+      <select #selectElement class="col-sm-7 col-lg-5 form-control sort-select ml-0 pl-0" (change)="sortProduct(selectElement.value)">
+        <option value="" disabled selected="{{(sort == undefined)?'selected':undefined}}">Chọn</option>
+        <option class="small-option" value="asc" selected="{{(sort == 'asc')?'selected':undefined}}">Giá tăng dần</option>
+        <option class="small-option" value="desc" selected="{{(sort == 'desc')?'selected':undefined}}" >Giá giảm dần</option>
 
       </select>
     </div>

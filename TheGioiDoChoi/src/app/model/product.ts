@@ -8,6 +8,7 @@ export class Product{
               private _age: string,
               private _gender: string,
               private _images: string[],
+              private _category: string,
               ) {
     if(this._price<this._price_sale){
       const temp = this._price;
@@ -91,6 +92,19 @@ export class Product{
   set gender(value: string) {
     this._gender = value;
   }
+
+  get category(): string {
+    return this._category;
+  }
+
+  set category(value: string) {
+    this._category = value;
+  }
+  //get the price for payment
+  get priceCalculate(){
+    let price = (this._price_sale>0 && this._price>this._price_sale)? this._price_sale:this._price;
+    return price;
+  }
   search(txt: string): boolean{
     const arr = txt.split(" ");
     for(let letter of arr){
@@ -99,7 +113,7 @@ export class Product{
     return false;
   }
   filterPrice(startPrice: number,endPrice: number){
-    let price = (this._price_sale>0 && this._price>this._price_sale)? this._price_sale:this._price;
+    let price = this.priceCalculate;
     if(price>=startPrice && price<=endPrice) return true;
     else return false;
   }
@@ -116,18 +130,26 @@ export class Product{
     return "name: "+this._name+" , "+"img1: "+this._images;
   }
 
-  filter(priceStartFilter: number, priceEndFilter: number, ageFilter: string[], genderFilter: string[]) {
-    let check = this.filterPrice(priceStartFilter,priceEndFilter);
-    if(ageFilter.length != 0) check &&=this.filterAge_Gender_Arr(ageFilter,'age');
-    if(genderFilter.length != 0) check &&= this.filterAge_Gender_Arr(genderFilter,'gender');
-
+  filter(category:string|undefined,startPrice: number|undefined, endPrice: number|undefined, age: string|string[]|undefined, gender: string|string[]|undefined,search: string|undefined) {
+    let check = true;
+    if(category !=undefined) check &&= this._category==category?true:false;
+    if(startPrice !=undefined && endPrice !=undefined) check &&= this.filterPrice(startPrice,endPrice);
+    if(age !=undefined) check &&= this.filterAge_Gender_Arr(age,'age');
+    if(gender !=undefined) check &&= this.filterAge_Gender_Arr(gender,'gender');
+    if(search !=undefined) check &&= this.searchName(search);
     return check;
   }
-  filterAge_Gender_Arr(arr: string[],type: string){
+  searchName(search: string): boolean{
+    if(this.name.includes(search)) return true;
+    return false;
+  }
+  filterAge_Gender_Arr(arr: string|string[],type: string){
     let check = false;
-    for(let ele of arr){
-      check ||=this.filterAge_Gender(ele,type);
-    }
+    if(Array.isArray(arr)) {
+      for (let ele of arr) {
+        check ||= this.filterAge_Gender(ele, type);
+      }
+    }else if(typeof arr == "string") check ||= this.filterAge_Gender(arr,type);
     return check;
   }
 }

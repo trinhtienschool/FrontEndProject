@@ -38,6 +38,7 @@
               "src/assets/css/fontawesome.min.css",
 
               "src/assets/css/slick.css",
+              "src/assets/css/jquery-ui.min.css",
               "src/styles.scss"
             ],
             "scripts": [
@@ -47,9 +48,10 @@
               "src/assets/js/all.min.js",
               "src/assets/js/popper.min.js",
                 "src/assets/js/slick.min.js",
-
+              "src/assets/js/jquery-ui.min.js",
               "src/assets/js/main.js",
-              "src/assets/js/preloader.js"
+              "src/assets/js/preloader.js",
+              "src/assets/js/customSlider.js"
 
             ]
           },

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
-declare const onloadFunction: any;
+// declare const onloadFunction: any;
+declare const categoryExpandClick: any;
+declare const categoryExpandOnload: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -31,7 +33,12 @@ export class HeaderComponent implements OnInit {
     return number;
   }
   ngOnInit(): void {
-    onloadFunction();
+    // onloadFunction();
+    categoryExpandOnload()
+  }
+  expandMenu(){
+    console.log("Co vao expanddddddddd");
+    categoryExpandClick();
   }
 
 }

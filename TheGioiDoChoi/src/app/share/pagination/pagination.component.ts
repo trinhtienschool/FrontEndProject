@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {PaginationService} from "../../service/pagination/pagination.service";
 import {Pagination} from "../../model/pagination";
+import {Util} from "../../model/util";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pagination',
@@ -9,11 +11,21 @@ import {Pagination} from "../../model/pagination";
 })
 export class PaginationComponent implements OnInit {
 
+  @Input() age: string[] | undefined;
+  @Input() gender: string[] | undefined;
+  @Input() category: string | undefined;
+  @Input() startPrice: string | undefined;
+  @Input() endPrice: string | undefined;
+  @Input() search: string | undefined;
+  @Input() sort: string | undefined;
+  @Input() page: string|undefined;
+  @Input() type: string|undefined;
+
   public numbers : number[]=[];
   public _pagination: Pagination|undefined;
   public isDisablePrevious: boolean = true ;
   public isDisableNext: boolean = true ;
-  constructor(private paginationService: PaginationService) {
+  constructor(private paginationService: PaginationService, private router: Router) {
     this.paginationService.pagination$.subscribe(pagination=>{
 
       this._pagination = pagination;
@@ -55,19 +67,38 @@ export class PaginationComponent implements OnInit {
       }
       // console.log("number"+this.numbers);
     })
+    // if(this.page != undefined) this.changePage(parseInt(this.page));
   }
 
   ngOnInit(): void {
   }
 
   changePage(i: number) {
-    this.paginationService.setCurrent(i);
+    // this.paginationService.setCurrent(i);
+    this.page = i+"";
+   this.navigate()
   }
   changePrevious(){
-    if(this._pagination !==undefined) this.paginationService.setCurrent(this._pagination.current -1);
+    // if(this._pagination !==undefined) this.paginationService.setCurrent(this._pagination.current -1);
+    if(this._pagination != undefined) this.page = (this._pagination.current -1)+"";
+    else this.page = '1';
+    this.navigate();
   }
   changeNext(){
-    if(this._pagination !==undefined) this.paginationService.setCurrent(this._pagination.current +1);
+    if(this._pagination !==undefined) this.page = (this._pagination.current +1)+"";
+    else this.page = '1';
+    this.navigate();
+  }
+  navigate(){
+    if(this.type !=undefined && this.type=='product') {
+      let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort, this.page);
+      console.log('Linkkkk', link);
+      this.router.navigateByUrl(link);
+    }else if(this.type !=undefined && this.type == 'blog'){
+      let link = '/blog?';
+      if(this.page !=undefined) link +='page='+this.page;
+      this.router.navigateByUrl(link);
+    }
   }
 
 }

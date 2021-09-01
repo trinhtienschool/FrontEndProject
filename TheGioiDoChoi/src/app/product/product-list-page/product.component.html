@@ -2,21 +2,20 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-9  order-2">
-      <app-shop-toolbar></app-shop-toolbar>
+      <app-shop-toolbar [age]="age" [category]="category" [startPrice]="startPrice" [endPrice]="endPrice" [gender]="gender" [search]="search" [page]="page" [sort]="sort"></app-shop-toolbar>
       <!-- Product grid -->
-
       <app-product-list></app-product-list>
       <!-- Pagination Block -->
-      <app-pagination></app-pagination>
+      <app-pagination [type]="'product'" [age]="age" [category]="category" [startPrice]="startPrice" [endPrice]="endPrice" [gender]="gender" [search]="search" [page]="page" [sort]="sort"></app-pagination>
 
     </div>
     <div id="left-sidebar" class="col-lg-3 container">
       <!-- Categories -->
-      <app-categories></app-categories>
+      <app-categories [age]="age" [category]="category" [startPrice]="startPrice" [endPrice]="endPrice" [gender]="gender" [search]="search" [page]="page" [sort]="sort"></app-categories>
       <!-- Price -->
-      <app-product-range-slide></app-product-range-slide>
-      <app-age-gender [title]="'Độ tuổi'" [content]="[['tu-1-6','Từ 1-6 tuổi'],['tu-6-11','Từ 6-11 tuổi'],['tren-11','Trên 11 tuổi']]" ></app-age-gender>
-      <app-age-gender [title]="'Giới tính'" [content]="[['nam','Nam'],['nu','Nữ'],['both','Cả 2']]"></app-age-gender>
+      <app-product-range-slide [age]="age" [category]="category" [startPrice]="startPrice" [endPrice]="endPrice" [gender]="gender" [search]="search" [page]="page" [sort]="sort"></app-product-range-slide>
+      <app-age-gender [title]="'Độ tuổi'" [content]="[['1-6','Từ 1-6 tuổi'],['6-11','Từ 6-11 tuổi'],['tren-11','Trên 11 tuổi']]" [age]="age" [category]="category" [startPrice]="startPrice" [endPrice]="endPrice" [gender]="gender" [search]="search" [page]="page" [sort]="sort"></app-age-gender>
+      <app-age-gender [title]="'Giới tính'" [content]="[['nam','Nam'],['nu','Nữ'],['ca-2','Cả 2']]" [age]="age" [category]="category" [startPrice]="startPrice" [endPrice]="endPrice" [gender]="gender" [search]="search" [page]="page" [sort]="sort"></app-age-gender>
       <!-- Promotion Block -->
       <div class="single-block mt-4">
           <img src="../../../assets/imgs/product/sale.png" alt="">

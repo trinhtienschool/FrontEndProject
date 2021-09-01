@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ProductService} from "../../../service/product/product.service";
 import {PaginationService} from "../../../service/pagination/pagination.service";
 import {Pagination} from "../../../model/pagination";
+import {Util} from "../../../model/util";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-shop-toolbar',
@@ -9,9 +11,19 @@ import {Pagination} from "../../../model/pagination";
   styleUrls: ['./shop-toolbar.component.scss']
 })
 export class ShopToolbarComponent implements OnInit {
-
   public pagination: Pagination|undefined;
-  constructor(private paginationService: PaginationService, private productService: ProductService) {
+
+  @Input() age: string[] | undefined;
+  @Input() gender: string[] | undefined;
+  @Input() category: string | undefined;
+  @Input() startPrice: string | undefined;
+  @Input() endPrice: string | undefined;
+  @Input() search: string | undefined;
+  @Input() sort: string | undefined;
+  @Input() page: string|undefined;
+
+  constructor(private productService: ProductService, private router: Router,
+              private paginationService: PaginationService) {
     paginationService.pagination$.subscribe(pagination =>{
       this.pagination = pagination;
     })
@@ -20,12 +32,13 @@ export class ShopToolbarComponent implements OnInit {
   ngOnInit(): void {
     console.log("Co vao Shop-toolbar");
   }
-  sort(value: string){
+  sortProduct(value: string){
     console.log("change: "+value);
-    if(value =='increase'){
-      this.productService.sortType = 'increase';
-    }else if(value == 'decrease') this.productService.sortType = 'decrease';
-    this.productService.filter();
+    if(value =='asc'){
+      this.sort = 'asc';
+    }else if(value == 'desc') this.sort = 'desc';
+    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,this.page);
+    this.router.navigateByUrl(link);
   }
 
 }

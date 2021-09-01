@@ -1,7 +1,7 @@
 <div class="single-block">
   <h3 class="sidebar-title age-gender">{{title}}</h3>
   <div class="form-check m-1 mt-3" *ngFor="let sub_title of content">
-    <input #checkboxValue  class="form-check-input cursor-pointer" type="checkbox"  (change)="check(checkboxValue.value,checkboxValue)" value="{{sub_title[1]}}" id="{{sub_title[0]}}">
+    <input #checkboxValue  class="form-check-input cursor-pointer" type="checkbox" checked="{{sub_title[2]}}"  (change)="check(checkboxValue.value,checkboxValue)" value="{{sub_title[0]}}" id="{{sub_title[0]}}">
     <label class="form-check-label cursor-pointer"  for="{{sub_title[0]}}">
       {{sub_title[1]}}
     </label>

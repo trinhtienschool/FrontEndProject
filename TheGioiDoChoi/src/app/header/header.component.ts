@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
+import {Route, Router} from "@angular/router";
 // declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
@@ -10,7 +11,16 @@ import {CartService} from "../service/cart/cart.service";
 export class HeaderComponent implements OnInit {
   public cartItemHeader: CartItem[]=[]
 
-  constructor(private service:CartService) {
+  public age: string[]|undefined;
+  public gender: string[]|undefined;
+  public category: string | undefined;
+  public startPrice: string | undefined;
+  public endPrice: string | undefined;
+  public search: string | undefined;
+  public sort: string | undefined;
+  public page: string|undefined;
+
+  constructor(private service:CartService, private router: Router) {
     this.service.cart$.subscribe(cart=>{this.cartItemHeader=cart})
   }
   public deleteCartItem(cartItem: CartItem){
@@ -33,5 +43,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     // onloadFunction();
     // categoryExpandOnload()
+  }
+
+  searchRoute(text: string){
+
   }
 }

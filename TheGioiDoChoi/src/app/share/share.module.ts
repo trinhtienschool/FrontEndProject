@@ -4,6 +4,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import {BlogCardComponent} from "./blog-card/blog-card.component";
 import {ProductCardSaleComponent} from "./product-card-sale/product-card-sale.component";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -14,9 +15,10 @@ import {ProductCardSaleComponent} from "./product-card-sale/product-card-sale.co
     BlogCardComponent,
     ProductCardSaleComponent
   ],
-  imports: [
-    CommonModule
-  ],
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
   exports: [
     BreadcrumbComponent,
     PaginationComponent,

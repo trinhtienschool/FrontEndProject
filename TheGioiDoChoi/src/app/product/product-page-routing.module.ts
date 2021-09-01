@@ -10,14 +10,17 @@ const routes: Routes = [
   {
     path:'',
     component: ProductPageComponent,
+    data: {breacrumb: "Sản phẩm"},
     children:[
       {
         path: '',
-        component: ProductComponent
+        component: ProductComponent,
+        data: { breadcrumb: "Danh sách sản phẩm"}
       },
       {
         path: ':id',
-        component: ProductDetailComponent
+        component: ProductDetailComponent,
+        data: { breadcrumb: "Chi tiết sản phẩm"}
       }
     ]
   }

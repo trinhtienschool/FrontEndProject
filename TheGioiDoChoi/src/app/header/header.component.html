@@ -86,8 +86,8 @@
           </div>
           <div class="col-lg-5">
             <div class="header-search-block">
-              <input type="text" placeholder="Tên đồ chơi" [value]="">
-              <button>Tìm kiếm</button>
+              <input #text type="text" placeholder="Tên đồ chơi" [value]="">
+              <button (click)="searchRoute(text.value)">Tìm kiếm</button>
             </div>
           </div>
           <div class="col-lg-4">

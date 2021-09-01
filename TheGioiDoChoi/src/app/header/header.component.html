@@ -85,8 +85,12 @@
             </nav>
           </div>
           <div class="col-lg-5">
-            <div class="header-search-block">
+            <div *ngIf="this.search!=undefined"  class="header-search-block">
               <input #text type="text" placeholder="Tên đồ chơi" [value]="this.search">
+              <button (click)="searchRoute(text.value)">Tìm kiếm</button>
+            </div>
+            <div *ngIf="this.search==undefined"  class="header-search-block">
+              <input #text type="text" placeholder="Tên đồ chơi" >
               <button (click)="searchRoute(text.value)">Tìm kiếm</button>
             </div>
           </div>

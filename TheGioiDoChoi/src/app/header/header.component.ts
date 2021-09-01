@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
 import {Route, Router} from "@angular/router";
+import {Util} from "../model/util";
 // declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
@@ -46,6 +47,7 @@ export class HeaderComponent implements OnInit {
   }
 
   searchRoute(text: string){
-
+    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender,text, this.sort,this.page);
+    this.router.navigateByUrl(link);
   }
 }

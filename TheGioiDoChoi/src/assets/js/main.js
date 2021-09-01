@@ -157,6 +157,7 @@ run = function(){
   /*-----------------------
   --> Off Canvas Menu
   -------------------------*/
+
   // Off Canvas Open close
   $(".off-canvas-btn").on('click', function() {
     $(".off-canvas-wrapper").addClass('open');

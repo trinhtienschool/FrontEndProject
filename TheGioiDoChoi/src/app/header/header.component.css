@@ -31,7 +31,6 @@
     -o-transition: 0.4s;
     transition: 0.4s; }
     .site-wrapper .site-header .main-navigation .main-menu .menu-item a {
-      margin-left: 10px;
       margin-right: 10px;
       padding-top: 25px;
       padding-bottom: 25px;
@@ -41,8 +40,22 @@
       color: #333; }
       @media (min-width: 992px) and (min-width: 1200px) {
         .site-wrapper .site-header .main-navigation .main-menu .menu-item a {
-          margin-left: 20px !important;
           margin-right: 20px !important; } }
+    .site-wrapper .site-header .main-navigation .main-menu .nav-item .nav-link a {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #333; }
+      @media (min-width: 992px) and (min-width: 1200px) {
+        .site-wrapper .site-header .main-navigation .main-menu .nav-item .nav-link a {
+          margin-right: 20px !important; } }
+    .site-wrapper .site-header .main-navigation .main-menu .nav-item .nav-link.active {
+      border-color: #00afef;
+      color: #00afef; }
     .site-wrapper .site-header .main-navigation .main-menu .menu-item:hover a {
       color: #00afef; }
 .site-wrapper .category-nav {
@@ -56,10 +69,13 @@
     border: 2px solid #eeeeee;
     display: block;
     font-weight: 700;
-    padding: 12px 10px 12px 15px; }
+    padding: 12px 10px 12px 15px;
+    margin-left: 10px; }
     .site-wrapper .category-nav .category-trigger i {
-      margin-right: 8px;
+      margin-right: 16px;
       font-size: 16px; }
+    .site-wrapper .category-nav .category-trigger svg {
+      margin-right: 10px; }
   .site-wrapper .category-nav .category-trigger:before {
     position: absolute;
     content: "\f078";
@@ -435,6 +451,9 @@
       color: #00afef; }
     .site-wrapper .off-canvas-wrapper .mobile-navigation .mobile-menu a {
       display: block; }
+    .site-wrapper .off-canvas-wrapper .mobile-navigation .mobile-menu .nav-item .nav-link.active {
+      border-color: #00afef;
+      color: #00afef; }
 .site-wrapper .off-canvas-wrapper.open {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);

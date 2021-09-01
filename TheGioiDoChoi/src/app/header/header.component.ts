@@ -44,8 +44,8 @@ export class HeaderComponent implements OnInit {
     // onloadFunction();
     // categoryExpandOnload()
   }
+
   searchRoute(text: string){
 
   }
-
 }

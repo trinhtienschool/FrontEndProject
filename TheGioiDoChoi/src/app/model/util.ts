@@ -58,7 +58,8 @@ export class Util {
           author: b_item.author,
           img1: b_item.img1,
           content: b_item.content,
-          date: b_item.date
+          date: b_item.date,
+          id: b_item.id
         }
         if (arr != undefined) arr.push(blog);
 

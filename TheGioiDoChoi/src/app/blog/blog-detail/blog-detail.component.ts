@@ -12,7 +12,8 @@ export class BlogDetailComponent implements OnInit {
     date: "22/07/2021",
     author: "Nam",
     content: "Day la content",
-    img1: "http://localhost:63342/FrontEndProject/Template_Nhuan/image/car.jpg"
+    img1: "http://localhost:63342/FrontEndProject/Template_Nhuan/image/car.jpg",
+    id:'1'
   }
 
   constructor() { }

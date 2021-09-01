@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
   constructor(private service:CartService, private router: Router,private productService: ProductService,
               private activateRoute: ActivatedRoute) {
     this.service.cart$.subscribe(cart=>{this.cartItemHeader=cart})
-    timer(500).pipe(switchMap(_=>this.activateRoute.queryParams)).subscribe(params => {
+  this.activateRoute.queryParams.subscribe(params => {
       this.category = params.category;
       this.startPrice = params.startPrice;
       this.endPrice = params.endPrice;

@@ -13,6 +13,7 @@ import {ShopToolbarComponent} from "./product-list-page/shop-toolbar/shop-toolba
 import {ProductComponent} from "./product-list-page/product.component";
 import {ShareModule} from "../share/share.module";
 import {RelatedProductComponent} from "./product-detail/related-product/related-product.component";
+import {BreadcrumbModule} from "angular-crumbs";
 
 
 
@@ -30,10 +31,11 @@ import {RelatedProductComponent} from "./product-detail/related-product/related-
     ShopToolbarComponent,
     ProductComponent,
   ],
-  imports: [
-    CommonModule,
-    ProductPageRoutingModule,
-    ShareModule
-  ]
+    imports: [
+        CommonModule,
+        ProductPageRoutingModule,
+        ShareModule,
+        BreadcrumbModule
+    ]
 })
 export class ProductPageModule { }

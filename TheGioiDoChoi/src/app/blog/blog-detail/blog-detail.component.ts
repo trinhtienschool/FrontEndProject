@@ -1,24 +1,34 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Blog} from "../../model/blog";
-declare const onloadFunction: any;
+import {ActivatedRoute, Router} from "@angular/router";
+import {map, switchMap} from "rxjs/operators";
+import {BlogService} from "../../service/blog/blog.service";
+// declare const onloadFunction: any;
 @Component({
   selector: 'app-blog-detail',
   templateUrl: './blog-detail.component.html',
   styleUrls: ['./blog-detail.component.scss']
 })
 export class BlogDetailComponent implements OnInit {
-  public blog:Blog={
-    name: "Ten blog",
-    date: "22/07/2021",
-    author: "Nam",
-    content: "Day la content",
-    img1: "http://localhost:63342/FrontEndProject/Template_Nhuan/image/car.jpg",
-    id:'1'
+  public blog: Blog|undefined;
+
+  constructor(private activateRoute: ActivatedRoute,
+              private blogService: BlogService,
+              private router: Router,) { }
+
+  ngOnInit(): void {
+
+    this.activateRoute.paramMap.pipe(
+      map(param=> param.get('id')),
+      switchMap(id =>this.blogService.findBlogById(id))
+    ).subscribe(blog=>this.blog = blog);
+    setTimeout(()=>{
+      console.log(this.blog);
+      if(this.blog == undefined)
+        this.router.navigateByUrl('/**');
+    },1000);
   }
 
-  constructor() { }
-  ngOnInit(): void {
-    onloadFunction();
-  }
 
 }
+

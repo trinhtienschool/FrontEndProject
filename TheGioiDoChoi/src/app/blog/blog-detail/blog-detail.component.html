@@ -1,3 +1,4 @@
+<div *ngIf="blog!=undefined">
 <div class="site-wrapper" id="top">
   <app-breadcrumb [parent_title]="'Trang chủ'" child_title="Chi tiết bài viết"></app-breadcrumb>
   <section class="inner-page-sec-padding-bottom">
@@ -29,7 +30,7 @@
 <!--              Thương hiệu: MAISTO<br>-->
 <!--              SKU 39510/MT39900-->
 <!--            </b>-->
-            <p>{{blog.content}}</p>
+            <div [innerHTML]="blog.content"></div>
           </article>
 
         </div>
@@ -46,4 +47,5 @@
       </div>
     </div>
   </section>
+</div>
 </div>

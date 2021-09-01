@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
-import {Route, Router} from "@angular/router";
+import {ActivatedRoute, Route, Router} from "@angular/router";
 import {Util} from "../model/util";
+import {ProductService} from "../service/product/product.service";
+import {timer} from "rxjs";
+import {switchMap} from "rxjs/operators";
 // declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
@@ -21,8 +24,20 @@ export class HeaderComponent implements OnInit {
   public sort: string | undefined;
   public page: string|undefined;
 
-  constructor(private service:CartService, private router: Router) {
+  constructor(private service:CartService, private router: Router,private productService: ProductService,
+              private activateRoute: ActivatedRoute) {
     this.service.cart$.subscribe(cart=>{this.cartItemHeader=cart})
+    timer(500).pipe(switchMap(_=>this.activateRoute.queryParams)).subscribe(params => {
+      this.category = params.category;
+      this.startPrice = params.startPrice;
+      this.endPrice = params.endPrice;
+      this.search = params.search;
+      this.sort = params.sort;
+      this.page = params.page;
+
+      if (params.age != undefined) this.age =[].concat(params.age); else this.age = undefined;
+      if (params.gender != undefined) this.gender =[].concat(params.gender); else this.gender = undefined;
+    });
   }
   public deleteCartItem(cartItem: CartItem){
     this.service.deleteItemProduct(cartItem)
@@ -41,6 +56,7 @@ export class HeaderComponent implements OnInit {
     }
     return number;
   }
+
   ngOnInit(): void {
     // onloadFunction();
     // categoryExpandOnload()
@@ -50,4 +66,5 @@ export class HeaderComponent implements OnInit {
     let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender,text, this.sort,this.page);
     this.router.navigateByUrl(link);
   }
+
 }

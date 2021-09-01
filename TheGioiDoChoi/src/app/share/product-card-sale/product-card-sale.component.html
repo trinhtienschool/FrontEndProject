@@ -5,12 +5,12 @@
       -{{product.percentSale}}%
     </div>
 
-    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab"
-         routerLink="{{product.product_id}}"
+    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab cursor-pointer"
+         routerLink="/product/{{product.product_id}}"
          src="{{product.images[0]}}"
          alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
     <div class="card-body">
-      <h5 class="card-title size-16 font-weight-bolder text-truncate" data-toggle="tooltip" data-placement="top" title="{{product.name}}">{{product.name}}
+      <h5 routerLink="/product/{{product.product_id}}" class="card-title size-16 font-weight-bolder text-truncate cursor-pointer" data-toggle="tooltip" data-placement="top" title="{{product.name}}">{{product.name}}
       </h5>
       <div *ngIf="product.percentSale !=0; else elseBlock">
         <div class="row">

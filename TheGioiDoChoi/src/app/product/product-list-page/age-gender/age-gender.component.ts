@@ -49,11 +49,11 @@ export class AgeGenderComponent implements OnInit, OnChanges {
     // Util.onChange(changes,this.age,this.gender,this.category,this.startPrice,this.endPrice,this.search,this.sort,this.page);
     console.log("Age-gender Age: "+this.title+": ",this.age);
     console.log("Age-gender Gender:"+this.title+": ", this.gender);
-    if (this.title != undefined && this.gender != undefined && this.age != undefined) {
+    if (this.title != undefined && this.content !=undefined) {
       if (this.title == 'Độ tuổi') {
-        if (this.content != undefined) this.addChecked(this.content, this.age);
+        if (this.age !=undefined) this.addChecked(this.content, this.age);
       } else if (this.title == 'Giới tính') {
-        if (this.content != undefined) this.addChecked(this.content, this.gender);
+        if (this.gender !=undefined) this.addChecked(this.content, this.gender);
       }
     }else if(this.title !=undefined && this.content !=undefined) this.deleteChecked(this.content);
     console.log("content: ",this.content);

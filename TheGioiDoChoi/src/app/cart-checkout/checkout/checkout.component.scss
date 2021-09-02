@@ -13,7 +13,7 @@ input{
   padding: 10px 20px;
   font-size: 14px;
   color: #14191e;
-  margin-bottom: 15px;
+  //margin-bottom: 15px;
 }
 input:focus{
   -webkit-box-shadow: none;
@@ -164,4 +164,8 @@ input:focus{
   @media (max-width: 400px) {
     font-size: 15px!important;
   }
+}
+.error-form{
+  font-size: 14px;
+  font-style: italic;
 }

@@ -47,4 +47,11 @@ export class CartService {
       }
     }
   }
+  // Todo: Xóa tất cả sản phẩm khỏi giỏ hàng
+  resetCart(){
+    for(let i=0; i<this.cart.length; i++){
+      this.cart.splice(i,1)
+      this.behaviorSubject.next(this.cart)
+    }
+  }
 }

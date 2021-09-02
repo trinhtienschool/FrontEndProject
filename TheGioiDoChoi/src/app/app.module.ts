@@ -15,6 +15,7 @@ import localeVi from '@angular/common/locales/vi';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {BreadcrumbModule} from "angular-crumbs";
 
+
 registerLocaleData(localeVi,'vi-VN')
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ registerLocaleData(localeVi,'vi-VN')
     ShareModule,
     HttpClientModule,
     AppRoutingModule,
-    BreadcrumbModule
+    BreadcrumbModule,
   ],
     exports: [
         HttpClientModule,

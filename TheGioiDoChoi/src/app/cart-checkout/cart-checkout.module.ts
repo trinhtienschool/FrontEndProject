@@ -9,6 +9,7 @@ import {CheckoutComponent} from "./checkout/checkout.component";
 import {ShareModule} from "../share/share.module";
 import {CartComponent} from "./cart/cart.component";
 import {ProductItemComponent} from "./cart/product-like/product-item/product-item.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -25,7 +26,8 @@ import {ProductItemComponent} from "./cart/product-like/product-item/product-ite
   imports: [
     CommonModule,
     CartCheckoutRoutingModule,
-    ShareModule
+    ShareModule,
+    ReactiveFormsModule
   ]
 })
 export class CartCheckoutModule { }

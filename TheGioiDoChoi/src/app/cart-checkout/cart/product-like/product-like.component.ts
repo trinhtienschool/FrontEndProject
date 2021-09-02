@@ -9,7 +9,6 @@ import {ProductService} from "src/app/service/product/product.service";
 })
 export class ProductLikeComponent implements OnInit {
 
-  // productList: Product[] = []
   listProducts: Product[]=[]
   constructor(private productService: ProductService) { }
 

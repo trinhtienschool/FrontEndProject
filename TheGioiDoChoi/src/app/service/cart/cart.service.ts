@@ -14,7 +14,7 @@ export class CartService {
   constructor() {
   }
 
-  // Thêm sản phẩm vào giỏ hàng và khi sản phẩm bị trùng sẽ tăng số lượng
+  // Todo: Thêm sản phẩm vào giỏ hàng và khi sản phẩm bị trùng sẽ tăng số lượng
   addCart(product: Product, quan: number){
     var productName = product.name
     let index=-1
@@ -26,8 +26,14 @@ export class CartService {
       }
     }
     if(index == -1){
-      this.cart.push(new CartItem(product.name,product.images[0],product.price,quan,product.product_id));
-      this.behaviorSubject.next(this.cart);
+      if(product.price_sale == 0){
+        this.cart.push(new CartItem(product.name,product.images[0],product.price,quan,product.product_id));
+        this.behaviorSubject.next(this.cart);
+      } else if (product.price_sale != 0){
+        this.cart.push(new CartItem(product.name,product.images[0],product.price_sale,quan,product.product_id));
+        this.behaviorSubject.next(this.cart);
+      }
+
     }
   }
 
@@ -39,6 +45,13 @@ export class CartService {
         this.behaviorSubject.next(this.cart)
         return
       }
+    }
+  }
+  // Todo: Xóa tất cả sản phẩm khỏi giỏ hàng
+  resetCart(){
+    for(let i=0; i<this.cart.length; i++){
+      this.cart.splice(i,1)
+      this.behaviorSubject.next(this.cart)
     }
   }
 }

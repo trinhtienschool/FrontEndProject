@@ -9,19 +9,28 @@
           <div class="product-item">
             <div class="product-img">
               <a [routerLink]="['/product',product.product_id]">
-                <img src="{{product.images[0]}}">
+                <img src="{{product.images[0]}}" alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
               </a>
             </div>
             <div class="product-card card-body">
-              <h5 class="card-title text-center">
+              <h5 class="card-title text-center text-truncate" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
                 <a [routerLink]="['/product',product.product_id]">{{product.name}}</a>
               </h5>
               <div class="row">
                 <div class="col-sm-9 col-12">
-                  <p class="product-price text-center card-text">
-                    {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
-                  <p class="product-price-discount text-center card-text">
-                    {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>
+                  <div *ngIf="product.price_sale == 0">
+<!--                    <p class="product-price-discount text-center card-text">-->
+<!--                      {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>-->
+                    <p class="product-price text-center card-text">
+                      {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
+                  </div>
+                  <div *ngIf="product.price_sale != 0">
+                    <p class="product-price-discount text-center card-text">
+                      {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}} </p>
+                    <p class="product-price text-center card-text">
+                      {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
+
+                  </div>
                 </div>
                 <button class="btn col-sm-3 col-12 btn-cart" (click)="handleAddToCart(product)">
                   <i class="fas fa-shopping-cart"></i>

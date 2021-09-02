@@ -10,31 +10,39 @@
               <div class="col-lg-7 mb--20">
 <!--                <app-billing-address></app-billing-address>-->
                 <!-- Billing Address -->
-                <div id="billing-form" class="mb-40">
+                <form [formGroup]="checkoutForm" id="billing-form" class="mb-40">
                   <h4 class="checkout-title">Địa chỉ nhận hàng</h4>
                   <div class="row">
                     <div class="col-md-6 col-12 mb--20">
                       <label>Họ*</label>
-                      <input type="text" placeholder="Họ">
+                      <input formControlName="firstname" name="firstname" type="text" placeholder="Họ" required value="">
+                      <small class="error-form text-danger" *ngIf="f.firstname.errors?.required">
+                        Bạn chưa nhập Họ</small>
                     </div>
                     <div class="col-md-6 col-12 mb--20">
                       <label>Tên*</label>
-                      <input type="text" placeholder="Tên">
+                      <input formControlName="lastname" type="text" placeholder="Tên" required>
+                      <small class="error-form text-danger" *ngIf="f.lastname.errors?.required">Bạn chưa nhập Tên</small>
                     </div>
                     <div class="col-12 mb--20">
-                      <label>Số điện thoại</label>
-                      <input type="text" placeholder="+84">
+                      <label>Số điện thoại*</label>
+                      <input formControlName="phone" type="number" placeholder="+84" required>
+                      <small class="error-form text-danger" *ngIf="f.phone.errors?.required">Bạn chưa nhập Số điện thoại</small>
                     </div>
                     <div class="col-12 mb--20">
-                      <label>Email</label>
-                      <input type="text" placeholder="Email">
+                      <label>Email*</label>
+                      <input formControlName="email" type="email" placeholder="Email" required>
+                      <small class="error-form text-danger" *ngIf="f.email.errors?.required">Bạn chưa nhập Email</small>
+                      <small class="error-form text-danger" *ngIf="f.email.errors?.email">Email không hợp lệ</small>
                     </div>
                     <div class="col-12 mb--20">
-                      <label>Địa chỉ</label>
-                      <input type="text" placeholder="Số nhà, xã/phường, tỉnh/thành phố">
+                      <label>Địa chỉ*</label>
+                      <input formControlName="address" type="text" placeholder="Số nhà, xã/phường, tỉnh/thành phố" required>
+                      <label class="error-form text-danger" *ngIf="f.address.errors?.required">Bạn chưa nhập địa chỉ</label>
                     </div>
                   </div>
-                </div>
+                </form>
+<!--            form    -->
                 <!-- Shipping Address -->
                 <div class="order-note-block mt--30">
                   <label for="order-note">Ghi chú</label>
@@ -57,7 +65,28 @@
                       <p>Tổng <span>{{totalPriceOfAllProduct()| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></p>
                       <p>Phí vận chuyển<span>{{30000| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></p>
                       <h4 class="total-after">Thành tiền<span>{{totalPriceOfAllProduct()+30000| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></h4>
-                      <button class="place-order w-100 pay-directly-must"><h4>THANH TOÁN NGAY</h4></button>
+                      <button type="button" class="place-order w-100 pay-directly-must" *ngIf="checkoutForm.invalid"><h4>THANH TOÁN NGAY</h4></button>
+                      <button type="button" class="place-order w-100 pay-directly-must" data-toggle="modal" data-target="#exampleModal" *ngIf="checkoutForm.valid"><h4>THANH TOÁN NGAY</h4></button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Thanh toán thành công</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="resetCart()">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Cảm ơn bạn đã mua hàng
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="resetCart()">Trở về</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
 

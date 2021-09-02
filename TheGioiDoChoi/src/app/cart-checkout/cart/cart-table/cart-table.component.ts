@@ -9,7 +9,6 @@ import {Product} from "../../../model/product";
   styleUrls: ['./cart-table.component.scss']
 })
 export class CartTableComponent implements OnInit {
-  // public products: Product[] =[];
   cartItems : CartItem[] = []
 
   constructor(private cartService: CartService) {
@@ -20,20 +19,19 @@ export class CartTableComponent implements OnInit {
 
   }
 
-  // todo nút giảm số lượng sản phẩm
+  // Todo: nút giảm số lượng sản phẩm
   decreaseQuantity(item:CartItem) {
     if(item.quantity>1)
       item.quantity -= 1;
     else if(item.quantity==1)
       this.cartService.deleteItemProduct(item)
   }
-  // todo nút tăng số lượng sản phẩm
+  // Todo: nút tăng số lượng sản phẩm
   increaseQuantity(item:CartItem) {
     item.quantity += 1;
   }
-
+  // Todo: xóa sản phẩm
   deleteItem(item: CartItem) {
    this.cartService.deleteItemProduct(item)
-    // alert("da vao xóa " + item)
   }
 }

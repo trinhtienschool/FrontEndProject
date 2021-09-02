@@ -520,17 +520,16 @@ h6 {
       content: "\f078";
       font-size: 12px;
       right: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
+      // display: -webkit-box;
+      // display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      height: 100%;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
+     
+      // align-items: center;
+      // height: 100%;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
       top: 0;
-      margin-right: 25px;
+      // margin-right: 25px;
     }
     .category-menu{
       list-style: none;

@@ -65,7 +65,7 @@
                       <p>Tổng <span>{{totalPriceOfAllProduct()| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></p>
                       <p>Phí vận chuyển<span>{{30000| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></p>
                       <h4 class="total-after">Thành tiền<span>{{totalPriceOfAllProduct()+30000| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></h4>
-                      <button type="button" class="place-order w-100 pay-directly-must" *ngIf="checkoutForm.invalid"><h4>THANH TOÁN NGAY</h4></button>
+                      <button type="button" class="w-100 btn btn-secondary" *ngIf="checkoutForm.invalid"><h4>THANH TOÁN NGAY</h4></button>
                       <button type="button" class="place-order w-100 pay-directly-must" data-toggle="modal" data-target="#exampleModal" *ngIf="checkoutForm.valid"><h4>THANH TOÁN NGAY</h4></button>
                       <!-- Modal -->
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

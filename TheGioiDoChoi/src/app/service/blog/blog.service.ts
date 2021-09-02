@@ -3,8 +3,9 @@ import {Blog} from "../../model/blog";
 import {Util} from "../../model/util";
 import {LoadJsonService} from "../load-json/load-json.service";
 import {PaginationService} from "../pagination/pagination.service";
-import {BehaviorSubject, Observable} from "rxjs";
+import {BehaviorSubject, Observable, of, timer} from "rxjs";
 import {Product} from "../../model/product";
+import {switchMap} from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +32,12 @@ export class BlogService {
   notify(currentPage: number){
     this.paginationService.setUpPagination(currentPage,this.blogs.length,12);
     this.behaviorSubject.next(this.blogs);
+  }
+  private findProduct(id: string|null): Blog{
+    const blog = this.blogs.find(b=>b.id == id);
+    return <Blog>blog;
+  }
+  public findBlogById(id: string|null):Observable<Blog>{
+    return timer(500).pipe(switchMap(_=>of(this.findProduct(id))));
   }
 }

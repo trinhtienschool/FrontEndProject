@@ -13,23 +13,23 @@ const  routes: Routes = [
   {
     path:'product',
     loadChildren: ()=> import('./product/product-page.module').then(productModule =>productModule.ProductPageModule),
-    data: {breadcrumb: "Sản phẩm trang chủ"}
+    data: {breadcrumb: "Sản phẩm"}
   },
 
   {
     path:'blog',
     loadChildren:() => import('./blog/blog-page.module').then(blogModule => blogModule.BlogPageModule),
-    data: {breadcrumb: "Blog trang chủ"}
+    data: {breadcrumb: "Bài viết"}
   },
   {
     path:'contact',
     loadChildren:() => import('./contact/contact.module').then(contactModule=>contactModule.ContactModule),
-    data: {breadcrumb: "Contact trang chủ"}
+    data: {breadcrumb: "Liên hệ"}
   },
   {
     path:'cart',
     loadChildren:() => import('./cart-checkout/cart-checkout.module').then(cartCheckout=>cartCheckout.CartCheckoutModule),
-    data: {breadcrumb: "Cart trang chủ"}
+    data: {breadcrumb: "Giỏ hàng"}
   },
   {
     path:'',

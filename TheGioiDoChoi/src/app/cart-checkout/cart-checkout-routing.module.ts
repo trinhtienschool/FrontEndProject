@@ -16,7 +16,8 @@ const routes : Routes = [
       },
       {
         path:'checkout',
-        component:CheckoutComponent
+        component:CheckoutComponent,
+        data: {breadcrumb: "Thanh toán"}
       }
     ]
   }

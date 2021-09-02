@@ -1,15 +1,14 @@
-<breadcrumb #parent>
-  <ol>
-    <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
-<!--      <li>{{route.url}}</li>-->
-<!--      <li *ngIf="!route.terminal">-->
 
-<!--        <a href="" [routerLink]="[route.url]">The {{route.url}} {{route.displayName}}</a>-->
-<!--      </li>-->
-<!--      <li *ngIf="route.terminal">{{route.displayName}}</li>-->
-    </ng-template>
-  </ol>
-</breadcrumb>
 <app-header></app-header>
+<!--<breadcrumb #parent>-->
+<!--  <ol class="breadcrumb">-->
+<!--    <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs" let-i="index">-->
+<!--      <li *ngIf="i != parent.breadcrumbs.length-1" class="breadcrumb-item">-->
+<!--        <a href="" [routerLink]="[route.url]">{{ route.displayName }}</a>-->
+<!--      </li>-->
+<!--      <li *ngIf="i == parent.breadcrumbs.length-1" class="breadcrumb-item active" aria-current="page">{{ route.displayName }}</li>-->
+<!--    </ng-template>-->
+<!--  </ol>-->
+<!--</breadcrumb>-->
 <router-outlet></router-outlet>
 <app-footer></app-footer >

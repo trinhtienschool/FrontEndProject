@@ -51,33 +51,32 @@
                 <a href="javascript:void(0)" class="category-trigger"><i
                   class="fa fa-bars"></i>Danh mục đồ chơi</a>
                 <ul class="category-menu">
-                  <li class="cat-item has-children"><a>Đồ chơi vận động</a>
+                  <li class="cat-item has-children"><a href="javascript:void(0)">Đồ chơi vận động</a>
                     <ul class="sub-menu">
-                      <li><a href="">Đồ chơi dã ngoại</a></li>
-                      <li><a href="">Đồ dùng nhà bếp</a></li>
-                      <li><a href="">Đồ chơi dưới nước</a></li>
-                      <li><a href="">Xe đạp</a></li>
+                      <li (click)="category_click('dochoidangoai')"><a href="javascript:void(0)">Đồ chơi dã ngoại</a></li>
+                      <li (click)="category_click('dodungnhabep')"><a href="javascript:void(0)">Đồ dùng nhà bếp</a></li>
+                      <li (click)="category_click('dochoiduoinuoc')"><a href="javascript:void(0)">Đồ chơi dưới nước</a></li>
+                      <li (click)="category_click('xe')"><a href="javascript:void(0)">Xe</a></li>
                     </ul>
                   </li>
                   <li class="cat-item has-children"><a>Đồ chơi trí tuệ</a>
                     <ul class="sub-menu">
-                      <li><a href="">Rubik</a></li>
-                      <li><a href="">Smart game</a></li>
-                      <li><a href="">Puzzle</a></li>
-                      <li><a href="">Xe đạp</a></li>
+                      <li (click)="category_click('lego')"><a href="javascript:void(0)">Lego</a></li>
+                      <li (click)="category_click('smartgame')"><a href="javascript:void(0)">Smart game</a></li>
+                      <li (click)="category_click('puzzle')"><a href="javascript:void(0)">Puzzle</a></li>
                     </ul>
                   </li>
                   <li class="cat-item has-children"><a>Phương tiện giao thông</a>
                     <ul class="sub-menu">
-                      <li><a href="">Xe mô hình</a></li>
-                      <li><a href="">Máy bay, tên lửa</a></li>
-                      <li><a href="">Xe cứu hỏa</a></li>
+                      <li (click)="category_click('mohinhxe')"><a href="javascript:void(0)">Mô hình xe</a></li>
+                      <li (click)="category_click('maybaytenlua')"><a href="javascript:void(0)">Máy bay, tên lửa</a></li>
+                      <li (click)="category_click('xedieukhien')"><a href="javascript:void(0)">Xe điều khiển</a></li>
                     </ul>
                   </li>
                   <li class="cat-item has-children"><a>Nhân vật</a>
                     <ul class="sub-menu">
-                      <li><a href="">Búp bê</a></li>
-                      <li><a href="">Robot</a></li>
+                      <li (click)="category_click('bupbe')"><a href="javascript:void(0)">Búp bê</a></li>
+                      <li (click)="category_click('robot')"><a href="javascript:void(0)">Robot</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -85,9 +84,13 @@
             </nav>
           </div>
           <div class="col-lg-5">
-            <div class="header-search-block">
-              <input type="text" placeholder="Tên đồ chơi" [value]="">
-              <button>Tìm kiếm</button>
+            <div *ngIf="this.search!=undefined"  class="header-search-block">
+              <input #text type="text" placeholder="Tên đồ chơi" [value]="this.search">
+              <button (click)="searchRoute(text.value)">Tìm kiếm</button>
+            </div>
+            <div *ngIf="this.search==undefined"  class="header-search-block">
+              <input #text type="text" placeholder="Tên đồ chơi" >
+              <button (click)="searchRoute(text.value)">Tìm kiếm</button>
             </div>
           </div>
           <div class="col-lg-4">
@@ -106,7 +109,7 @@
                                                 Giỏ hàng
                                             </span>
                     <span class="price">
-                                                {{totalPriceOfAllProduct()+30000| currency:'VND':'symbol':'1.0-0':'vi-VN'}}
+                                                {{totalPriceOfAllProduct()| currency:'VND':'symbol':'1.0-0':'vi-VN'}}
                                                 <i class="fa fa-chevron-down"></i>
                                             </span>
                   </div>
@@ -157,31 +160,30 @@
                 <ul class="category-menu">
                   <li class="cat-item has-children"><a>Đồ chơi vận động</a>
                     <ul class="sub-menu">
-                      <li><a href="">Đồ chơi dã ngoại</a></li>
-                      <li><a href="">Đồ dùng nhà bếp</a></li>
-                      <li><a href="">Đồ chơi dưới nước</a></li>
-                      <li><a href="">Xe đạp</a></li>
+                      <li (click)="category_click('dochoidangoai')"><a href="javascript:void(0)">Đồ chơi dã ngoại</a></li>
+                      <li (click)="category_click('dodungnhabep')"><a href="javascript:void(0)">Đồ dùng nhà bếp</a></li>
+                      <li (click)="category_click('dochoiduoinuoc')"><a href="javascript:void(0)">Đồ chơi dưới nước</a></li>
+                      <li (click)="category_click('xe')"><a href="javascript:void(0)">Xe</a></li>
                     </ul>
                   </li>
                   <li class="cat-item has-children"><a>Đồ chơi trí tuệ</a>
                     <ul class="sub-menu">
-                      <li><a href="">Rubik</a></li>
-                      <li><a href="">Smart game</a></li>
-                      <li><a href="">Puzzle</a></li>
-                      <li><a href="">Xe đạp</a></li>
+                      <li (click)="category_click('lego')"><a href="javascript:void(0)">Lego</a></li>
+                      <li (click)="category_click('smartgame')"><a href="javascript:void(0)">Smart game</a></li>
+                      <li (click)="category_click('puzzle')"><a href="javascript:void(0)">Puzzle</a></li>
                     </ul>
                   </li>
                   <li class="cat-item has-children"><a>Phương tiện giao thông</a>
                     <ul class="sub-menu">
-                      <li><a href="">Xe mô hình</a></li>
-                      <li><a href="">Máy bay, tên lửa</a></li>
-                      <li><a href="">Xe cứu hỏa</a></li>
+                      <li (click)="category_click('mohinhxe')"><a href="javascript:void(0)">Mô hình xe</a></li>
+                      <li (click)="category_click('maybaytenlua')"><a href="javascript:void(0)">Máy bay, tên lửa</a></li>
+                      <li (click)="category_click('xedieukhien')"><a href="javascript:void(0)">Xe điều khiển</a></li>
                     </ul>
                   </li>
                   <li class="cat-item has-children"><a>Nhân vật</a>
                     <ul class="sub-menu">
-                      <li><a href="">Búp bê</a></li>
-                      <li><a href="">Robot</a></li>
+                      <li (click)="category_click('bupbe')"><a href="javascript:void(0)">Búp bê</a></li>
+                      <li (click)="category_click('robot')"><a href="javascript:void(0)">Robot</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -210,10 +212,16 @@
       </div>
       <div class="off-canvas-inner">
         <!-- search box start -->
-        <div class="search-box offcanvas">
+        <div *ngIf="this.search!=undefined"  class="search-box offcanvas">
           <form>
-            <input type="text" placeholder="Tên đồ chơi">
-            <button class="search-btn"><i class="fa fa-search"></i></button>
+            <input #text type="text" placeholder="Tên đồ chơi"  [value]="this.search">
+            <button (click)="searchRoute(text.value)" class="search-btn"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div *ngIf="this.search==undefined"  class="search-box offcanvas">
+          <form>
+            <input #text type="text" placeholder="Tên đồ chơi" >
+            <button (click)="searchRoute(text.value)" class="search-btn"><i class="fa fa-search"></i></button>
           </form>
         </div>
         <!-- search box end -->

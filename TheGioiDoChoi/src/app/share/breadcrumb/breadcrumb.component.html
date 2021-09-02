@@ -1,9 +1,13 @@
 <!--		Breadcrumb-->
-<section class="container">
-  <nav aria-label="breadcrumb" class="breadcrumb-contents">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">{{parent_title}}</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{child_title}}</li>
-    </ol>
-  </nav>
-</section>
+<div class="container mt-3">
+<breadcrumb #parent>
+  <ol class="breadcrumb">
+    <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs" let-i="index">
+      <li *ngIf="i != parent.breadcrumbs.length-1" class="breadcrumb-item">
+        <a href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
+      </li>
+      <li *ngIf="i == parent.breadcrumbs.length-1" class="breadcrumb-item active" aria-current="page">{{ route.displayName }}</li>
+    </ng-template>
+  </ol>
+</breadcrumb>
+</div>

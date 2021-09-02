@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
-
+// declare const clickAddCart: any;
 @Component({
   selector: 'app-product-card-sale',
   templateUrl: './product-card-sale.component.html',
@@ -19,6 +19,7 @@ export class ProductCardSaleComponent implements OnInit {
   handleAddToCart(){
     if(this.product != undefined){
       this.cartService.addCart(this.product,1);
+      // clickAddCart();
     }
   }
 

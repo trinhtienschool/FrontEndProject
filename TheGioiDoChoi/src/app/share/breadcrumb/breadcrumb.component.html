@@ -7,6 +7,7 @@
         <a href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
       </li>
       <li *ngIf="i == parent.breadcrumbs.length-1" class="breadcrumb-item active" aria-current="page">{{ route.displayName }}</li>
+
     </ng-template>
   </ol>
 </breadcrumb>

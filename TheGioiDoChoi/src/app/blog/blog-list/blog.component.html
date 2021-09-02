@@ -1,5 +1,5 @@
+<app-breadcrumb></app-breadcrumb>
 <div class="container" *ngIf="pagination !==undefined && this.blogs !== undefined">
-  <app-breadcrumb [parent_title]="'Trang chủ'" child_title="Bài viết"></app-breadcrumb>
   <div class="row blog-list" >
     <div *ngFor="let blog of blogs; let i = index" class="col-lg-3 col-sm-6 col-md-4 blog-item">
 

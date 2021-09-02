@@ -134,6 +134,7 @@ $(document).ready(function(){
   });
 
 run = function(){
+
    
     /*------------------------
                    --> Slick Carousel
@@ -258,4 +259,11 @@ run = function(){
            console.log("có vào "+formatCurrency(price));
         })
         console.log(formatCurrency(50000));
+
+        //add cart
+        $("#add-cart-animate").fadeOut();
+        $(".shopping-cart-center").click(function(){
+            $("#add-cart-animate").fadeIn();
+            $("#add-cart-animate").fadeOut(500);
+          });
 }

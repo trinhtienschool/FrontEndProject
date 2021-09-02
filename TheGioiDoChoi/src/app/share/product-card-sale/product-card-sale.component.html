@@ -1,7 +1,10 @@
 <div *ngIf="product">
+<!--  <div id="add-cart-animate">-->
+<!--    <img src="/assets/imgs/product/add_cart_off.gif" alt="" class="add-cart-gif">-->
+<!--  </div>-->
   <div class="card product-coupon" >
 
-    <div class="coupon margin-img-tab" *ngIf="product.percentSale !=0">
+    <div class="coupon margin-img-tab"  *ngIf="product.percentSale !=0">
       -{{product.percentSale}}%
     </div>
 

@@ -37,14 +37,15 @@
         .related-product .container .product-item .product-card .product-price {
           color: #00AFEF;
           font-weight: 700;
-          font-size: 14px;
+          font-size: 16px;
           margin-bottom: 0; }
         .related-product .container .product-item .product-card .product-price-discount {
           color: #7b7b7b;
           text-decoration: line-through;
-          font-size: 12px; }
+          font-size: 14px; }
         .related-product .container .product-item .product-card .btn-cart {
           color: #00AFEF;
-          background-color: #fff; }
+          background-color: #fff;
+          font-size: 25px; }
 
 /*# sourceMappingURL=related-product.component.css.map */

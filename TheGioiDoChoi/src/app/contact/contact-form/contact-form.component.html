@@ -1,38 +1,69 @@
 <div class="contact_form_have">
   <h3 class="ct_title">Gửi thông tin phản hồi</h3>
-  <form id="contact-form" class="form-contact-must" action="https://demo.hasthemes.com/pustok-preview/pustok/php/mail.php" method="post" class="contact-form">
+  <form [formGroup]="contactForm" id="contact-form" class="form-contact-must" class="contact-form">
     <div class="row">
       <div class="col-lg-12">
         <div class="form-group">
           <label>Họ và tên<span class="required">*</span></label>
-          <input type="text" id="con_name" name="con_name" class="form-control"
+          <input type="text" id="con_name" name="con_name" class="form-control" formControlName="name"
                  required>
+          <small class="error-form text-danger" *ngIf="f.name.errors?.required">
+            Bạn chưa nhập Họ và tên</small>
         </div>
       </div>
       <div class="col-lg-12">
         <div class="form-group">
           <label>Email <span class="required">*</span></label>
-          <input type="email" id="con_email" name="con_email" class="form-control"
+          <input type="email" id="con_email" name="con_email" class="form-control" formControlName="email"
                  required>
+          <small class="error-form text-danger" *ngIf="f.email.errors?.required">
+            Bạn chưa nhập Email</small>
+          <small class="error-form text-danger" *ngIf="f.email.errors?.email">
+            Email không hợp lệ</small>
         </div>
       </div>
       <div class="col-lg-12">
         <div class="form-group">
-          <label>Số điện thoại</label>
-          <input type="text" id="con_phone" name="con_phone" class="form-control">
+          <label>Số điện thoại*</label>
+          <input type="text" id="con_phone" name="con_phone" class="form-control" formControlName="phone">
+          <small class="error-form text-danger" *ngIf="f.phone.errors?.required">
+            Bạn chưa nhập Số điện thoại</small>
         </div>
       </div>
       <div class="col-lg-12">
         <div class="form-group">
-          <label>Ghi chú</label>
+          <label>Ghi chú*</label>
           <textarea id="con_message" name="con_message"
-                    class="form-control"></textarea>
+                    class="form-control" formControlName="note"></textarea>
+          <small class="error-form text-danger" *ngIf="f.note.errors?.required">
+            Bạn chưa nhập Ghi chú</small>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="form-btn">
-          <button type="submit" value="submit" id="submit" class="btn btn-black"
-                  name="submit">Gửi</button>
+          <button type="button" value="submit" id="submitFail" class="btn btn-black"
+                  name="submit" data-toggle="modal" data-target="#exampleModal" *ngIf="!contactForm.valid">Gửi</button>
+          <button type="button" value="submit" id="submit" class="btn btn-black"
+                  name="submit" data-toggle="modal" data-target="#exampleModal" *ngIf="contactForm.valid">Gửi</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Gửi thành công</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Cảm ơn bạn đã đóng góp ý kiến
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Trở về</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="form__output"></div>
       </div>

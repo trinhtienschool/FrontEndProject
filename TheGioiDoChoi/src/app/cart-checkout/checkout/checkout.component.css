@@ -11,8 +11,7 @@ input {
   line-height: 23px;
   padding: 10px 20px;
   font-size: 14px;
-  color: #14191e;
-  margin-bottom: 15px; }
+  color: #14191e; }
 
 input:focus {
   -webkit-box-shadow: none;
@@ -139,5 +138,9 @@ input:focus {
   @media (max-width: 400px) {
     .total-after {
       font-size: 15px !important; } }
+
+.error-form {
+  font-size: 14px;
+  font-style: italic; }
 
 /*# sourceMappingURL=checkout.component.css.map */

@@ -193,3 +193,10 @@ run = function(){
 //     $(this).addClass('active');
 //   })
 // })
+// $("#add-cart-animate").fadeOut();
+// function clickAddCart() {
+//   $(".shopping-cart-center").click(function () {
+//     $("#add-cart-animate").fadeIn();
+//     $("#add-cart-animate").fadeOut(500);
+//   });
+// }

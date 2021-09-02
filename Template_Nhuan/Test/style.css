@@ -1,9 +1,7 @@
 .dm::before {
   color: #000;
   content: '\f078';
-  /* You should use \ and not /*/
   font-family: "Font Awesome 5 Free";
-  /* This is the correct font-family*/
   font-style: normal;
   font-weight: 900;
   font-size: 40px;

@@ -24,7 +24,12 @@ export class HeaderComponent implements OnInit {
   public sort: string | undefined;
   public page: string|undefined;
 
-  public showToggle = false;
+  public showToggle:boolean = false;
+  public mobileToggle:boolean=false;
+  public slideMobileToggle:boolean=false;
+  public slideMobileToggle1:boolean=false;
+  public slideMobileToggle2:boolean=false;
+  public slideMobileToggle3:boolean=false;
   public open = false;
   constructor(private service:CartService, private router: Router,private productService: ProductService,
               private activateRoute: ActivatedRoute) {
@@ -74,6 +79,10 @@ export class HeaderComponent implements OnInit {
 
   show() {
     this.showToggle = !this.showToggle;
+    console.log("showToggle");
+  }
+  showSlide() {
+    this.mobileToggle=!this.mobileToggle;
   }
 
   addOpen() {
@@ -82,5 +91,18 @@ export class HeaderComponent implements OnInit {
 
   closeOpen() {
     this.open = false;
+  }
+
+  showSlideToggle() {
+    this.slideMobileToggle=!this.slideMobileToggle;
+  }
+  showSlideToggle1() {
+    this.slideMobileToggle1=!this.slideMobileToggle1;
+  }
+  showSlideToggle2() {
+    this.slideMobileToggle2=!this.slideMobileToggle2;
+  }
+  showSlideToggle3() {
+    this.slideMobileToggle3=!this.slideMobileToggle3;
   }
 }

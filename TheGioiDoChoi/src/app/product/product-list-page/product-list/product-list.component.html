@@ -1,8 +1,8 @@
 <div *ngIf="pagination !==undefined && products !==undefined">
   <div class="shop-product-wrap row mb-2">
-    <div class="col-lg-4 col-sm-6 product-list" *ngFor="let productCard of products; let i=index">
+    <div class="col-lg-4 col-sm-6 col-6 product-list" *ngFor="let productCard of products; let i=index">
       <div *ngIf="i>=pagination.getStart() && i<pagination.getEnd()">
-        <app-product-card-sale [product]="productCard"></app-product-card-sale>
+        <app-product-card-sale  [product]="productCard"></app-product-card-sale>
       </div>
     </div>
   </div>

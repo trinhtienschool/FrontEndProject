@@ -114,3 +114,14 @@
     margin-left: -25px;
     border-radius: 60px; }
 }
+@media (min-width: 1200px) {
+ .card-img-top{
+   height: 250px;
+ }
+}
+@media (max-width: 1200px) {
+  .card-img-top{
+    height: 230px;
+  }
+}
+

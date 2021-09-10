@@ -1,0 +1,22 @@
+<p><i class="fas fa-address-card"></i>Biểu tượng</p>
+<ngx-slider #slider [(value)]="value" [(highValue)]="highValue" [options]="options" (click)="getValue(slider.value,slider.highValue)"></ngx-slider>
+<npn-slider [min]="1000" [max]="5000" (onChange)="onSliderChange($event)"  [showStepIndicator]="true"></npn-slider>
+<h2>Start Slick</h2>
+<!-- You can now use your library component in app.component.html -->
+<ngx-slick-carousel class="carousel"
+                    #slickModal="slick-carousel"
+                    [config]="slideConfig"
+                    (init)="slickInit($event)"
+                    (breakpoint)="breakpoint($event)"
+                    (afterChange)="afterChange($event)"
+                    (beforeChange)="beforeChange($event)">
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <img src="{{ slide.img }}" alt="" width="100%">
+  </div>
+</ngx-slick-carousel>
+
+<button (click)="addSlide()">Add</button>
+<button (click)="removeSlide()">Remove</button>
+<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+<button (click)="slickModal.unslick()">unslick</button>
+

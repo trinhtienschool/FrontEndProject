@@ -65,5 +65,37 @@ export class PersonTrafficComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  slideConfig = {
+    "infinite": true,
+    "slidesToShow": 4,
+    "slidesToScroll": 1,
+    "dots": true,
+    "autoplay": true,
+    "useCSS": true,
+    "rows":2,
+    "autoplaySpeed": 3000,
 
+    "swipeToSlide":true,
+    "responsive": [
+      {
+        "breakpoint": 1200,
+        "settings": {
+          "slidesToShow": 3
+        }
+      },
+      {
+        "breakpoint": 768,
+        "settings": {
+          "slidesToShow": 2
+        }
+      },
+      {
+        "breakpoint": 320,
+        "settings": {
+          "slidesToShow": 1
+        }
+      }
+
+    ]
+  };
 }

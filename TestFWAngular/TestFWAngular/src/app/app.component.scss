@@ -1,0 +1,22 @@
+p::after{
+    color: #000;
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+
+
+
+}
+.ngx-slider-model-value, .ngx-slider-model-high{
+  border-radius: 5px;
+  /* margin-left: -20px; */
+  border: 1px solid red;
+  margin-bottom: 10px;
+  background: rgb(144, 255, 224);
+}
+.ngx-slider-bubble{
+  display: none !important;
+}
+

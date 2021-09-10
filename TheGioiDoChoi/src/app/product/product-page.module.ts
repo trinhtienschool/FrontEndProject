@@ -14,6 +14,7 @@ import {ProductComponent} from "./product-list-page/product.component";
 import {ShareModule} from "../share/share.module";
 import {RelatedProductComponent} from "./product-detail/related-product/related-product.component";
 import {BreadcrumbModule} from "angular-crumbs";
+import {NgxSliderModule} from "@angular-slider/ngx-slider";
 
 
 
@@ -30,12 +31,14 @@ import {BreadcrumbModule} from "angular-crumbs";
     ProductRangeSlideComponent,
     ShopToolbarComponent,
     ProductComponent,
+
   ],
     imports: [
         CommonModule,
         ProductPageRoutingModule,
         ShareModule,
-        BreadcrumbModule
+        BreadcrumbModule,
+      NgxSliderModule
     ]
 })
 export class ProductPageModule { }

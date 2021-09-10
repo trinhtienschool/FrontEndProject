@@ -2,7 +2,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1; }
+  z-index: 1;
+  background-image: url("/assets/imgs/home/banner/banner-best-saller.png"); }
 
 #best-saller-product {
   padding-top: 50px;

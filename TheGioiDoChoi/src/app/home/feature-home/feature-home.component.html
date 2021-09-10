@@ -1,3 +1,93 @@
+<!--&lt;!&ndash;=================================-->
+<!--      Feature home-->
+<!--       ===================================== &ndash;&gt;-->
+<!--<section id="tab-feature" class="section-padding">-->
+
+<!--  <div class="container">-->
+<!--    <div class="sb-custom-tab">-->
+<!--      <ul class="nav nav-tabs" id="myTab" role="tablist">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" id="shop-tab" data-toggle="tab" href="#featureHighLight" role="tab"-->
+<!--             aria-controls="shop" aria-selected="true">-->
+<!--            Nổi bật-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" id="men-tab" data-toggle="tab" href="#featureLatest" role="tab"-->
+<!--             aria-controls="men" aria-selected="true">-->
+<!--            Mới nhất-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" id="woman-tab" data-toggle="tab" href="#featureBestSaller" role="tab"-->
+<!--             aria-controls="woman" aria-selected="false">-->
+<!--            Mua nhiều-->
+<!--          </a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <div class="tab-content" id="myTabContent">-->
+<!--        <div class="tab-pane active" id="featureHighLight" role="tabpanel" aria-labelledby="shop-tab">-->
+<!--          <div class="sb-slick-slider" data-slick-setting='{-->
+<!--                            "infinite": true,-->
+<!--                            "autoplay": true,-->
+<!--                            "autoplaySpeed": 3000,-->
+<!--                            "slidesToShow": 4,-->
+<!--                            "rows":2,-->
+<!--                            "dots":true-->
+<!--                        }' data-slick-responsive='[-->
+<!--                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },-->
+<!--                            {"breakpoint":768, "settings": {"slidesToShow": 2} },-->
+
+<!--                            {"breakpoint":320, "settings": {"slidesToShow": 1} }-->
+<!--                        ]'>-->
+<!--            <div *ngFor="let productCard of hightlight">-->
+<!--              <app-product-card-sale [product]="productCard"></app-product-card-sale>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="tab-pane" id="featureLatest" role="tabpanel" aria-labelledby="men-tab">-->
+<!--          <div class="sb-slick-slider" data-slick-setting='{-->
+<!--                            "infinite": true,-->
+<!--                            "autoplay": true,-->
+<!--                            "autoplaySpeed": 3000,-->
+<!--                            "slidesToShow": 4,-->
+<!--                            "rows":2,-->
+<!--                            "dots":true-->
+<!--                        }' data-slick-responsive='[-->
+<!--                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },-->
+<!--                            {"breakpoint":768, "settings": {"slidesToShow": 2} },-->
+
+<!--                            {"breakpoint":320, "settings": {"slidesToShow": 1} }-->
+<!--                        ]'>-->
+<!--            <div *ngFor="let productCard of latest">-->
+<!--              <app-product-card-sale [product]="productCard"></app-product-card-sale>-->
+
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="tab-pane" id="featureBestSaller" role="tabpanel" aria-labelledby="woman-tab">-->
+<!--          <div class="sb-slick-slider" data-slick-setting='{-->
+<!--                            "infinite": true,-->
+<!--                            "autoplay": true,-->
+<!--                            "autoplaySpeed": 3000,-->
+<!--                            "slidesToShow": 4,-->
+<!--                            "rows":2,-->
+<!--                            "dots":true-->
+<!--                        }' data-slick-responsive='[-->
+<!--                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },-->
+<!--                            {"breakpoint":768, "settings": {"slidesToShow": 2} },-->
+
+<!--                            {"breakpoint":320, "settings": {"slidesToShow": 1} }-->
+<!--                        ]'>-->
+<!--            <div *ngFor="let productCard of bestsaller">-->
+<!--              <app-product-card-sale [product]="productCard"></app-product-card-sale>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 <!--=================================
       Feature home
        ===================================== -->
@@ -27,62 +117,83 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane active" id="featureHighLight" role="tabpanel" aria-labelledby="shop-tab">
-          <div class="sb-slick-slider" data-slick-setting='{
-                            "infinite": true,
-                            "autoplay": true,
-                            "autoplaySpeed": 3000,
-                            "slidesToShow": 4,
-                            "rows":2,
-                            "dots":true
-                        }' data-slick-responsive='[
-                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },
-                            {"breakpoint":768, "settings": {"slidesToShow": 2} },
+          <!--          <div class="sb-slick-slider" data-slick-setting='{-->
+          <!--                            "infinite": true,-->
+          <!--                            "autoplay": true,-->
+          <!--                            "autoplaySpeed": 3000,-->
+          <!--                            "slidesToShow": 4,-->
+          <!--                            "rows":2,-->
+          <!--                            "dots":true-->
+          <!--                        }' data-slick-responsive='[-->
+          <!--                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },-->
+          <!--                            {"breakpoint":768, "settings": {"slidesToShow": 2} },-->
+          <!--                            {"breakpoint":320, "settings": {"slidesToShow": 1} }-->
+          <!--                        ]'>-->
+          <!--            <div *ngFor="let productCard of hightlight">-->
+          <!--              <app-product-card-sale [product]="productCard"></app-product-card-sale>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <ngx-slick-carousel class="carousel sb-slick-slider"
+                              #slickModal="slick-carousel"
+                              [config]="slideConfig">
 
-                            {"breakpoint":320, "settings": {"slidesToShow": 1} }
-                        ]'>
-            <div *ngFor="let productCard of hightlight">
+            <div *ngFor="let productCard of hightlight" ngxSlickItem class="slide">
               <app-product-card-sale [product]="productCard"></app-product-card-sale>
             </div>
-          </div>
+          </ngx-slick-carousel>
         </div>
         <div class="tab-pane" id="featureLatest" role="tabpanel" aria-labelledby="men-tab">
-          <div class="sb-slick-slider" data-slick-setting='{
-                            "infinite": true,
-                            "autoplay": true,
-                            "autoplaySpeed": 3000,
-                            "slidesToShow": 4,
-                            "rows":2,
-                            "dots":true
-                        }' data-slick-responsive='[
-                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },
-                            {"breakpoint":768, "settings": {"slidesToShow": 2} },
+          <!--          <div class="sb-slick-slider" data-slick-setting='{-->
+          <!--                            "infinite": true,-->
+          <!--                            "autoplay": true,-->
+          <!--                            "autoplaySpeed": 3000,-->
+          <!--                            "slidesToShow": 4,-->
+          <!--                            "rows":2,-->
+          <!--                            "dots":true-->
+          <!--                        }' data-slick-responsive='[-->
+          <!--                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },-->
+          <!--                            {"breakpoint":768, "settings": {"slidesToShow": 2} },-->
+          <!--                            {"breakpoint":320, "settings": {"slidesToShow": 1} }-->
+          <!--                        ]'>-->
+          <!--            <div *ngFor="let productCard of latest">-->
+          <!--              <app-product-card-sale [product]="productCard"></app-product-card-sale>-->
 
-                            {"breakpoint":320, "settings": {"slidesToShow": 1} }
-                        ]'>
-            <div *ngFor="let productCard of latest">
+          <!--            </div>-->
+          <!--          </div>-->
+          <ngx-slick-carousel class="carousel sb-slick-slider"
+                              #slickModal="slick-carousel"
+                              [config]="slideConfig">
+
+            <div *ngFor="let productCard of latest" ngxSlickItem class="slide">
               <app-product-card-sale [product]="productCard"></app-product-card-sale>
-
             </div>
-          </div>
+          </ngx-slick-carousel>
         </div>
         <div class="tab-pane" id="featureBestSaller" role="tabpanel" aria-labelledby="woman-tab">
-          <div class="sb-slick-slider" data-slick-setting='{
-                            "infinite": true,
-                            "autoplay": true,
-                            "autoplaySpeed": 3000,
-                            "slidesToShow": 4,
-                            "rows":2,
-                            "dots":true
-                        }' data-slick-responsive='[
-                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },
-                            {"breakpoint":768, "settings": {"slidesToShow": 2} },
+          <!--          <div class="sb-slick-slider" data-slick-setting='{-->
+          <!--                            "infinite": true,-->
+          <!--                            "autoplay": true,-->
+          <!--                            "autoplaySpeed": 3000,-->
+          <!--                            "slidesToShow": 4,-->
+          <!--                            "rows":2,-->
+          <!--                            "dots":true-->
+          <!--                        }' data-slick-responsive='[-->
+          <!--                            {"breakpoint":1200, "settings": {"slidesToShow": 3} },-->
+          <!--                            {"breakpoint":768, "settings": {"slidesToShow": 2} },-->
+          <!--                            {"breakpoint":320, "settings": {"slidesToShow": 1} }-->
+          <!--                        ]'>-->
+          <!--            <div *ngFor="let productCard of bestsaller">-->
+          <!--              <app-product-card-sale [product]="productCard"></app-product-card-sale>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <ngx-slick-carousel class="carousel sb-slick-slider"
+                              #slickModal="slick-carousel"
+                              [config]="slideConfig">
 
-                            {"breakpoint":320, "settings": {"slidesToShow": 1} }
-                        ]'>
-            <div *ngFor="let productCard of bestsaller">
+            <div *ngFor="let productCard of bestsaller" ngxSlickItem class="slide">
               <app-product-card-sale [product]="productCard"></app-product-card-sale>
             </div>
-          </div>
+          </ngx-slick-carousel>
         </div>
       </div>
     </div>

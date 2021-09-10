@@ -6,11 +6,11 @@
 <!--    <input type="text" id="amount" readonly style="border:0; font-weight:bold;">-->
 <!--  </p>-->
 
-  <div id="slider-range" (click)="click(from_html.innerText,to_html.innerText)" class="range-slider-widget cursor-pointer"></div>
-
+<!--  <div id="slider-range" (click)="click(from_html.innerText,to_html.innerText)" class="range-slider-widget cursor-pointer"></div>-->
+  <ngx-slider class="cursor-pointer" #slider [(value)]="value" [(highValue)]="highValue" [options]="options" (click)="getValue(slider.value,slider.highValue)"></ngx-slider>
   <div class="range-slider-value">
-    <div id="cost-from" #from_html>10000</div>
+    <div id="cost-from">{{value | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</div>
     <div class="hyphen">-</div>
-    <div id="cost-to" #to_html>4000000</div>
+    <div id="cost-to" >{{highValue | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</div>
   </div>
 </div>

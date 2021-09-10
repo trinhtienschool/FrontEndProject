@@ -63,6 +63,51 @@ export class BestSallerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
+  slideConfig = {
+    "infinite": true,
+    "slidesToShow": 2,
+    "slidesToScroll": 1,
+    "dots": true,
+    "autoplay": true,
+    "useCSS": true,
+    "autoplaySpeed": 3000,
+
+    "swipeToSlide":true,
+    "responsive": [
+      {
+        "breakpoint": 1200,
+        "settings": {
+          "slidesToShow": 2
+        }
+      },
+      {
+        "breakpoint": 992,
+        "settings": {
+          "slidesToShow": 1
+        }
+      },
+      {
+        "breakpoint": 768,
+        "settings": {
+          "slidesToShow": 2
+        }
+      },
+      {
+        "breakpoint": 575,
+        "settings": {
+          "slidesToShow": 2
+        }
+      },
+      {
+        "breakpoint": 350,
+        "settings": {
+          "slidesToShow": 1
+        }
+      }
+    ]
+  };
 
 }

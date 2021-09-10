@@ -2,7 +2,8 @@ import {AfterContentInit, Component, Input, OnChanges, OnInit, SimpleChanges} fr
 import {Util} from "../../../model/util";
 import {ProductService} from "../../../service/product/product.service";
 import {Router} from "@angular/router";
-declare const slider: any;
+import {Options} from "@angular-slider/ngx-slider";
+// declare const slider: any;
 
 @Component({
   selector: 'app-product-range-slide',
@@ -19,7 +20,12 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
   @Input() page: string|undefined;
-
+  value: number = 10000;
+  highValue: number = 4000000;
+  options: Options = {
+    floor: 10000,
+    ceil: 4000000
+  };
   constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
@@ -39,16 +45,23 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    setTimeout(()=>{
-    if(this.startPrice !=undefined && this.endPrice !=undefined) slider(10000,4000000,[this.startPrice,this.endPrice]);
-    else slider(10000,4000000,[10000,4000000]);
-    },1000);
+    if(this.startPrice != undefined && this.endPrice != undefined){
+      this.value = parseInt(this.startPrice);
+      this.highValue = parseInt(this.endPrice);
+    }
+
   }
 
   ngAfterContentInit(): void {
-    setTimeout(()=>{
-      if(this.startPrice !=undefined && this.endPrice !=undefined) slider(10000,4000000,[this.startPrice,this.endPrice]);
-      else slider(10000,4000000,[10000,4000000]);
-    },1000);
+    if(this.startPrice !=undefined && this.endPrice !=undefined){
+     this.value = parseInt(this.startPrice);
+     this.highValue = parseInt(this.endPrice);
+    }
+
+  }
+  getValue(value: number, highValue: number) {
+    // console.log("Value: "+value+" , highValue: "+highValue);
+    let link = Util.makeLinkProduc(this.category, this.value+"", this.highValue+"", this.age, this.gender, this.search, this.sort,this.page);
+    this.router.navigateByUrl(link);
   }
 }

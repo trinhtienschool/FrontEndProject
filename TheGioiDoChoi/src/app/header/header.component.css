@@ -89,7 +89,7 @@
     align-items: center;
     height: 100%;
     font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+    font-weight: 900;
     top: 0;
     margin-right: 25px; }
   .site-wrapper .category-nav .category-menu {
@@ -359,7 +359,7 @@
     font-family: "Font Awesome 5 Brands";
     font-size: 34px;
     color: #00afef;
-    display: none;
+    display: inline-block;
     vertical-align: top;
     line-height: 1;
     margin-right: 11px; }

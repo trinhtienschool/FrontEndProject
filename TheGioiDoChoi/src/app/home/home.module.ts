@@ -11,6 +11,7 @@ import { PersonTrafficComponent } from './person-traffic/person-traffic.componen
 import { BlogAreaComponent } from './blog-area/blog-area.component';
 import {ShareModule} from "../share/share.module";
 import {RouterModule} from "@angular/router";
+import {SlickCarouselModule} from "ngx-slick-carousel";
 
 
 
@@ -33,7 +34,9 @@ import {RouterModule} from "@angular/router";
     imports: [
         CommonModule,
         ShareModule,
-        RouterModule
+        RouterModule,
+      // Specify your library as an import
+      SlickCarouselModule
     ]
 })
 export class HomeModule { }

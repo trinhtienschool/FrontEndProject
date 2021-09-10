@@ -17,5 +17,14 @@ export class HeroAreaComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
 
   }
+  slideConfig = { "infinite": true,
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "dots": true,
+    "autoplay": true,
+    "useCSS": true,
+    "autoplaySpeed": 3000
+  };
+
 
 }

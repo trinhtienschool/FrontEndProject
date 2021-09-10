@@ -125,7 +125,14 @@ h6 {
     border-radius: 60px;
   }
 }
-
+//range slider
+.ngx-slider-bubble{
+  display: none !important;
+}
+//slick-arrow
+.slick-arrow{
+  display: none !important;
+}
 //////Hero-area//////
 .hero-area{
   .slick-dots {

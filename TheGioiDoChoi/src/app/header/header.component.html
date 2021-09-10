@@ -48,7 +48,7 @@
           <div class="col-lg-3">
             <nav class="category-nav">
               <div>
-                <a href="javascript:void(0)" class="category-trigger"><i
+                <a href="javascript:void(0)" (click)="show()" [class.show]="showToggle" class="category-trigger"><i
                   class="fas fa-bars"></i>Danh mục đồ chơi</a>
                 <ul class="category-menu">
                   <li class="cat-item has-children"><a href="javascript:void(0)">Đồ chơi vận động</a>
@@ -197,7 +197,7 @@
                   <a [routerLink]="['/cart']" class="cart-link link-icon"><i class="fa fa-shopping-bag"></i></a>
                 </li>
                 <li class="sin-link">
-                  <a href="javascript:" class="link-icon hamburgur-icon off-canvas-btn"><i class="fa fa-compass"></i></a>
+                  <a href="javascript:" class="link-icon hamburgur-icon off-canvas-btn" (click)="addOpen()"><i class="fa fa-compass"></i></a>
                 </li>
               </ul>
             </div>
@@ -206,8 +206,8 @@
       </div>
     </header>
     <!--Off Canvas Navigation Start-->
-    <aside class="off-canvas-wrapper">
-      <div class="btn-close-off-canvas">
+    <aside class="off-canvas-wrapper" [class.open]="this.open">
+      <div class="btn-close-off-canvas" (click)="closeOpen()">
         <i class="fa fa-chevron-right"></i>
       </div>
       <div class="off-canvas-inner">

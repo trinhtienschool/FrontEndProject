@@ -24,6 +24,8 @@ export class HeaderComponent implements OnInit {
   public sort: string | undefined;
   public page: string|undefined;
 
+  public showToggle = false;
+  public open = false;
   constructor(private service:CartService, private router: Router,private productService: ProductService,
               private activateRoute: ActivatedRoute) {
     this.service.cart$.subscribe(cart=>{this.cartItemHeader=cart})
@@ -68,5 +70,17 @@ export class HeaderComponent implements OnInit {
   }
   category_click(text: string){
     this.router.navigateByUrl("/product?category="+text);
+  }
+
+  show() {
+    this.showToggle = !this.showToggle;
+  }
+
+  addOpen() {
+    this.open = true;
+  }
+
+  closeOpen() {
+    this.open = false;
   }
 }

@@ -159,29 +159,29 @@ run = function(){
   -------------------------*/
 
   // Off Canvas Open close
-  $(".off-canvas-btn").on('click', function() {
-    $(".off-canvas-wrapper").addClass('open');
-  });
-
-  $(".btn-close-off-canvas").on('click', function() {
-    $(".off-canvas-wrapper").removeClass('open');
-  });
-
-  //category tricger click
-  $('.category-trigger').on('click', function(e) {
-    $('.category-nav').toggleClass('show');
-    e.stopPropagation();
-  });
-  //mobile
-  $('.category-menu .has-children > a').on('click', function(e) {
-    e.preventDefault();
-    $(this).siblings('.sub-menu').slideToggle('1');
-  });
-  //hightlight
-  $('.menu-item').on('click','a',function (){
-    $('.menu-item a.active').removeClass('active');
-    $(this).addClass('active');
-  });
+  // $(".off-canvas-btn").on('click', function() {
+  //   $(".off-canvas-wrapper").addClass('open');
+  // });
+  //
+  // $(".btn-close-off-canvas").on('click', function() {
+  //   $(".off-canvas-wrapper").removeClass('open');
+  // });
+  //
+  // //category tricger click
+  // $('.category-trigger').on('click', function(e) {
+  //   $('.category-nav').toggleClass('show');
+  //   e.stopPropagation();
+  // });
+  // //mobile
+  // $('.category-menu .has-children > a').on('click', function(e) {
+  //   e.preventDefault();
+  //   $(this).siblings('.sub-menu').slideToggle('1');
+  // });
+  // //hightlight
+  // $('.menu-item').on('click','a',function (){
+  //   $('.menu-item a.active').removeClass('active');
+  //   $(this).addClass('active');
+  // });
 
 // }
 //Nhuan

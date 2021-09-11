@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Product} from "../../model/product";
 
 
 @Component({
@@ -7,6 +8,7 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
   styleUrls: ['./hero-area.component.scss']
 })
 export class HeroAreaComponent implements OnInit, AfterViewInit {
+
 
   constructor() { }
 

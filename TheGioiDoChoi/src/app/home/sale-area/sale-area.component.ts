@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from "../../model/product";
 
 @Component({
@@ -8,6 +8,7 @@ import {Product} from "../../model/product";
 })
 export class SaleAreaComponent implements OnInit {
   @Input() saleProducts: Product[]|undefined;
+  @Output() getProductQuickViewOutput: EventEmitter<Product> = new EventEmitter<Product>();
   public product_sales: Product[]|undefined
     // =   [
   //   new Product("SP1",3000,2000,"brand","pId","description",[
@@ -90,21 +91,19 @@ export class SaleAreaComponent implements OnInit {
       {
         "breakpoint": 768,
         "settings": {
-          "slidesToShow": 3
-        }
-      },
-      {
-        "breakpoint": 575,
-        "settings": {
           "slidesToShow": 2
         }
       },
       {
-        "breakpoint": 320,
+        "breakpoint": 576,
         "settings": {
           "slidesToShow": 1
         }
       }
     ]
   };
+
+  getProductQuickView($event: Product) {
+    this.getProductQuickViewOutput.emit($event);
+  }
 }

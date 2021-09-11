@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from "../../model/product";
 
 @Component({
@@ -9,6 +9,7 @@ import {Product} from "../../model/product";
 export class PersonTrafficComponent implements OnInit {
   @Input() sectionTitle: string|undefined;
   @Input() products : Product[] | undefined;
+  @Output() getProductQuickViewOutput: EventEmitter<Product> = new EventEmitter<Product>();
   // public products: Product[]|undefined
   //   = [
   //   new Product("SP1",3000,2000,"brand","pId","description",[
@@ -61,6 +62,7 @@ export class PersonTrafficComponent implements OnInit {
   //   ]),
   //
   // ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -84,13 +86,7 @@ export class PersonTrafficComponent implements OnInit {
         }
       },
       {
-        "breakpoint": 768,
-        "settings": {
-          "slidesToShow": 2
-        }
-      },
-      {
-        "breakpoint": 320,
+        "breakpoint": 576,
         "settings": {
           "slidesToShow": 1
         }
@@ -98,4 +94,7 @@ export class PersonTrafficComponent implements OnInit {
 
     ]
   };
+  getProductQuickView($event: Product) {
+    this.getProductQuickViewOutput.emit($event)
+  }
 }

@@ -15,12 +15,12 @@ const routes: Routes = [
       {
         path: '',
         component: ProductComponent,
-        data: { breadcrumb: "Danh sách sản phẩm"}
+        data: { breadcrumb: "Danh sách sản phẩm", animation:'productList'}
       },
       {
         path: ':id',
         component: ProductDetailComponent,
-        data: { breadcrumb: "Chi tiết sản phẩm"}
+        data: { breadcrumb: "Chi tiết sản phẩm", animation: 'productDetail'}
       }
     ]
   }

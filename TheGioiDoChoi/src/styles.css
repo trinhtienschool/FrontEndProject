@@ -113,8 +113,11 @@ h6 {
 .slick-arrow {
   display: none !important; }
 
+.slick-dots li button:before {
+  display: none; }
+
 .hero-area .slick-dots {
-  margin-top: -50px !important; }
+  transform: translateY(-50px); }
 
 .sb-slick-slider .slick-dots {
   display: flex;

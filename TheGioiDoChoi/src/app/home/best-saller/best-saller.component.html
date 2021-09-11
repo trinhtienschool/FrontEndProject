@@ -81,7 +81,7 @@
                               [config]="slideConfig">
 
             <div *ngFor="let productCard of bestSaller" ngxSlickItem class="slide">
-              <app-product-card-sale [product]="productCard"></app-product-card-sale>
+              <app-product-card-sale (getProductQuickView)="getProductQuickView($event)" [product]="productCard"></app-product-card-sale>
             </div>
           </ngx-slick-carousel>
         </div>
@@ -89,3 +89,4 @@
     </div>
   </div>
 </section>
+

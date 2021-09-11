@@ -13,12 +13,12 @@ const routes: Routes = [
       {
         path:'',
         component: BlogComponent,
-        data: {breadcrumb: "Bài viết"}
+        data: {breadcrumb: "Bài viết",animation:'blogList'}
       },
       {
         path:':id',
         component: BlogDetailComponent,
-        data: {breadcrumb: "Chi tiết bài viết"}
+        data: {breadcrumb: "Chi tiết bài viết",animation: "blogDetail"}
       }
     ]
   }

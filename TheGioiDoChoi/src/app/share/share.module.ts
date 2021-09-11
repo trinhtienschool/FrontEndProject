@@ -6,6 +6,9 @@ import {BlogCardComponent} from "./blog-card/blog-card.component";
 import {ProductCardSaleComponent} from "./product-card-sale/product-card-sale.component";
 import {RouterModule} from "@angular/router";
 import {BreadcrumbModule} from "angular-crumbs";
+import {ProductCardDetailComponent} from "./product-card-detail/product-card-detail.component";
+import { ProductCardQuickviewComponent } from './product-card-quickview/product-card-quickview.component';
+
 
 
 
@@ -14,18 +17,23 @@ import {BreadcrumbModule} from "angular-crumbs";
     BreadcrumbComponent,
     PaginationComponent,
     BlogCardComponent,
-    ProductCardSaleComponent
+    ProductCardSaleComponent,
+    ProductCardDetailComponent,
+    ProductCardQuickviewComponent
   ],
     imports: [
         CommonModule,
         RouterModule,
-        BreadcrumbModule
+        BreadcrumbModule,
+
     ],
   exports: [
     BreadcrumbComponent,
     PaginationComponent,
     BlogCardComponent,
-    ProductCardSaleComponent
+    ProductCardSaleComponent,
+    ProductCardDetailComponent,
+    ProductCardQuickviewComponent
   ]
 })
 export class ShareModule { }

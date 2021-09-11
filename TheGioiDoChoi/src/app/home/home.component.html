@@ -1,11 +1,12 @@
 
 <app-hero-area></app-hero-area>
 <app-age-area></app-age-area>
-<app-feature-home [bestsaller]="bestsaller" [latest]="latest" [hightlight]="hightlight"></app-feature-home>
-<app-fuild-banner [img_src]="'assets/imgs/home/banner/banner-full.png'"></app-fuild-banner>
-<app-sale-area [saleProducts]="sale"></app-sale-area>
-<app-best-saller [bestSaller]="bestsaller_area"></app-best-saller>
-<app-person-traffic [products]="bupbe_robot" [sectionTitle]="'Búp bê - Robot'"></app-person-traffic>
-<app-person-traffic [products]="ptgt" [sectionTitle]="'Phương tiện giao thông'"></app-person-traffic>
-<app-fuild-banner [img_src]="'assets/imgs/home/banner/readbookbanner.jpg'"></app-fuild-banner>
+<app-feature-home [bestsaller]="bestsaller" [latest]="latest" [hightlight]="hightlight" (getProductQuickViewOutput)="getProductQuickView($event)"></app-feature-home>
+<app-fuild-banner [img_src]="'assets/imgs/home/banner/banner22.jpg'"></app-fuild-banner>
+<app-sale-area [saleProducts]="sale" (getProductQuickViewOutput)="getProductQuickView($event)"></app-sale-area>
+<app-best-saller [bestSaller]="bestsaller_area" (getProductQuickViewOutput)="getProductQuickView($event)"></app-best-saller>
+<app-person-traffic [products]="bupbe_robot" [sectionTitle]="'Búp bê - Robot'" (getProductQuickViewOutput)="getProductQuickView($event)"></app-person-traffic>
+<app-person-traffic [products]="ptgt" [sectionTitle]="'Phương tiện giao thông'" (getProductQuickViewOutput)="getProductQuickView($event)"></app-person-traffic>
+<app-fuild-banner [img_src]="'assets/imgs/home/banner/bannerRead.jpg'"></app-fuild-banner>
 <app-blog-area [blogs]="blog"></app-blog-area>
+<app-product-card-quickview [product]="productQuickView"></app-product-card-quickview>

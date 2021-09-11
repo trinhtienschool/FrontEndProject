@@ -28,9 +28,11 @@ export class Util {
         if (p_item.img2 != undefined) product.images.push(p_item.img2);
         if (p_item.img3 != undefined) product.images.push(p_item.img3);
         if (p_item.img4 != undefined) product.images.push(p_item.img4);
-
+        for(let i=0;i<4;i++){
+          if(product.images[i] ==undefined || product.images[i].length==0)
+            product.images.push(product.images[0]);
+        }
         if (arr != undefined) arr.push(product);
-        ;
       }
 
     }

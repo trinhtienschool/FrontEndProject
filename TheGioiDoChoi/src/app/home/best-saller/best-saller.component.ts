@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from "../../model/product";
 
 @Component({
@@ -8,6 +8,7 @@ import {Product} from "../../model/product";
 })
 export class BestSallerComponent implements OnInit {
   @Input() bestSaller: Product[]| undefined;
+  @Output() getProductQuickViewOutput: EventEmitter<Product>=new EventEmitter<Product>();
   public product_best_sallers: Product[] |undefined
   // =   [
   //   new Product("SP1",3000,2000,"brand","pId","description",[
@@ -95,14 +96,9 @@ export class BestSallerComponent implements OnInit {
           "slidesToShow": 2
         }
       },
+
       {
-        "breakpoint": 575,
-        "settings": {
-          "slidesToShow": 2
-        }
-      },
-      {
-        "breakpoint": 350,
+        "breakpoint": 576,
         "settings": {
           "slidesToShow": 1
         }
@@ -110,4 +106,7 @@ export class BestSallerComponent implements OnInit {
     ]
   };
 
+  getProductQuickView($event: Product) {
+    this.getProductQuickViewOutput.emit($event);
+  }
 }

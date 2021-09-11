@@ -1,0 +1,15 @@
+<div *ngIf="product">
+<div class="modal fade modal-quick-view" id="product-card-detail" tabindex="-1" role="dialog"
+     aria-labelledby="quickModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close-btn ml-auto" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="product-details-modal">
+        <app-product-card-detail [product]="product"></app-product-card-detail>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

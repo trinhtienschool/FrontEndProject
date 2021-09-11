@@ -1,4 +1,7 @@
 <app-breadcrumb></app-breadcrumb>
-<app-detail></app-detail>
+<div *ngIf="product">
+<!--<app-detail></app-detail>-->
+<app-product-card-detail [product]="product"></app-product-card-detail>
 <app-description></app-description>
 <app-related-product></app-related-product>
+</div>

@@ -4,6 +4,20 @@
   padding: 0px !important;
 }
 .hero-area {
+  position: relative;
+  margin-top: 10px;
+  .starlight{
+    position: absolute;
+    z-index: 30;
+  }
+  .star-light-left{
+    left: 60%;
+    top: 0%;
+  }
+  .star-light-right{
+    left: 90%;
+    top: 30%;
+  }
   .bg-shade-whisper {
     background: #dafcfb;
     //background-image: url("src/assets");
@@ -12,7 +26,7 @@
   }
   .bg-pink-whisper {
     background: #ffe0f1;
-    background-image: url(/assets/imgs/home/banner/banner11.png) !important;
+    background-image: url(/assets/imgs/home/banner/banner11.jpg) !important;
     background-repeat: no-repeat, repeat;
   }
   .home-content {
@@ -22,20 +36,26 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
+    @media (min-width: 560px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      min-height: 500px;
+    }
     @media (min-width: 768px) {
       padding-top: 0px;
       padding-bottom: 0px;
-      min-height: 400px;
+      min-height: 600px;
     }
-    @media (min-width: 992px) {
-      min-height: 440px;
-    }
-    @media (min-width: 1200px) {
-      min-height: 410px;
-    }
-    @media (min-width: 1600px) {
-      min-height: 560px;
-    }
+    //@media (min-width: 992px) {
+    //  min-height: 660px;
+    //}
+    //@media (min-width: 1200px) {
+    //  min-height: 770px;
+    //}
+    //@media (min-width: 1600px) {
+    //  min-height: 860px;
+    //}
+
     h1 {
       color: #ff6046;
       text-transform: capitalize;
@@ -193,12 +213,14 @@
     .content-right-side {
       @media (min-width: 1600px) {
         padding-left: 85px;
+
       }
     }
     .content-left-side {
       margin-left: 100px;
       @media (max-width: 998px) {
         margin-left: 0;
+
       }
     }
     @media (min-width: 1200px) {
@@ -209,6 +231,22 @@
   }
 
 }
-.slick-dots {
-  margin-top: -50px !important;
+.hero-partial-image, .content-right-side, .content-left-side {
+
+
+  @media (min-width: 565px) {
+   margin-top: 100px !important;
+  }
+  @media (min-width: 768px) {
+    margin-top: 150px !important;
+  }
+  @media (min-width: 992px) {
+    margin-top: 100px !important;
+  }
+}
+.hero-partial-image{
+  @media (max-width: 565px) {
+    margin-top: 50px !important;
+  }
+
 }

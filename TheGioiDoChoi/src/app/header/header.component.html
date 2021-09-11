@@ -116,11 +116,11 @@
                   <div class="cart-dropdown-block">
                     <div  *ngFor="let ch of cartItemHeader"  class=" single-cart-block ">
                       <div class="cart-product">
-                        <a href="product-details.html" class="image">
-                          <img src="{{ch.image}}" alt="">
+                        <a class="image">
+                          <img  [routerLink]="['/product',ch.product_id]" src="{{ch.image}}" alt="">
                         </a>
                         <div class="content">
-                          <h3 class="title"><a href="product-details.html">{{ch.name}}</a></h3>
+                          <h3 class="title"><a [routerLink]="['/product',ch.product_id]">{{ch.name}}</a></h3>
                           <p class="price"><span class="qty">{{ch.quantity}} ×</span>{{ch.price| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
                           <button (click)="deleteCartItem(ch)" class="cross-btn"><i class="fa fa-times"></i></button>
                         </div>

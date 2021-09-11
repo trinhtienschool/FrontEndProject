@@ -50,7 +50,7 @@
               <div>
                 <a (click)="show()"  href="javascript:void(0)" class="category-trigger"><i
                   class="fas fa-bars"></i>Danh mục đồ chơi</a>
-                <ul *ngIf="showToggle" class="category-menu">
+                <ul *ngIf="showToggle" @fade class="category-menu">
                   <li class="cat-item has-children"><a href="javascript:void(0)">Đồ chơi vận động</a>
                     <ul class="sub-menu">
                       <li (click)="category_click('dochoidangoai')"><a href="javascript:void(0)">Đồ chơi dã ngoại</a></li>

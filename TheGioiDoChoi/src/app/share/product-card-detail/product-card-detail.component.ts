@@ -1,11 +1,15 @@
 import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
+import {fade} from "../animation";
 
 @Component({
   selector: 'app-product-card-detail',
   templateUrl: './product-card-detail.component.html',
-  styleUrls: ['./product-card-detail.component.scss']
+  styleUrls: ['./product-card-detail.component.scss'],
+  animations: [
+    fade
+  ]
 })
 export class ProductCardDetailComponent implements OnInit, OnChanges {
   @Input() product: Product|undefined;

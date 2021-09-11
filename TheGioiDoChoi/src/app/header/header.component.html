@@ -46,11 +46,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-3">
-            <nav class="category-nav">
+            <nav class="category-nav" [class.show]="showToggle">
               <div>
-                <a href="javascript:void(0)" (click)="show()" [class.show]="showToggle" class="category-trigger"><i
+                <a (click)="show()"  href="javascript:void(0)" class="category-trigger"><i
                   class="fas fa-bars"></i>Danh mục đồ chơi</a>
-                <ul class="category-menu">
+                <ul *ngIf="showToggle" class="category-menu">
                   <li class="cat-item has-children"><a href="javascript:void(0)">Đồ chơi vận động</a>
                     <ul class="sub-menu">
                       <li (click)="category_click('dochoidangoai')"><a href="javascript:void(0)">Đồ chơi dã ngoại</a></li>
@@ -116,11 +116,11 @@
                   <div class="cart-dropdown-block">
                     <div  *ngFor="let ch of cartItemHeader"  class=" single-cart-block ">
                       <div class="cart-product">
-                        <a href="product-details.html" class="image">
-                          <img src="{{ch.image}}" alt="">
+                        <a class="image">
+                          <img  [routerLink]="['/product',ch.product_id]" src="{{ch.image}}" alt="">
                         </a>
                         <div class="content">
-                          <h3 class="title"><a href="product-details.html">{{ch.name}}</a></h3>
+                          <h3 class="title"><a [routerLink]="['/product',ch.product_id]">{{ch.name}}</a></h3>
                           <p class="price"><span class="qty">{{ch.quantity}} ×</span>{{ch.price| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
                           <button (click)="deleteCartItem(ch)" class="cross-btn"><i class="fa fa-times"></i></button>
                         </div>
@@ -153,35 +153,35 @@
             </a>
           </div>
           <div class="col-md-5 order-3 order-md-2">
-            <nav class="category-nav">
+            <nav class="category-nav"  [class.show]="mobileToggle">
               <div>
-                <a href="javascript:void(0)" class="category-trigger"><i
+                <a (click)="showSlide()"  href="javascript:void(0)" class="category-trigger"><i
                   class="fa fa-bars"></i>Danh mục đồ chơi</a>
-                <ul class="category-menu">
-                  <li class="cat-item has-children"><a>Đồ chơi vận động</a>
-                    <ul class="sub-menu">
+                <ul *ngIf="mobileToggle" class="category-menu">
+                  <li class="cat-item has-children"><a (click)="showSlideToggle()">Đồ chơi vận động</a>
+                    <ul *ngIf="slideMobileToggle" class="sub-menu" style="display: block">
                       <li (click)="category_click('dochoidangoai')"><a href="javascript:void(0)">Đồ chơi dã ngoại</a></li>
                       <li (click)="category_click('dodungnhabep')"><a href="javascript:void(0)">Đồ dùng nhà bếp</a></li>
                       <li (click)="category_click('dochoiduoinuoc')"><a href="javascript:void(0)">Đồ chơi dưới nước</a></li>
                       <li (click)="category_click('xe')"><a href="javascript:void(0)">Xe</a></li>
                     </ul>
                   </li>
-                  <li class="cat-item has-children"><a>Đồ chơi trí tuệ</a>
-                    <ul class="sub-menu">
+                  <li class="cat-item has-children"><a (click)="showSlideToggle1()">Đồ chơi trí tuệ</a>
+                    <ul *ngIf="slideMobileToggle1" class="sub-menu" style="display: block">
                       <li (click)="category_click('lego')"><a href="javascript:void(0)">Lego</a></li>
                       <li (click)="category_click('smartgame')"><a href="javascript:void(0)">Smart game</a></li>
                       <li (click)="category_click('puzzle')"><a href="javascript:void(0)">Puzzle</a></li>
                     </ul>
                   </li>
-                  <li class="cat-item has-children"><a>Phương tiện giao thông</a>
-                    <ul class="sub-menu">
+                  <li class="cat-item has-children"><a (click)="showSlideToggle2()">Phương tiện giao thông</a>
+                    <ul *ngIf="slideMobileToggle2" class="sub-menu" style="display: block">
                       <li (click)="category_click('mohinhxe')"><a href="javascript:void(0)">Mô hình xe</a></li>
                       <li (click)="category_click('maybaytenlua')"><a href="javascript:void(0)">Máy bay, tên lửa</a></li>
                       <li (click)="category_click('xedieukhien')"><a href="javascript:void(0)">Xe điều khiển</a></li>
                     </ul>
                   </li>
-                  <li class="cat-item has-children"><a>Nhân vật</a>
-                    <ul class="sub-menu">
+                  <li class="cat-item has-children"><a (click)="showSlideToggle3()">Nhân vật</a>
+                    <ul *ngIf="slideMobileToggle3" class="sub-menu" style="display: block">
                       <li (click)="category_click('bupbe')"><a href="javascript:void(0)">Búp bê</a></li>
                       <li (click)="category_click('robot')"><a href="javascript:void(0)">Robot</a></li>
                     </ul>
@@ -206,13 +206,13 @@
       </div>
     </header>
     <!--Off Canvas Navigation Start-->
-    <aside class="off-canvas-wrapper" [class.open]="this.open">
+    <aside class="off-canvas-wrapper" [class.open]="open">
       <div class="btn-close-off-canvas" (click)="closeOpen()">
         <i class="fa fa-chevron-right"></i>
       </div>
       <div class="off-canvas-inner">
         <!-- search box start -->
-        <div *ngIf="this.search!=undefined"  class="search-box offcanvas">
+        <div *ngIf="this.search!=undefined" class="search-box offcanvas">
           <form>
             <input #text type="text" placeholder="Tên đồ chơi"  [value]="this.search">
             <button (click)="searchRoute(text.value)" class="search-btn"><i class="fa fa-search"></i></button>

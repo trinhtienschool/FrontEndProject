@@ -139,6 +139,7 @@
       opacity: 0;
       pointer-events: none;
       background: #fff;
+      z-index: 999;
       .cat-item{
         padding: 0 10px;
         position: relative;
@@ -164,6 +165,7 @@
           position: relative;
           display: none;
           border-bottom: 1px solid #eeeeee;
+          margin-left: -29px;
           li{
             padding: 5px 27px;
             font-weight: 600;

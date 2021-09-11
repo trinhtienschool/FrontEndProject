@@ -138,7 +138,7 @@
                               [config]="slideConfig">
 
             <div *ngFor="let productCard of hightlight" ngxSlickItem class="slide">
-              <app-product-card-sale [product]="productCard"></app-product-card-sale>
+              <app-product-card-sale (getProductQuickView)="getProductQuickView($event)" [product]="productCard"></app-product-card-sale>
             </div>
           </ngx-slick-carousel>
         </div>
@@ -165,7 +165,7 @@
                               [config]="slideConfig">
 
             <div *ngFor="let productCard of latest" ngxSlickItem class="slide">
-              <app-product-card-sale [product]="productCard"></app-product-card-sale>
+              <app-product-card-sale (getProductQuickView)="getProductQuickView($event)" [product]="productCard"></app-product-card-sale>
             </div>
           </ngx-slick-carousel>
         </div>
@@ -191,7 +191,7 @@
                               [config]="slideConfig">
 
             <div *ngFor="let productCard of bestsaller" ngxSlickItem class="slide">
-              <app-product-card-sale [product]="productCard"></app-product-card-sale>
+              <app-product-card-sale (getProductQuickView)="getProductQuickView($event)" [product]="productCard"></app-product-card-sale>
             </div>
           </ngx-slick-carousel>
         </div>
@@ -199,3 +199,4 @@
     </div>
   </div>
 </section>
+

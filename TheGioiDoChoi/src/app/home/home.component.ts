@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   bupbe_robot: Product[] = [];
   ptgt: Product[] = [];
   blog: Blog[] = [];
-
+  productQuickView: Product|undefined;
   constructor(private httpData: LoadJsonService) {}
 
   ngOnInit(): void {
@@ -42,5 +42,7 @@ export class HomeComponent implements OnInit {
   }
 
 
-
+  getProductQuickView($event: Product) {
+    this.productQuickView = $event;
+  }
 }

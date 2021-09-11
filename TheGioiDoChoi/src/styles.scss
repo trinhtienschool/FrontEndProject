@@ -133,10 +133,14 @@ h6 {
 .slick-arrow{
   display: none !important;
 }
+//slick dot
+.slick-dots li button:before {
+  display: none;
+}
 //////Hero-area//////
 .hero-area{
   .slick-dots {
-    margin-top: -50px !important;
+   transform: translateY(-50px);
   }
 }
 /////////////////Slider///////////////

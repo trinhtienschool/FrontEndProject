@@ -1,45 +1,73 @@
 <div *ngIf="product">
-<!--  <div id="add-cart-animate">-->
-<!--    <img src="/assets/imgs/product/add_cart_off.gif" alt="" class="add-cart-gif">-->
-<!--  </div>-->
-  <div class="card product-coupon">
+  <!--  <div id="add-cart-animate">-->
+  <!--    <img src="/assets/imgs/product/add_cart_off.gif" alt="" class="add-cart-gif">-->
+  <!--  </div>-->
+  <div class="card product-coupon" (mouseenter)="showQuickView=true" (mouseleave)="showQuickView=false">
+    <div class="img-wrap" (mouseenter)="this.changeImage = true" (mouseleave)="changeImage = false">
+      <div class="coupon margin-img-tab" *ngIf="product.percentSale !=0">
+        -{{product.percentSale}}%
+      </div>
+      <div @fade class="eye-view cursor-pointer" *ngIf="showQuickView" data-toggle="modal" data-target="#product-card-detail"
+           (click)="onClickProductQuickView()">
+                 <i class="fas fa-eye"></i>
+      </div>
+      <div id="add-cart-animate" *ngIf="!showCart" @fade>
+        <img
+          src="/assets/imgs/product/add_cart_off.gif" alt="" class="add-cart-gif">
+      </div>
+      <img @fade class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab cursor-pointer img-hover"
+           *ngIf="!changeImage"
+           routerLink="/product/{{product.product_id}}"
+           src="{{product.images[0]}}"
+           alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
+      <img @fade class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab cursor-pointer img-hover"
+           *ngIf="changeImage"
+           routerLink="/product/{{product.product_id}}"
+           src="{{product.images[1]}}"
+           alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
 
-    <div class="coupon margin-img-tab"  *ngIf="product.percentSale !=0">
-      -{{product.percentSale}}%
     </div>
-
-    <img class="card-img-top rounded mx-auto d-block img-thumbnail margin-img-tab cursor-pointer"
-         routerLink="/product/{{product.product_id}}"
-         src="{{product.images[0]}}"
-         alt="Card image cap" data-toggle="tooltip" data-placement="top" title="{{product.name}}">
     <div class="card-body">
-      <h5 routerLink="/product/{{product.product_id}}" class="card-title size-16 font-weight-bolder text-truncate cursor-pointer" data-toggle="tooltip" data-placement="top" title="{{product.name}}">{{product.name}}
+      <h5 routerLink="/product/{{product.product_id}}"
+          class="card-title size-16 font-weight-bolder text-truncate cursor-pointer" data-toggle="tooltip"
+          data-placement="top" title="{{product.name}}">{{product.name}}
       </h5>
       <div *ngIf="product.percentSale !=0; else elseBlock">
         <div class="row">
 
           <div class="product-price col-sm-9 col-12">
 
-            <p class="card-text font-weight-bold text-muted text-center product-discount currency" style="margin-top: -10px">
+            <p class="card-text font-weight-bold text-muted text-center product-discount currency"
+               style="margin-top: -10px">
               {{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
             <p class="card-text font-weight-bold text-primary size-16 text-center currency">
               {{product.price_sale | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
 
           </div>
-          <button class="btn col-sm-3 col-12 " (click)="handleAddToCart()">
-            <img src="/assets/imgs/product/cart.png" class="shopping-cart-center" alt="">
+          <button class="btn col-sm-3 col-12 p-relative" (click)="handleAddToCart()">
+            <img @fade src="/assets/imgs/product/cart.png" class="shopping-cart-center p-absolute img-card" alt=""
+                 *ngIf="showCart">
+            <img @fade src="/assets/imgs/product/resizeDulfinal.gif"
+                 class="shopping-cart-center p-absolute img-adding-card" alt="" *ngIf="!showCart">
           </button>
+
         </div>
       </div>
       <ng-template #elseBlock>
         <div class="row">
           <p
             class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center currency">{{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
-          <button class="btn col-sm-3 col-12 " (click)="handleAddToCart()">
-            <img src="/assets/imgs/product/cart.png" class="shopping-cart-center" alt="">
+
+          <button class="btn col-sm-3 col-12 p-relative" (click)="handleAddToCart()">
+            <img @fade src="/assets/imgs/product/cart.png" class="shopping-cart-center p-absolute img-card" alt=""
+                 *ngIf="showCart">
+            <img @fade src="/assets/imgs/product/resizeDulfinal.gif"
+                 class="shopping-cart-center p-absolute img-adding-card" alt="" *ngIf="!showCart">
           </button>
         </div>
       </ng-template>
     </div>
   </div>
 </div>
+<!-- Button trigger modal -->
+

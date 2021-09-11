@@ -6,7 +6,8 @@ import {ContactComponent} from "./contact.component";
 const routes: Routes=[
   {
     path:'',
-    component:ContactComponent
+    component:ContactComponent,
+    data:{breadcrumb:'Liên hệ',animation:'contactPage'}
   }
 ]
 

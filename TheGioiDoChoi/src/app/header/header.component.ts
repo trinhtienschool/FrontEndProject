@@ -1,35 +1,40 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
-import {ActivatedRoute, Route, Router} from "@angular/router";
+import {ActivatedRoute, NavigationEnd, Route, Router} from "@angular/router";
 import {Util} from "../model/util";
 import {ProductService} from "../service/product/product.service";
 import {timer} from "rxjs";
-import {switchMap} from "rxjs/operators";
+import {filter, map, switchMap} from "rxjs/operators";
+
 // declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  public cartItemHeader: CartItem[]=[]
+export class HeaderComponent implements OnInit, OnChanges {
+  public cartItemHeader: CartItem[] = []
 
-  public age: string[]|undefined;
-  public gender: string[]|undefined;
+  public age: string[] | undefined;
+  public gender: string[] | undefined;
   public category: string | undefined;
   public startPrice: string | undefined;
   public endPrice: string | undefined;
   public search: string | undefined;
   public sort: string | undefined;
-  public page: string|undefined;
+  public page: string | undefined;
 
   public showToggle = false;
   public open = false;
-  constructor(private service:CartService, private router: Router,private productService: ProductService,
+
+  constructor(private service: CartService, private router: Router, private productService: ProductService,
               private activateRoute: ActivatedRoute) {
-    this.service.cart$.subscribe(cart=>{this.cartItemHeader=cart})
-  this.activateRoute.queryParams.subscribe(params => {
+
+    this.service.cart$.subscribe(cart => {
+      this.cartItemHeader = cart
+    })
+    this.activateRoute.queryParams.subscribe(params => {
       this.category = params.category;
       this.startPrice = params.startPrice;
       this.endPrice = params.endPrice;
@@ -37,10 +42,22 @@ export class HeaderComponent implements OnInit {
       this.sort = params.sort;
       this.page = params.page;
 
-      if (params.age != undefined) this.age =[].concat(params.age); else this.age = undefined;
-      if (params.gender != undefined) this.gender =[].concat(params.gender); else this.gender = undefined;
+      if (params.age != undefined) this.age = [].concat(params.age); else this.age = undefined;
+      if (params.gender != undefined) this.gender = [].concat(params.gender); else this.gender = undefined;
+      console.log("category header:====",this.category);
     });
+
+    //Lay duong Link
+    this.router.events.subscribe(value => {
+      if(value instanceof NavigationEnd){
+        console.log('urlllllllllll: ',value.url);
+      }
+    })
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+
+    }
   public deleteCartItem(cartItem: CartItem){
     this.service.deleteItemProduct(cartItem)
   }
@@ -62,6 +79,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     // onloadFunction();
     // categoryExpandOnload()
+    console.log("routerrrrrrrrr: ",this.router.url)
   }
 
   searchRoute(text: string){

@@ -22,7 +22,13 @@ export class ProductDetailComponent implements OnInit {
     this.activateRoute.paramMap.pipe(
       map(param=> param.get('id')),
       switchMap(id =>this.productService.findProductById(id))
-    ).subscribe(product=>this.product = product);
+    ).subscribe(product=>{
+      this.product = product;
+
+
+      // console.log("Sizeeeee: ",size);
+      console.log("Product Imageeeee: ",product.images)
+    });
     setTimeout(()=>{
     console.log(this.product);
       if(this.product == undefined)

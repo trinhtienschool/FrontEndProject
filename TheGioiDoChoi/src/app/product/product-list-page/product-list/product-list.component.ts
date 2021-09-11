@@ -14,7 +14,7 @@ import {switchMap} from "rxjs/operators";
 export class ProductListComponent implements OnInit {
 
   public products: Product[]|undefined
-
+  public product: Product | undefined;
     public pagination: Pagination|undefined
   constructor(private productService: ProductService,private paginationService: PaginationService
               ) {
@@ -60,4 +60,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getProductQuickView($event: Product) {
+   this.product = $event;
+  }
 }

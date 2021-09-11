@@ -8,28 +8,29 @@ const  routes: Routes = [
   {
     path:'home',
     component:HomeComponent,
-    data: {breadcrumb: "Trang chủ"}
+    data: {breadcrumb: "Trang chủ",
+    animation:'home'}
   },
   {
     path:'product',
     loadChildren: ()=> import('./product/product-page.module').then(productModule =>productModule.ProductPageModule),
-    data: {breadcrumb: "Sản phẩm"}
+    data: {breadcrumb: "Sản phẩm", animation:'product'}
   },
 
   {
     path:'blog',
     loadChildren:() => import('./blog/blog-page.module').then(blogModule => blogModule.BlogPageModule),
-    data: {breadcrumb: "Bài viết"}
+    data: {breadcrumb: "Bài viết", animation: "blog"}
   },
   {
     path:'contact',
     loadChildren:() => import('./contact/contact.module').then(contactModule=>contactModule.ContactModule),
-    data: {breadcrumb: "Liên hệ"}
+    data: {breadcrumb: "Liên hệ", animation: 'contact'}
   },
   {
     path:'cart',
     loadChildren:() => import('./cart-checkout/cart-checkout.module').then(cartCheckout=>cartCheckout.CartCheckoutModule),
-    data: {breadcrumb: "Giỏ hàng"}
+    data: {breadcrumb: "Giỏ hàng",animation: 'cart'}
   },
   {
     path:'',

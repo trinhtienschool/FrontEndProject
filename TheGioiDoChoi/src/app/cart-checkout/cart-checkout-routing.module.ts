@@ -12,12 +12,13 @@ const routes : Routes = [
     children:[
       {
         path:'',
-        component:CartComponent
+        component:CartComponent,
+        data:{breadcrumb: 'Giỏ hàng',animation:'cart'}
       },
       {
         path:'checkout',
         component:CheckoutComponent,
-        data: {breadcrumb: "Thanh toán"}
+        data: {breadcrumb: "Thanh toán",animation: 'checkout'}
       }
     ]
   }

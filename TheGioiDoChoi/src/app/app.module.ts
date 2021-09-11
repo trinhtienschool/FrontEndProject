@@ -14,6 +14,7 @@ import { registerLocaleData} from "@angular/common";
 import localeVi from '@angular/common/locales/vi';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {BreadcrumbModule} from "angular-crumbs";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 registerLocaleData(localeVi,'vi-VN')
@@ -32,6 +33,7 @@ registerLocaleData(localeVi,'vi-VN')
     HttpClientModule,
     AppRoutingModule,
     BreadcrumbModule,
+    BrowserAnimationsModule
   ],
     exports: [
         HttpClientModule,

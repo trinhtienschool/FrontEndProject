@@ -6,12 +6,16 @@ import {Util} from "../model/util";
 import {ProductService} from "../service/product/product.service";
 import {timer} from "rxjs";
 import {filter, map, switchMap} from "rxjs/operators";
+import {fade} from "../share/animation";
 
 // declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    fade
+  ]
 })
 export class HeaderComponent implements OnInit, OnChanges {
   public cartItemHeader: CartItem[] = []
@@ -32,7 +36,7 @@ export class HeaderComponent implements OnInit, OnChanges {
   public slideMobileToggle2:boolean=false;
   public slideMobileToggle3:boolean=false;
   public open = false;
-
+  public selectedMenuItem: string='';
   constructor(private service: CartService, private router: Router, private productService: ProductService,
               private activateRoute: ActivatedRoute) {
 
@@ -56,6 +60,7 @@ export class HeaderComponent implements OnInit, OnChanges {
     this.router.events.subscribe(value => {
       if(value instanceof NavigationEnd){
         console.log('urlllllllllll: ',value.url);
+        this.selectedMenuItem = value.url
       }
     })
   }

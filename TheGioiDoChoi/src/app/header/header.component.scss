@@ -2,6 +2,8 @@
 
 .site-wrapper{
   .site-header{
+    .header-middle{
+    }
     .header-phone{
       display: -webkit-box;
       display: -ms-flexbox;
@@ -268,10 +270,26 @@
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+    .firstCart{
+      color: red;
+      font-size: 25px;
+      margin-right: 5px;
+    }
+    .secondCart{
+      color: #00afef;
+      font-size: 25px;
+      margin-right: 5px;
+      margin-left: 15px;
+    }
     .login-block{
       margin-right: 27px;
       padding: 6px 0;
       text-align: left;
+      i{
+        color: red;
+        font-size: 25px;
+        margin-right: 5px;
+      }
     }
     .cart-block {
       padding: 10px 0;
@@ -419,6 +437,9 @@
           right: 0px;
           top: -1px;
         }
+        .secondNumber{
+          background: #00afef;
+        }
         .text-item{
           display: block;
           margin-bottom: 2px;
@@ -458,7 +479,9 @@
       display: inline-block;
       vertical-align: top;
       line-height: 1;
-      margin-right: 11px; }
+      margin-right: 11px;
+      display: none;
+    }
     .cart-block:hover{
       .cart-dropdown-block{
         opacity: 1;

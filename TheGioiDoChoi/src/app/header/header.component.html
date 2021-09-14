@@ -96,13 +96,47 @@
           <div class="col-lg-4">
             <div class="main-navigation flex-lg-right">
               <div class="cart-widget">
-                <div class="login-block">
-                  <a href="login-register.html" class="font-weight-bold">Đăng nhập</a> <br>
-                  <span>hoặc</span><a href="login-register.html">Đăng ký</a>
-                </div>
+<!--                <div class="login-block">-->
+<!--                  <i class="fas fa-heart"></i><a href="login-register.html" class="font-weight-bold">Yêu thích</a>-->
+<!--                </div>-->
+                <i class="fas fa-heart firstCart"></i>
                 <div class="cart-block">
                   <div class="cart-total">
                                             <span class="text-number">
+                                                {{numberOfListLoveProduct()}}
+                                            </span>
+                    <span class="text-item">
+                                                Yêu thích
+                                            </span>
+                    <span class="price">
+                      <i class="fa fa-chevron-down chevrondownfirst"></i>
+                                            </span>
+                  </div>
+                  <div class="cart-dropdown-block">
+                    <div  *ngFor="let lh of loveItemHeader"  class=" single-cart-block ">
+                      <div class="cart-product">
+                        <a class="image">
+                          <img  [routerLink]="['/product',lh.product_id]" src="{{getFirstImage(lh)}}" alt="">
+                        </a>
+                        <div class="content">
+                          <h3 class="title"><a [routerLink]="['/product',lh.product_id]">{{lh.name}}</a></h3>
+<!--                          <p class="price"><span class="qty">{{ch.quantity}} ×</span>{{ch.price| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>-->
+                          <button (click)="deleteLoveItem(lh)" class="cross-btn"><i class="fa fa-times"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" single-cart-block ">
+                      <div class="btn-block">
+                        <a [routerLink]="['/love']"class="btn btn--primary">Yêu thích<i
+                          class="fa fa-chevron-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="fas fa-shopping-cart secondCart"></i>
+                <div class="cart-block">
+                  <div class="cart-total">
+                                            <span class="text-number secondNumber">
                                                 {{numberOfListProduct()}}
                                             </span>
                     <span class="text-item">

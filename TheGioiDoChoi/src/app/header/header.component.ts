@@ -7,6 +7,8 @@ import {ProductService} from "../service/product/product.service";
 import {timer} from "rxjs";
 import {filter, map, switchMap} from "rxjs/operators";
 import {fade} from "../share/animation";
+import {LoveService} from "../service/love/love.service";
+import {Product} from "../model/product";
 
 // declare const onloadFunction: any;
 @Component({
@@ -19,6 +21,7 @@ import {fade} from "../share/animation";
 })
 export class HeaderComponent implements OnInit, OnChanges {
   public cartItemHeader: CartItem[] = []
+  public loveItemHeader: Product[]=[]
 
   public age: string[] | undefined;
   public gender: string[] | undefined;
@@ -37,11 +40,14 @@ export class HeaderComponent implements OnInit, OnChanges {
   public slideMobileToggle3:boolean=false;
   public open = false;
   public selectedMenuItem: string='';
-  constructor(private service: CartService, private router: Router, private productService: ProductService,
+  constructor(private service: CartService, private router: Router, private productService: ProductService,private loveService: LoveService,
               private activateRoute: ActivatedRoute) {
 
     this.service.cart$.subscribe(cart => {
       this.cartItemHeader = cart
+    })
+    this.loveService.love$.subscribe(love => {
+      this.loveItemHeader = love
     })
     this.activateRoute.queryParams.subscribe(params => {
       this.category = params.category;
@@ -85,7 +91,21 @@ export class HeaderComponent implements OnInit, OnChanges {
     }
     return number;
   }
-
+  //love start
+  public deleteLoveItem(love: Product){
+    this.loveService.deleteItemLove(love)
+  }
+  public numberOfListLoveProduct(){
+    let number=0;
+    for(let c of this.loveItemHeader){
+      number+=1;
+    }
+    return number;
+  }
+  public getFirstImage(love: Product){
+    let listImage=love.images;
+    return listImage[0];
+  }
   ngOnInit(): void {
     // onloadFunction();
     // categoryExpandOnload()

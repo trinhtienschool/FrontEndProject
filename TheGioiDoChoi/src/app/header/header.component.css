@@ -204,10 +204,23 @@
   -ms-flex-align: center;
   align-items: center;
   position: relative; }
+  .site-wrapper .cart-widget .firstCart {
+    color: red;
+    font-size: 25px;
+    margin-right: 5px; }
+  .site-wrapper .cart-widget .secondCart {
+    color: #00afef;
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 15px; }
   .site-wrapper .cart-widget .login-block {
     margin-right: 27px;
     padding: 6px 0;
     text-align: left; }
+    .site-wrapper .cart-widget .login-block i {
+      color: red;
+      font-size: 25px;
+      margin-right: 5px; }
   .site-wrapper .cart-widget .cart-block {
     padding: 10px 0; }
     .site-wrapper .cart-widget .cart-block .cart-dropdown-block {
@@ -334,6 +347,8 @@
         position: absolute;
         right: 0px;
         top: -1px; }
+      .site-wrapper .cart-widget .cart-block .cart-total .secondNumber {
+        background: #00afef; }
       .site-wrapper .cart-widget .cart-block .cart-total .text-item {
         display: block;
         margin-bottom: 2px;
@@ -363,7 +378,8 @@
     display: inline-block;
     vertical-align: top;
     line-height: 1;
-    margin-right: 11px; }
+    margin-right: 11px;
+    display: none; }
   .site-wrapper .cart-widget .cart-block:hover .cart-dropdown-block {
     opacity: 1;
     pointer-events: visible; }

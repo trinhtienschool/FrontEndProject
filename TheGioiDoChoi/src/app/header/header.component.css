@@ -477,6 +477,12 @@
   transform: translateX(0);
   opacity: 1;
   visibility: visible; }
+.site-wrapper .site-mobile-menu .mobile-header .container img {
+  width: 94%;
+  height: 60%; }
+  @media (max-width: 228px) {
+    .site-wrapper .site-mobile-menu .mobile-header .container img {
+      display: none !important; } }
 .site-wrapper .site-mobile-menu .mobile-header .absolute-header {
   position: absolute;
   top: 0;

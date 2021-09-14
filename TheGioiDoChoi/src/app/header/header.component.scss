@@ -3,6 +3,8 @@
 .site-wrapper{
   .site-header{
     .header-middle{
+      .container{
+      }
     }
     .header-phone{
       display: -webkit-box;
@@ -608,6 +610,19 @@
   }
   .site-mobile-menu{
     .mobile-header{
+      .container{
+        img{
+          width:94%;
+          height: 60%;
+          @media (max-width: 228px) {
+            //margin-left: 20px!important;
+            //margin-right: 20px!important;
+            display: none!important;
+            //width:24%!important;
+            //height: 60%!important;
+          }
+        }
+      }
       .absolute-header{
         position: absolute;
         top: 0;

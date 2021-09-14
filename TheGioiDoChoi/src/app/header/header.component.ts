@@ -32,6 +32,10 @@ export class HeaderComponent implements OnInit, OnChanges {
   public sort: string | undefined;
   public page: string | undefined;
 
+  public homeActive:boolean=false;
+  public productActive:boolean=false;
+  public blogActive:boolean=false;
+  public contactActive:boolean=false;
   public showToggle:boolean = false;
   public mobileToggle:boolean=false;
   public slideMobileToggle:boolean=false;
@@ -65,12 +69,40 @@ export class HeaderComponent implements OnInit, OnChanges {
     //Lay duong Link
     this.router.events.subscribe(value => {
       if(value instanceof NavigationEnd){
-        console.log('urlllllllllll: ',value.url);
+        var myString=value.url;
+        var mySubString=myString.split("/")[1];
+        mySubString=mySubString.split("?")[0];
+        console.log('urlllllllllll is: ',mySubString);
+
         this.selectedMenuItem = value.url
+        if(mySubString=="home"){
+          this.homeActive=true;
+          this.productActive=false;
+          this.blogActive=false;
+          this.contactActive=false;
+        }else {
+          if(mySubString=="product"||mySubString=="cart"||mySubString=="love"){
+            this.homeActive=false;
+            this.productActive=true;
+            this.blogActive=false;
+            this.contactActive=false;
+          }else {
+            if(mySubString=="blog"){
+              this.homeActive=false;
+              this.productActive=false;
+              this.blogActive=true;
+              this.contactActive=false;
+            }else {
+              this.homeActive=false;
+              this.productActive=false;
+              this.blogActive=false;
+              this.contactActive=true;
+            }
+          }
+        }
       }
     })
   }
-
   ngOnChanges(changes: SimpleChanges): void {
 
     }

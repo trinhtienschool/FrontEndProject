@@ -23,18 +23,18 @@
             <div class="main-navigation flex-lg-right">
               <ul class="main-menu menu-right ">
                 <li class="menu-item has-children nav-item">
-                  <a class="nav-link active" [routerLink]="['/home']" >Trang chủ </a>
+                  <a class="nav-link"  [class.active]="homeActive"  [routerLink]="['/home']" >Trang chủ </a>
                 </li>
                 <!-- Shop -->
                 <li class="menu-item has-children mega-menu nav-item">
-                  <a class="nav-link"  [routerLink]="['/product']" >Mua sắm</a>
+                  <a class="nav-link" [class.active]="productActive" [routerLink]="['/product']" >Mua sắm</a>
                 </li>
                 <!-- Pages -->
                 <li class="menu-item has-children nav-item">
-                  <a class="nav-link"  [routerLink]="['/blog']" >Bài viết</a>
+                  <a class="nav-link" [class.active]="blogActive" [routerLink]="['/blog']" >Bài viết</a>
                 </li>
                 <li class="menu-item nav-item">
-                  <a class="nav-link" [routerLink]="['/contact']" >Liên hệ</a>
+                  <a class="nav-link" [class.active]="contactActive" [routerLink]="['/contact']" >Liên hệ</a>
                 </li>
               </ul>
             </div>
@@ -228,6 +228,9 @@
             <div class="mobile-header-btns header-top-widget">
               <ul class="header-links">
                 <li class="sin-link">
+                  <a [routerLink]="['/love']" class="cart-link link-icon"><i class="fas fa-heart firstCart"></i></a>
+                </li>
+                <li class="sin-link">
                   <a [routerLink]="['/cart']" class="cart-link link-icon"><i class="fa fa-shopping-bag"></i></a>
                 </li>
                 <li class="sin-link">
@@ -265,16 +268,16 @@
           <nav class="off-canvas-nav">
             <ul class="mobile-menu main-mobile-menu">
               <li class="menu-item-has-children nav-item menu-item">
-                <a class="nav-link active"  [routerLink]="['/home']" >Trang chủ</a>
+                <a class="nav-link" [class.active]="homeActive"  [routerLink]="['/home']" >Trang chủ</a>
               </li>
               <li class="menu-item-has-children nav-item menu-item">
-                <a class="nav-link"  [routerLink]="['/product']" >Mua sắm</a>
+                <a class="nav-link" [class.active]="productActive"  [routerLink]="['/product']" >Mua sắm</a>
               </li>
               <li class="menu-item-has-children nav-item menu-item">
-                <a class="nav-link" [routerLink]="['/blog']">Bài viết</a>
+                <a class="nav-link" [class.active]="blogActive"  [routerLink]="['/blog']">Bài viết</a>
               </li>
               <li class="menu-item-has-children nav-item menu-item">
-                <a class="nav-link" [routerLink]="['/contact']">Liên hệ</a>
+                <a class="nav-link" [class.active]="contactActive"  [routerLink]="['/contact']">Liên hệ</a>
               </li>
             </ul>
           </nav>

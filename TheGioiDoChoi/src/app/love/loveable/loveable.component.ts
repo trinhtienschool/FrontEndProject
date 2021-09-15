@@ -10,6 +10,7 @@ import {CartService} from "../../service/cart/cart.service";
 })
 export class LoveableComponent implements OnInit {
   public listProducts: Product[] =[];
+  productQuickView: Product | undefined
   constructor(private productService: ProductService,
               private cartService: CartService) {
     this.listProducts = productService.allProductsArr
@@ -22,4 +23,8 @@ export class LoveableComponent implements OnInit {
     this.cartService.addCart(product, 1)
   }
 
+  getQuickView($event: Product) {
+    this.productQuickView = $event
+  }
 }
+

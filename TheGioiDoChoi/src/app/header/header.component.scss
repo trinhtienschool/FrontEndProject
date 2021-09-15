@@ -286,7 +286,7 @@
     align-items: center;
     position: relative;
     .firstCart{
-      color: red;
+      color: #bd0018;
       font-size: 25px;
       margin-right: 5px;
     }
@@ -335,6 +335,10 @@
             .image{
               width: 120px;
               padding: 0 10px;
+              img{
+                width: 80px;
+                height: 80px;
+              }
             }
             .content{
               padding-left: 10px;

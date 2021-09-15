@@ -140,6 +140,8 @@ export class Product{
     return check;
   }
   searchName(search: string): boolean{
+    search = search.toLowerCase();
+    this.name.toLowerCase();
     if(this.name.includes(search)) return true;
     return false;
   }

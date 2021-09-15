@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
 import {fade} from "../animation";
+import {LoveService} from "../../service/love/love.service";
 // declare const clickAddCart: any;
 @Component({
   selector: 'app-product-card-sale',
@@ -13,12 +14,16 @@ import {fade} from "../animation";
 })
 export class ProductCardSaleComponent implements OnInit {
  @Input() product: Product|undefined;
+  @Input() productLove: Product|undefined;
  @Output() getProductQuickView: EventEmitter<Product> = new EventEmitter<Product>();
  showCart = true;
   showQuickView = false;
  changeImage = false;
 
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService,private loveService: LoveService) {
+    this.loveService.love$.subscribe(love => {
+      this.productLove = love
+    })
   }
 
   ngOnInit(): void {
@@ -38,7 +43,8 @@ export class ProductCardSaleComponent implements OnInit {
     this.getProductQuickView.emit(this.product);
   }
 
-  onClickLoveProduct() {
+  onClickLoveProduct(product: Product) {
     //Nhuan does here
+    this.loveService.addLove(product);
   }
 }

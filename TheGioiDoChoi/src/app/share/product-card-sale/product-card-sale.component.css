@@ -171,9 +171,9 @@
     margin-top: 2px;
     font-size: 20px; }
   .eye-view .fa-eye {
-    margin-left: 5px;
+    margin-left: 30px;
     color: #00afef; }
   .eye-view .fa-heart {
-    color: red; }
+    color: #bd0018; }
 
 /*# sourceMappingURL=product-card-sale.component.css.map */

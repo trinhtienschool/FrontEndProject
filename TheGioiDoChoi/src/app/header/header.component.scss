@@ -8,7 +8,7 @@
       transition: 0.2s linear;
       top: 0px;
       background: white;
-      z-index: 2;
+      z-index: 999;
       }
     .nofixed {
       position: static;
@@ -642,7 +642,7 @@
           width: 100%;
           transition: 0.2s linear;
           top: 0px;
-          z-index: 2;
+          z-index: 999;
           background: white;
         }
         .nofixed2 {

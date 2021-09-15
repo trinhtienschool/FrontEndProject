@@ -4,7 +4,7 @@
   transition: 0.2s linear;
   top: 0px;
   background: white;
-  z-index: 2; }
+  z-index: 999; }
 .site-wrapper .site-header .nofixed {
   position: static;
   transition: 0.2s linear;
@@ -500,7 +500,7 @@
   width: 100%;
   transition: 0.2s linear;
   top: 0px;
-  z-index: 2;
+  z-index: 999;
   background: white; }
 .site-wrapper .site-mobile-menu .mobile-header .container .nofixed2 {
   position: static;

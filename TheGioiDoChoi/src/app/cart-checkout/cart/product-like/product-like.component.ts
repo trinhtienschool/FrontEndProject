@@ -8,7 +8,7 @@ import {ProductService} from "src/app/service/product/product.service";
   styleUrls: ['./product-like.component.scss']
 })
 export class ProductLikeComponent implements OnInit {
-
+  productQuickView: Product|undefined;
   listProducts: Product[]=[]
   constructor(private productService: ProductService) { }
 
@@ -16,4 +16,7 @@ export class ProductLikeComponent implements OnInit {
     this.listProducts = this.productService.allProductsArr;
   }
 
+  getQuickView($event: Product) {
+    this.productQuickView = $event
+  }
 }

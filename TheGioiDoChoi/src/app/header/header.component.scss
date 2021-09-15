@@ -2,6 +2,23 @@
 
 .site-wrapper{
   .site-header{
+    .fixed {
+      position: fixed;
+      width: 100%;
+      transition: 0.2s linear;
+      top: 0px;
+      background: white;
+      z-index: 999;
+      }
+    .nofixed {
+      position: static;
+      transition: 0.2s linear;
+      top: -50px;
+    }
+    .header-middle{
+      .container{
+      }
+    }
     .header-phone{
       display: -webkit-box;
       display: -ms-flexbox;
@@ -165,7 +182,6 @@
           position: relative;
           display: none;
           border-bottom: 1px solid #eeeeee;
-          margin-left: -29px;
           li{
             padding: 5px 27px;
             font-weight: 600;
@@ -269,10 +285,26 @@
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+    .firstCart{
+      color: red;
+      font-size: 25px;
+      margin-right: 5px;
+    }
+    .secondCart{
+      color: #00afef;
+      font-size: 25px;
+      margin-right: 5px;
+      margin-left: 15px;
+    }
     .login-block{
       margin-right: 27px;
       padding: 6px 0;
       text-align: left;
+      i{
+        color: red;
+        font-size: 25px;
+        margin-right: 5px;
+      }
     }
     .cart-block {
       padding: 10px 0;
@@ -420,6 +452,9 @@
           right: 0px;
           top: -1px;
         }
+        .secondNumber{
+          background: #00afef;
+        }
         .text-item{
           display: block;
           margin-bottom: 2px;
@@ -459,11 +494,15 @@
       display: inline-block;
       vertical-align: top;
       line-height: 1;
-      margin-right: 11px; }
+      margin-right: 11px;
+      display: none;
+    }
     .cart-block:hover{
       .cart-dropdown-block{
         opacity: 1;
         pointer-events: visible;
+        transition: 0.5s;
+
       }
     }
   }
@@ -586,6 +625,32 @@
   }
   .site-mobile-menu{
     .mobile-header{
+      .container{
+        img{
+          width:94%;
+          height: 60%;
+          @media (max-width: 228px) {
+            //margin-left: 20px!important;
+            //margin-right: 20px!important;
+            display: none!important;
+            //width:24%!important;
+            //height: 60%!important;
+          }
+        }
+        .fixed2 {
+          position: fixed;
+          width: 100%;
+          transition: 0.2s linear;
+          top: 0px;
+          z-index: 999;
+          background: white;
+        }
+        .nofixed2 {
+          position: static;
+          transition: 0.2s linear;
+          top: -50px;
+        }
+      }
       .absolute-header{
         position: absolute;
         top: 0;

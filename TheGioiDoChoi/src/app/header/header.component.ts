@@ -1,4 +1,4 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, HostListener, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
 import {ActivatedRoute, NavigationEnd, Route, Router} from "@angular/router";
@@ -6,15 +6,22 @@ import {Util} from "../model/util";
 import {ProductService} from "../service/product/product.service";
 import {timer} from "rxjs";
 import {filter, map, switchMap} from "rxjs/operators";
+import {fade} from "../share/animation";
+import {LoveService} from "../service/love/love.service";
+import {Product} from "../model/product";
 
 // declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    fade
+  ]
 })
 export class HeaderComponent implements OnInit, OnChanges {
   public cartItemHeader: CartItem[] = []
+  public loveItemHeader: Product[]=[]
 
   public age: string[] | undefined;
   public gender: string[] | undefined;
@@ -25,6 +32,11 @@ export class HeaderComponent implements OnInit, OnChanges {
   public sort: string | undefined;
   public page: string | undefined;
 
+  public navbarfixed:boolean = false;
+  public homeActive:boolean=false;
+  public productActive:boolean=false;
+  public blogActive:boolean=false;
+  public contactActive:boolean=false;
   public showToggle:boolean = false;
   public mobileToggle:boolean=false;
   public slideMobileToggle:boolean=false;
@@ -32,12 +44,15 @@ export class HeaderComponent implements OnInit, OnChanges {
   public slideMobileToggle2:boolean=false;
   public slideMobileToggle3:boolean=false;
   public open = false;
-
-  constructor(private service: CartService, private router: Router, private productService: ProductService,
+  public selectedMenuItem: string='';
+  constructor(private service: CartService, private router: Router, private productService: ProductService,private loveService: LoveService,
               private activateRoute: ActivatedRoute) {
 
     this.service.cart$.subscribe(cart => {
       this.cartItemHeader = cart
+    })
+    this.loveService.love$.subscribe(love => {
+      this.loveItemHeader = love
     })
     this.activateRoute.queryParams.subscribe(params => {
       this.category = params.category;
@@ -55,11 +70,40 @@ export class HeaderComponent implements OnInit, OnChanges {
     //Lay duong Link
     this.router.events.subscribe(value => {
       if(value instanceof NavigationEnd){
-        console.log('urlllllllllll: ',value.url);
+        var myString=value.url;
+        var mySubString=myString.split("/")[1];
+        mySubString=mySubString.split("?")[0];
+        console.log('urlllllllllll is: ',mySubString);
+
+        this.selectedMenuItem = value.url
+        if(mySubString=="home"){
+          this.homeActive=true;
+          this.productActive=false;
+          this.blogActive=false;
+          this.contactActive=false;
+        }else {
+          if(mySubString=="product"||mySubString=="cart"||mySubString=="love"){
+            this.homeActive=false;
+            this.productActive=true;
+            this.blogActive=false;
+            this.contactActive=false;
+          }else {
+            if(mySubString=="blog"){
+              this.homeActive=false;
+              this.productActive=false;
+              this.blogActive=true;
+              this.contactActive=false;
+            }else {
+              this.homeActive=false;
+              this.productActive=false;
+              this.blogActive=false;
+              this.contactActive=true;
+            }
+          }
+        }
       }
     })
   }
-
   ngOnChanges(changes: SimpleChanges): void {
 
     }
@@ -80,7 +124,21 @@ export class HeaderComponent implements OnInit, OnChanges {
     }
     return number;
   }
-
+  //love start
+  public deleteLoveItem(love: Product){
+    this.loveService.deleteItemLove(love)
+  }
+  public numberOfListLoveProduct(){
+    let number=0;
+    for(let c of this.loveItemHeader){
+      number+=1;
+    }
+    return number;
+  }
+  public getFirstImage(love: Product){
+    let listImage=love.images;
+    return listImage[0];
+  }
   ngOnInit(): void {
     // onloadFunction();
     // categoryExpandOnload()
@@ -122,5 +180,15 @@ export class HeaderComponent implements OnInit, OnChanges {
   }
   showSlideToggle3() {
     this.slideMobileToggle3=!this.slideMobileToggle3;
+  }
+  @HostListener('window:scroll',['$event']) onscroll(){
+    if(window.scrollY > 100)
+    {
+      this.navbarfixed = true;
+    }
+    else
+    {
+      this.navbarfixed = false;
+    }
   }
 }

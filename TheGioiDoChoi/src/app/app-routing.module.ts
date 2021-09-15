@@ -33,6 +33,11 @@ const  routes: Routes = [
     data: {breadcrumb: "Giỏ hàng",animation: 'cart'}
   },
   {
+    path:'love',
+    loadChildren:() => import('./love/love.module').then(loveModule=>loveModule.LoveModule),
+    data: {breadcrumb: "Yêu thích",animation: 'love'}
+  },
+  {
     path:'',
     redirectTo:'home',
     pathMatch:'full'

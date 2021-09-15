@@ -15,6 +15,8 @@ import localeVi from '@angular/common/locales/vi';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {BreadcrumbModule} from "angular-crumbs";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { LoveComponent } from './love/love.component';
+import {LoveModule} from "./love/love.module";
 
 
 registerLocaleData(localeVi,'vi-VN')
@@ -24,17 +26,19 @@ registerLocaleData(localeVi,'vi-VN')
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
+    LoveComponent,
   ],
 
-  imports: [
-    BrowserModule,
-    HomeModule,
-    ShareModule,
-    HttpClientModule,
-    AppRoutingModule,
-    BreadcrumbModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        HomeModule,
+        ShareModule,
+        HttpClientModule,
+        AppRoutingModule,
+        BreadcrumbModule,
+        BrowserAnimationsModule,
+        LoveModule
+    ],
     exports: [
         HttpClientModule,
     ],

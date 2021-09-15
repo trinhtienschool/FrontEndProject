@@ -1,10 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {BreadcrumbService,Breadcrumb} from "angular-crumbs";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {RouterOutlet} from "@angular/router";
+import {NavigationEnd, Router, RouterOutlet} from "@angular/router";
 import {animate, group, query, style, transition, trigger} from "@angular/animations";
 import {animationRoute} from "./share/animation";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +16,8 @@ import {animationRoute} from "./share/animation";
 })
 export class AppComponent implements OnInit{
   title = 'TheGioiDoChoi';
+  isShow: boolean = true;
+  topPosToStartShowing = 100;
 
   constructor(private titleService: Title,
               private breadcrumbService: BreadcrumbService) {
@@ -43,5 +46,23 @@ export class AppComponent implements OnInit{
   prepareRoute(myOutlet: RouterOutlet) {
     return myOutlet && myOutlet.activatedRouteData &&
       myOutlet.activatedRouteData['animation'];
+  }
+  @HostListener('window:scroll')
+  checkScroll() {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    console.log('[scroll]', scrollPosition);
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+
+  gotoTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 }

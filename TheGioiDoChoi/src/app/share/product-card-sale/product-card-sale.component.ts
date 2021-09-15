@@ -19,7 +19,6 @@ export class ProductCardSaleComponent implements OnInit {
  changeImage = false;
 
   constructor(private cartService: CartService) {
-
   }
 
   ngOnInit(): void {
@@ -37,5 +36,9 @@ export class ProductCardSaleComponent implements OnInit {
     console.log("co vao productcardsaleeeeeeeeee: ",this.product);
     if(this.product !=undefined)
     this.getProductQuickView.emit(this.product);
+  }
+
+  onClickLoveProduct() {
+    //Nhuan does here
   }
 }

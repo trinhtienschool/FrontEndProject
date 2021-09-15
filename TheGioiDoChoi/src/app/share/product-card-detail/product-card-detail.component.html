@@ -9,7 +9,7 @@
             </div>
           </div>
           <div class="img-select">
-            <div class="img-item" *ngFor="let img of product.images">
+            <div class="img-item cursor-pointer" *ngFor="let img of product.images">
               <p>
                 <img (click)="selectImg(img)" src="{{img}}">
               </p>

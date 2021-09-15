@@ -216,7 +216,7 @@
   align-items: center;
   position: relative; }
   .site-wrapper .cart-widget .firstCart {
-    color: red;
+    color: #bd0018;
     font-size: 25px;
     margin-right: 5px; }
   .site-wrapper .cart-widget .secondCart {
@@ -261,6 +261,9 @@
           .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .image {
             width: 120px;
             padding: 0 10px; }
+            .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .image img {
+              width: 80px;
+              height: 80px; }
           .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .content {
             padding-left: 10px;
             padding-right: 30px; }

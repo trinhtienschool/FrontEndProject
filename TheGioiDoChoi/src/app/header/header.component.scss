@@ -8,7 +8,7 @@
       transition: 0.2s linear;
       top: 0px;
       background: white;
-      z-index: 999;
+      z-index: 9999;
       }
     .nofixed {
       position: static;
@@ -336,8 +336,8 @@
               width: 120px;
               padding: 0 10px;
               img{
-                width: 80px;
-                height: 80px;
+                width: 80px!important;
+                height: 80px!important;
               }
             }
             .content{

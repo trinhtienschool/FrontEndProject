@@ -37,4 +37,8 @@ export class ProductCardSaleComponent implements OnInit {
     if(this.product !=undefined)
     this.getProductQuickView.emit(this.product);
   }
+
+  onClickLoveProduct() {
+    //Nhuan does here
+  }
 }

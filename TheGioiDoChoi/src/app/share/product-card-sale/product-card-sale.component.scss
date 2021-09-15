@@ -245,8 +245,14 @@
   z-index: 5;
   i{
     margin-top: 2px;
-    color: #00afef;
-    font-size: 20px;
 
+    font-size: 20px;
+  }
+  .fa-eye{
+    margin-left: 5px;
+    color: #00afef;
+  }
+  .fa-heart{
+    color: red;
   }
 }

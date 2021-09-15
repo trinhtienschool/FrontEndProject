@@ -393,7 +393,8 @@
     display: none; }
   .site-wrapper .cart-widget .cart-block:hover .cart-dropdown-block {
     opacity: 1;
-    pointer-events: visible; }
+    pointer-events: visible;
+    transition: 0.5s; }
 .site-wrapper .off-canvas-wrapper {
   top: 0;
   right: 0;

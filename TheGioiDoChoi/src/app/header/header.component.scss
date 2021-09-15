@@ -501,6 +501,8 @@
       .cart-dropdown-block{
         opacity: 1;
         pointer-events: visible;
+        transition: 0.5s;
+
       }
     }
   }

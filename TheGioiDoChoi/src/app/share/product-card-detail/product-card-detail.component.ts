@@ -37,6 +37,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
     if(this.product != undefined){
       this.cartService.addCart(this.product, this.quantity);
       this.title = 'Đã thêm vào giỏ hàng'
+      setTimeout(()=>this.title='Thêm vào giỏ hàng',1000);
     }
   }
 

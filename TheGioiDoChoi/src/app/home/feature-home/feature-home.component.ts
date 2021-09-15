@@ -46,7 +46,8 @@ export class FeatureHomeComponent implements OnInit{
         "settings": {
           "slidesToShow": 1
         }
-      }
+      },
+
     ]
   };
   getProductQuickView($event: Product) {

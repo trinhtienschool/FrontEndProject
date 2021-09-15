@@ -1,7 +1,4 @@
 <div *ngIf="product">
-  <!--  <div id="add-cart-animate">-->
-  <!--    <img src="/assets/imgs/product/add_cart_off.gif" alt="" class="add-cart-gif">-->
-  <!--  </div>-->
   <div class="card product-coupon" (mouseenter)="showQuickView=true" (mouseleave)="showQuickView=false">
     <div class="img-wrap" (mouseenter)="this.changeImage = true" (mouseleave)="changeImage = false">
       <div class="coupon margin-img-tab" *ngIf="product.percentSale !=0">

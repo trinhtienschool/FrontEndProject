@@ -19,7 +19,6 @@ export class ProductCardSaleComponent implements OnInit {
  changeImage = false;
 
   constructor(private cartService: CartService) {
-
   }
 
   ngOnInit(): void {

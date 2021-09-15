@@ -1,4 +1,16 @@
 $color-bold-blue: #00afef;
 $color-blue: #46ccfd;
 $color-gray: #7b7b7b;
-
+button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}

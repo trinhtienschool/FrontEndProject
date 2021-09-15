@@ -12,4 +12,7 @@
 <div [@routeAnimation]="prepareRoute(myOutlet)">
   <router-outlet #myOutlet='outlet'></router-outlet>
 </div>
+<button *ngIf="isShow" (click)="gotoTop()">
+  <img src="assets/imgs/arrow/arrow.png">
+</button>
 <app-footer></app-footer>

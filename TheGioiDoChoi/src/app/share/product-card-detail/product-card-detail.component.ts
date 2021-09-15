@@ -11,6 +11,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   @Input() product: Product|undefined;
   public imgZoom: string | undefined
   public quantity: number = 1
+  public title: string = 'Thêm vào giỏ hàng'
   constructor( private cartService: CartService) { }
 
   ngOnInit(): void {
@@ -31,6 +32,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   handleAddToCart(){
     if(this.product != undefined){
       this.cartService.addCart(this.product, this.quantity);
+      this.title = 'Đã thêm vào giỏ hàng'
     }
   }
 

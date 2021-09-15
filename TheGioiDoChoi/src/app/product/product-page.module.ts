@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ProductPageComponent } from './product-page.component';
 import {ProductPageRoutingModule} from "./product-page-routing.module";
 import {DescriptionComponent} from "./product-detail/description/description.component";
-import {DetailComponent} from "./product-detail/detail/detail.component";
 import {ProductDetailComponent} from "./product-detail/product-detail.component";
 import {AgeGenderComponent} from "./product-list-page/age-gender/age-gender.component";
 import {CategoriesComponent} from "./product-list-page/categories/categories.component";
@@ -22,7 +21,6 @@ import {NgxSliderModule} from "@angular-slider/ngx-slider";
   declarations: [
     ProductPageComponent,
     DescriptionComponent,
-    DetailComponent,
     ProductDetailComponent,
     AgeGenderComponent,
     CategoriesComponent,

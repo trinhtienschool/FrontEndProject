@@ -12,8 +12,8 @@
               <thead class="head-table">
               <tr class="text-center row">
                 <th class="col-md-4" colspan="2">Sản phẩm</th>
-                <th class="col-md-2">Giá</th>
-                <th class="col-md-2">Xóa</th>
+                <th class="col-md-4">Giá</th>
+                <th class="col-md-4">Xóa</th>
               </tr>
               </thead>
               <tbody *ngIf="loveItems.length > 0">
@@ -27,7 +27,7 @@
                 <td class="text-center col-md-2 col-lg-3">
                   <a [routerLink]="['/product',item.product_id]">{{item.name}}</a>
                 </td>
-                <td class="text-center col-md-2">{{item.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</td>
+                <td class="text-center col-md-4">{{item.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</td>
                 <!--        <td class="text-center col-md-2">-->
                 <!--          <div class="product-purchase">-->
                 <!--            <div class="row">-->
@@ -42,7 +42,7 @@
                 <!--          </div>-->
                 <!--        </td>-->
                 <!--        <td class="text-center col-md-2">{{item.totalPrice() | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</td>-->
-                <td class="text-center col-md-2" ><span (click)="deleteLoveItem(item)"><i class="fas fa-trash-alt" style="cursor: pointer"></i></span></td>
+                <td class="text-center col-md-4" ><span (click)="deleteLoveItem(item)"><i class="fas fa-trash-alt" style="cursor: pointer"></i></span></td>
               </tr>
               </tbody>
             </table>

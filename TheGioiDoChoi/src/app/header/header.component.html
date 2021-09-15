@@ -1,6 +1,6 @@
 <div class="site-wrapper" id="top">
   <div class="site-header d-none d-lg-block">
-    <div class="header-middle pt--10 pb--10">
+    <div class="header-middle pt--10 pb--10" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-3 ">
@@ -180,7 +180,7 @@
   <div class="site-mobile-menu">
     <header class="mobile-header d-block d-lg-none pt--10 pb-md--10">
       <div class="container">
-        <div class="row align-items-sm-end align-items-center">
+        <div class="row align-items-sm-end align-items-center"  (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed2':'nofixed2'">
           <div class="col-md-4 col-7">
             <a [routerLink]="['/home']" class="site-brand">
               <img src="assets/imgs/logo/logo.png" alt="">

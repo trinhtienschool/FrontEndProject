@@ -1,4 +1,4 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, HostListener, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {CartItem} from "../model/cart-item";
 import {CartService} from "../service/cart/cart.service";
 import {ActivatedRoute, NavigationEnd, Route, Router} from "@angular/router";
@@ -32,6 +32,7 @@ export class HeaderComponent implements OnInit, OnChanges {
   public sort: string | undefined;
   public page: string | undefined;
 
+  public navbarfixed:boolean = false;
   public homeActive:boolean=false;
   public productActive:boolean=false;
   public blogActive:boolean=false;
@@ -179,5 +180,15 @@ export class HeaderComponent implements OnInit, OnChanges {
   }
   showSlideToggle3() {
     this.slideMobileToggle3=!this.slideMobileToggle3;
+  }
+  @HostListener('window:scroll',['$event']) onscroll(){
+    if(window.scrollY > 100)
+    {
+      this.navbarfixed = true;
+    }
+    else
+    {
+      this.navbarfixed = false;
+    }
   }
 }

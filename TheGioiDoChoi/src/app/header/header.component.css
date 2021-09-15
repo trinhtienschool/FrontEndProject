@@ -1,3 +1,14 @@
+.site-wrapper .site-header .fixed {
+  position: fixed;
+  width: 100%;
+  transition: 0.2s linear;
+  top: 0px;
+  background: white;
+  z-index: 2; }
+.site-wrapper .site-header .nofixed {
+  position: static;
+  transition: 0.2s linear;
+  top: -50px; }
 .site-wrapper .site-header .header-phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,6 +494,17 @@
   @media (max-width: 228px) {
     .site-wrapper .site-mobile-menu .mobile-header .container img {
       display: none !important; } }
+.site-wrapper .site-mobile-menu .mobile-header .container .fixed2 {
+  position: fixed;
+  width: 100%;
+  transition: 0.2s linear;
+  top: 0px;
+  z-index: 2;
+  background: white; }
+.site-wrapper .site-mobile-menu .mobile-header .container .nofixed2 {
+  position: static;
+  transition: 0.2s linear;
+  top: -50px; }
 .site-wrapper .site-mobile-menu .mobile-header .absolute-header {
   position: absolute;
   top: 0;

@@ -20,9 +20,9 @@ export class CartService {
     let index=-1
     for(let i=0; i<this.cart.length; i++){
       if(productName === this.cart[i].name) {
-        this.cart[i].quantity++;
-        index = i
-        break
+          this.cart[i].quantity += quan;
+          index = i
+          break
       }
     }
     if(index == -1){

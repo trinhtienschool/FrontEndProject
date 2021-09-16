@@ -77,7 +77,7 @@ export class SaleAreaComponent implements OnInit {
     "swipeToSlide":true,
     "responsive": [
       {
-        "breakpoint": 1400,
+        "breakpoint": 1200,
         "settings": {
           "slidesToShow": 4
         }

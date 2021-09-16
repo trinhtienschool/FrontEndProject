@@ -146,15 +146,21 @@
 .btn {
   margin-bottom: 10px; }
 
-@media (max-width: 576px) {
+.img-card {
+  height: 32px;
+  width: 32px;
+  left: 45%; }
+
+.img-adding-card {
+  height: 38px;
+  width: 38px;
+  left: 45%; }
+
+@media (max-width: 350px) {
   .img-card {
-    height: 32px;
-    width: 32px;
     left: 40%; }
 
   .img-adding-card {
-    height: 38px;
-    width: 35px;
     left: 40%; } }
 .eye-view {
   margin-bottom: -30px;

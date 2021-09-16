@@ -30,7 +30,7 @@ export class FeatureHomeComponent implements OnInit{
     "swipeToSlide":true,
     "responsive": [
       {
-        "breakpoint": 1000,
+        "breakpoint": 992,
         "settings": {
           "slidesToShow": 3
         }

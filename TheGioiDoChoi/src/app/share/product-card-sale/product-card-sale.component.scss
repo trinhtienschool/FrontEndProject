@@ -10,7 +10,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 .margin-img-tab {
   margin-top: 30px;
@@ -194,18 +193,27 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 576px){
+//@media (max-width: 576px){
   .img-card{
     height: 32px;
     width: 32px;
-    left: 40%;
+    left: 45%;
   }
   .img-adding-card{
     height: 38px;
-    width: 35px;
-    left: 40%;
+    width: 38px;
+    left: 45%;
   }
-}
+  @media (max-width: 350px) {
+    .img-card{
+      left: 40%;
+    }
+    .img-adding-card{
+      left: 40%;
+    }
+
+  }
+//}
 //@media(max-width: 575px){
 //  .product-coupon{
 //    padding: 0 100px 0 100px;

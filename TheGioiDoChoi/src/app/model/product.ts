@@ -141,8 +141,8 @@ export class Product{
   }
   searchName(search: string): boolean{
     search = search.toLowerCase();
-    this.name.toLowerCase();
-    if(this.name.includes(search)) return true;
+    let name = this.name.toLowerCase();
+    if(name.includes(search)) return true;
     return false;
   }
   filterAge_Gender_Arr(arr: string|string[],type: string){

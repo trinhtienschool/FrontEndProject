@@ -80,9 +80,15 @@ export class PersonTrafficComponent implements OnInit {
     "swipeToSlide":true,
     "responsive": [
       {
-        "breakpoint": 1200,
+        "breakpoint": 992,
         "settings": {
           "slidesToShow": 3
+        }
+      },
+      {
+        "breakpoint": 768,
+        "settings": {
+          "slidesToShow": 2
         }
       },
       {

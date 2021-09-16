@@ -94,10 +94,17 @@ export class HeaderComponent implements OnInit, OnChanges {
               this.blogActive=true;
               this.contactActive=false;
             }else {
-              this.homeActive=false;
-              this.productActive=false;
-              this.blogActive=false;
-              this.contactActive=true;
+              if(mySubString=="contact"){
+                this.homeActive=false;
+                this.productActive=false;
+                this.blogActive=false;
+                this.contactActive=true;
+              }else {
+                this.homeActive=true;
+                this.productActive=false;
+                this.blogActive=false;
+                this.contactActive=false;
+              }
             }
           }
         }
@@ -149,6 +156,7 @@ export class HeaderComponent implements OnInit, OnChanges {
     console.log('text');
     let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender,text, this.sort,this.page);
     this.router.navigateByUrl(link);
+    console.log("Search neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",link);
   }
   category_click(text: string){
     this.router.navigateByUrl("/product?category="+text);

@@ -54,12 +54,14 @@ input:focus {
     overflow: hidden; }
     @media (min-width: 399px) {
       .checkout-cart-total ul li span {
-        color: inherit !important;
+        color: inherit;
         float: right !important; } }
     @media (min-width: 399px) {
       .checkout-cart-total ul li span.left {
         width: 70% !important;
         float: left !important; } }
+    .checkout-cart-total ul li span.left:hover {
+      color: #00afef; }
 .checkout-cart-total p {
   font-size: 14px;
   line-height: 30px;
@@ -120,6 +122,10 @@ input:focus {
     transition: 0.4s; }
     .checkout-cart-total .place-order h4 {
       font-size: 12px !important; } }
+.checkout-cart-total span:hover {
+  color: #00afef; }
+.checkout-cart-total .highlightname:hover {
+  color: #00afef; }
 
 @media (max-width: 400px) {
   .checkout-title {

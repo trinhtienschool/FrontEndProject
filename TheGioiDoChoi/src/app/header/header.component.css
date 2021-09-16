@@ -262,8 +262,10 @@
             width: 120px;
             padding: 0 10px; }
             .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .image img {
-              width: 80px !important;
-              height: 80px !important; }
+              width: 100px !important;
+              height: 100px !important;
+              max-width: fit-content;
+              cursor: pointer; }
           .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .content {
             padding-left: 10px;
             padding-right: 30px; }
@@ -503,7 +505,7 @@
   width: 100%;
   transition: 0.2s linear;
   top: 0px;
-  z-index: 999;
+  z-index: 9999;
   background: white; }
 .site-wrapper .site-mobile-menu .mobile-header .container .nofixed2 {
   position: static;

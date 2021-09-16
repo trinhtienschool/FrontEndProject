@@ -12,17 +12,7 @@
           <header>
             <h3 class="blog-title"> {{blog.name}}</h3>
             <div class="post-meta">
-                                <span class="post-author">
-                                    <i class="fa fa-user"></i>
-                                    <span class="text-gray">Posted by : </span>
-                                  {{blog.author}}
-                                </span>
-              <span class="post-separator">|</span>
-              <span class="post-date">
-                                    <i class="far fa-calendar-alt"></i>
-                                    <span class="text-gray">On : </span>
-                {{blog.date}}
-                                </span>
+
             </div>
           </header>
           <article>
@@ -33,7 +23,15 @@
 <!--            </b>-->
             <div [innerHTML]="blog.content"></div>
           </article>
-
+<!--          <span class="post-author">-->
+<!--&lt;!&ndash;                                    <i class="fa fa-user"></i>&ndash;&gt;-->
+<!--                                    <span class="text-gray">Posted by : </span>{{blog.author}}</span>-->
+<!--          <span class="post-separator">|</span>-->
+<!--          <span class="post-date">-->
+<!--&lt;!&ndash;                                    <i class="far fa-calendar-alt"></i>&ndash;&gt;-->
+<!--                                    <span class="text-gray">On : </span>-->
+<!--            {{blog.date}}-->
+<!--                                </span>-->
         </div>
       </div>
       <div class="share-block mb--50">

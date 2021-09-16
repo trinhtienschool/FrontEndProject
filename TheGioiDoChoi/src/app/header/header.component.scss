@@ -336,8 +336,10 @@
               width: 120px;
               padding: 0 10px;
               img{
-                width: 80px!important;
-                height: 80px!important;
+                width: 100px!important;
+                height: 100px!important;
+                max-width: fit-content;
+                cursor: pointer;
               }
             }
             .content{
@@ -646,7 +648,7 @@
           width: 100%;
           transition: 0.2s linear;
           top: 0px;
-          z-index: 999;
+          z-index: 9999;
           background: white;
         }
         .nofixed2 {

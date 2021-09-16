@@ -264,7 +264,8 @@
             .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .image img {
               width: 100px !important;
               height: 100px !important;
-              max-width: fit-content; }
+              max-width: fit-content;
+              cursor: pointer; }
           .site-wrapper .cart-widget .cart-block .cart-dropdown-block .single-cart-block .cart-product .content {
             padding-left: 10px;
             padding-right: 30px; }

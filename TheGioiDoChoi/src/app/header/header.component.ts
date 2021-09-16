@@ -155,6 +155,7 @@ export class HeaderComponent implements OnInit, OnChanges {
   searchRoute(text: string){
     let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender,text, this.sort,this.page);
     this.router.navigateByUrl(link);
+    console.log("Search neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",link);
   }
   category_click(text: string){
     this.router.navigateByUrl("/product?category="+text);

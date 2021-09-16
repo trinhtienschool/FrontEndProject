@@ -504,7 +504,7 @@
   width: 100%;
   transition: 0.2s linear;
   top: 0px;
-  z-index: 999;
+  z-index: 9999;
   background: white; }
 .site-wrapper .site-mobile-menu .mobile-header .container .nofixed2 {
   position: static;

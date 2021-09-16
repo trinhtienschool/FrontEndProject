@@ -65,7 +65,7 @@ input:focus{
       overflow: hidden;
       span{
         @media (min-width: 399px) {
-          color: inherit!important;
+          color: inherit;
           float: right!important;
         }
       }
@@ -74,6 +74,9 @@ input:focus{
           width: 70%!important;
           float: left!important;
         }
+      }
+      span.left:hover{
+        color: #00afef;
       }
     }
   }
@@ -144,6 +147,12 @@ input:focus{
     }
 
 
+  }
+  span:hover{
+    color: #00afef;
+  }
+  .highlightname:hover{
+    color: #00afef;
   }
 }
 .checkout-title{

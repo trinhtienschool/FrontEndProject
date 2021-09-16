@@ -94,10 +94,17 @@ export class HeaderComponent implements OnInit, OnChanges {
               this.blogActive=true;
               this.contactActive=false;
             }else {
-              this.homeActive=false;
-              this.productActive=false;
-              this.blogActive=false;
-              this.contactActive=true;
+              if(mySubString=="contact"){
+                this.homeActive=false;
+                this.productActive=false;
+                this.blogActive=false;
+                this.contactActive=true;
+              }else {
+                this.homeActive=true;
+                this.productActive=false;
+                this.blogActive=false;
+                this.contactActive=false;
+              }
             }
           }
         }

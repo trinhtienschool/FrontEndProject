@@ -116,7 +116,7 @@
                     <div  *ngFor="let lh of loveItemHeader"  class=" single-cart-block ">
                       <div class="cart-product">
                         <a class="image">
-                          <img  [routerLink]="['/product',lh.product_id]" src="{{getFirstImage(lh)}}" alt="">
+                          <img [routerLink]="['/product',lh.product_id]" src="{{getFirstImage(lh)}}" alt="">
                         </a>
                         <div class="content">
                           <h3 class="title"><a [routerLink]="['/product',lh.product_id]">{{lh.name}}</a></h3>

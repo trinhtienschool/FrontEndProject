@@ -336,8 +336,9 @@
               width: 120px;
               padding: 0 10px;
               img{
-                width: 80px!important;
-                height: 80px!important;
+                width: 100px!important;
+                height: 100px!important;
+                max-width: fit-content;
               }
             }
             .content{

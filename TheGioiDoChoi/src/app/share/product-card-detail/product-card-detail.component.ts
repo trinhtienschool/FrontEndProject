@@ -18,6 +18,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   public productlove: Product[]=[];
   public imgZoom: string | undefined
   public quantity: number = 1
+  public myQuant: number = this.quantity
   public title: string = 'Thêm vào giỏ hàng'
   // public title2:string='Thêm vào yêu thích'
   constructor( private cartService: CartService,private loveService: LoveService) {

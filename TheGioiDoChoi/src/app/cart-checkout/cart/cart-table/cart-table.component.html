@@ -30,7 +30,8 @@
               <div class="col-12">
                 <div class="product-quantity">
                   <span class="decrease quantity-btn" (click)="decreaseQuantity(item)">-</span>
-                  <input type="number" value="{{item.quantity}}">
+<!--                  <input type="number" value="{{item.quantity}}">-->
+                  <span class="quantity">{{item.quantity}}</span>
                   <span class="increase quantity-btn" (click)="increaseQuantity(item)">+</span>
                 </div>
               </div>

@@ -2,6 +2,7 @@ import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core'
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
 import {fade} from "../animation";
+import {LoveService} from "../../service/love/love.service";
 
 @Component({
   selector: 'app-product-card-detail',
@@ -12,13 +13,17 @@ import {fade} from "../animation";
   ]
 })
 export class ProductCardDetailComponent implements OnInit, OnChanges {
+  @Input() productLove: Product|undefined;
   @Input() product: Product|undefined;
   public imgZoom: string | undefined
   public quantity: number = 1
   public myQuant: number = this.quantity
   public title: string = 'Thêm vào giỏ hàng'
   public title2: string = 'Thêm vào yêu thích'
-  constructor(private cartService: CartService) { }
+
+  constructor( private cartService: CartService,private loveService: LoveService) {
+
+  }
 
   ngOnInit(): void {
 
@@ -45,5 +50,10 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if(this.product !=undefined)
       this.imgZoom = this.product.images[0];
+  }
+
+  onClickLoveProduct(product: Product) {
+    this.loveService.addLove(product);
+    this.title2='Đã thêm vào yêu thích'
   }
 }

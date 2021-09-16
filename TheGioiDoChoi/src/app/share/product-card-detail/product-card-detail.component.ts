@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
 import {fade} from "../animation";
@@ -12,7 +12,7 @@ import {LoveService} from "../../service/love/love.service";
     fade
   ]
 })
-export class ProductCardDetailComponent implements OnInit, OnChanges {
+export class ProductCardDetailComponent implements OnInit, OnChanges, DoCheck {
   @Input() productLove: Product|undefined;
   @Input() product: Product|undefined;
   public imgZoom: string | undefined
@@ -28,6 +28,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   ngOnInit(): void {
 
    }
+
   selectImg(img: string) {
     this.imgZoom = img;
   }
@@ -43,7 +44,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   handleAddToCart(){
     if(this.product != undefined){
       this.cartService.addCart(this.product, this.quantity);
-      this.title = 'Đã thêm vào giỏ hàng'
+      this.title = 'Đã thêm giỏ hàng'
       setTimeout(()=>this.title='Thêm vào giỏ hàng',1000);
     }
   }
@@ -55,6 +56,10 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
 
   onClickLoveProduct(product: Product) {
     this.loveService.addLove(product);
-    this.title2='Đã thêm vào yêu thích'
+    this.title2='Đã thêm yêu thích'
+  }
+
+  ngDoCheck(): void {
+    console.log('Danggggggggggggg vao');
   }
 }

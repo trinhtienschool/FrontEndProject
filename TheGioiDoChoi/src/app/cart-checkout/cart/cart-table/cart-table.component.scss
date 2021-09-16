@@ -47,6 +47,7 @@ $gray: #7b7b7b;
             background: #f5f5f5;
             margin-bottom: 5px;
             margin-right: 10px;
+            padding-top: 5px;
             @media (max-width: 767px) {
               width: 100px;
             }
@@ -57,7 +58,7 @@ $gray: #7b7b7b;
               cursor: pointer;
               display: inline-block;
             }
-            input{
+            .quantity{
               height: 100%;
               width: 60%;
               font-size: 16px;

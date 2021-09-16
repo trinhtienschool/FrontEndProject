@@ -54,5 +54,6 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
 
   onClickLoveProduct(product: Product) {
     this.loveService.addLove(product);
+    this.title2='Đã thêm vào yêu thích'
   }
 }

@@ -102,16 +102,20 @@
   .product-details .product-content .product-purchase .product-cart .btn-cart {
     font-size: 14px;
     border: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 0.5rem;
     background-color: #00AFEF;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 5px; }
     @media (max-width: 200px) {
       .product-details .product-content .product-purchase .product-cart .btn-cart {
-        padding: 0; } }
+        padding: 0;
+        margin-bottom: 5px; } }
+  .product-details .product-content .product-purchase .product-cart .btn-love {
+    background-color: #bd0018; }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .btn-cart {
-    margin-left: 20px; } }
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=product-card-detail.component.css.map */

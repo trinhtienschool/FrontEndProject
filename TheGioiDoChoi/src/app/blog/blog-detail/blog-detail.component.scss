@@ -6,6 +6,7 @@
           width: 80%;
           display: block;
           margin-bottom: 25px;
+          align-content: center;
         }
       }
       .blog-content{
@@ -13,11 +14,18 @@
           .blog-title{
             @media (max-width: 299px) {
               font-size: 15px !important;
+              align-content: center;
+              i{
+                margin-left: 5px;
+                margin-right: 5px;
+              }
             }
           }
 
         }
-
+        article{
+          align-content: center;
+        }
       }
     }
     .share-block{

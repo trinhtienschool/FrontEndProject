@@ -56,7 +56,7 @@
                       <h2 class="checkout-title">Hóa đơn của bạn</h2>
                       <h4 class="title-product">Tên sản phẩm x số lượng<span class="total-must">Tổng</span></h4>
                       <ul>
-                        <li *ngFor="let c of cartItem"><span class="left float-left-must">{{c.name}} X {{c.quantity}}</span> <span
+                        <li style="cursor: pointer" *ngFor="let c of cartItem"><span [routerLink]="['/product',c.product_id]" class="left float-left-must highlightname">{{c.name}} X {{c.quantity}}</span> <span
                           class="right float-right-must">{{c.totalPrice()| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></li>
                       </ul>
                       <p>Tổng <span>{{totalPriceOfAllProduct()| currency:'VND':'symbol':'1.0-0':'vi-VN'}}</span></p>

@@ -250,16 +250,12 @@
       <div *ngIf="open" class="off-canvas-inner">
         <!-- search box start -->
         <div *ngIf="this.search!=undefined" class="search-box offcanvas">
-          <form>
             <input #text2 type="text" (keydown.enter)="searchRoute(text2.value)" placeholder="Tên đồ chơi"  [value]="this.search">
             <button (click)="searchRoute(text2.value)" class="search-btn"><i class="fa fa-search"></i></button>
-          </form>
         </div>
         <div *ngIf="this.search==undefined"  class="search-box offcanvas">
-          <form>
             <input #text2 type="text" (keydown.enter)="searchRoute(text2.value)" placeholder="Tên đồ chơi" >
             <button (click)="searchRoute(text2.value)" class="search-btn"><i class="fa fa-search"></i></button>
-          </form>
         </div>
         <!-- search box end -->
         <!-- mobile menu start -->

@@ -16,6 +16,7 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   public imgZoom: string | undefined
   public quantity: number = 1
   public title: string = 'Thêm vào giỏ hàng'
+  public title2: string = 'Thêm vào yêu thích'
   constructor( private cartService: CartService) { }
 
   ngOnInit(): void {

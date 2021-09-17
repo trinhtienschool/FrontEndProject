@@ -161,9 +161,12 @@ export class HeaderComponent implements OnInit, OnChanges {
     // this.age = undefined;
     // this.gender = undefined;
     // this.sort = undefined;
-    let link = Util.makeLinkProduc(undefined, undefined, undefined,undefined,undefined,text,undefined,undefined);
-    this.router.navigateByUrl(link);
-    console.log("Search neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",link);
+    text = text.trim();
+    if(text.length !=0) {
+      let link = Util.makeLinkProduc(undefined, undefined, undefined, undefined, undefined, text, undefined, undefined);
+      this.router.navigateByUrl(link);
+      console.log("Search neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", link);
+    }
   }
   category_click(text: string){
     this.router.navigateByUrl("/product?category="+text);

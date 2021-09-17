@@ -28,7 +28,9 @@ export class RelatedProductComponent implements OnInit,AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    setTimeout(()=>{
+      console.log('random products: ',this.productService.getRandomProducts());
+    },500)
 
-    console.log('random products: ',this.productService.getRandomProduct());
   }
 }

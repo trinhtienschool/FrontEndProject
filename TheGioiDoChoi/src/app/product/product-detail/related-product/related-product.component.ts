@@ -32,6 +32,5 @@ export class RelatedProductComponent implements OnInit,AfterViewInit {
       console.log('random products: ',this.productService.getRandomProducts());
       this.listProducts = this.productService.getRandomProducts();
     },500)
-
   }
 }

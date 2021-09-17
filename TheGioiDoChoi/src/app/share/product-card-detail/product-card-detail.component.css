@@ -78,7 +78,8 @@
     text-align: center;
     background: #f5f5f5;
     margin-bottom: 5px;
-    margin-right: 10px; }
+    margin-right: 5px;
+    padding-top: 5px; }
     @media (max-width: 181px) {
       .product-details .product-content .product-purchase .product-quantity {
         display: flex; } }
@@ -91,7 +92,7 @@
       color: #6f6f6f;
       cursor: pointer;
       display: inline-block; }
-    .product-details .product-content .product-purchase .product-quantity input {
+    .product-details .product-content .product-purchase .product-quantity .quantity {
       height: 90%;
       font-size: 16px;
       color: #6f6f6f;

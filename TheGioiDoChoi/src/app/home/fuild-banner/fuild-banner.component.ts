@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class FuildBannerComponent implements OnInit {
   @Input() img_src: string|undefined;
+  @Input() url: string|undefined;
   constructor() { }
 
   ngOnInit(): void {

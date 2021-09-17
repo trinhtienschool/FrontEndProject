@@ -20,7 +20,7 @@ export class ShopToolbarComponent implements OnInit {
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  @Input() page: string|undefined;
+  // @Input() page: string|undefined;
 
   constructor(private productService: ProductService, private router: Router,
               private paginationService: PaginationService) {
@@ -37,7 +37,8 @@ export class ShopToolbarComponent implements OnInit {
     if(value =='asc'){
       this.sort = 'asc';
     }else if(value == 'desc') this.sort = 'desc';
-    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,this.page);
+    // this.page = '1';
+    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,undefined);
     this.router.navigateByUrl(link);
   }
 

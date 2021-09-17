@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {AfterViewInit, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
 import {fade} from "../animation";
@@ -13,41 +13,49 @@ import {LoveService} from "../../service/love/love.service";
     fade
   ]
 })
-export class ProductCardSaleComponent implements OnInit {
-  @Input() product: Product | undefined;
+export class ProductCardSaleComponent implements OnInit, AfterViewInit {
 
-  @Output() getProductQuickView: EventEmitter<Product> = new EventEmitter<Product>();
-  showCart = true;
+ @Input() product: Product|undefined;
+ @Output() getProductQuickView: EventEmitter<Product> = new EventEmitter<Product>();
+ showCart = true;
+
   showQuickView = false;
   changeImage = false;
   isLove = false;
 
 
   constructor(private cartService: CartService, private loveService: LoveService) {
-    // this.loveService.love$.subscribe(love => {
-    //   this.productLove = love
-    //   if(this.productLove !=undefined && this.product !=undefined){
-    //     for(let i = 0;i<this.productLove.length;i++){
-    //       if(this.productLove[i].product_id==this.product.product_id){
-    //         this.isLove = true;
-    //         console.log('id product card sale: ',this.product.product_id);
-    //       }
-    //     }
-    //   }
-    // })
 
   }
 
-  ngOnInit(): void {
-    let productLoves = this.loveService.love;
-    if (this.product != undefined) {
-      for (let i = 0; i < productLoves.length; i++) {
-        if (this.product.product_id == productLoves[i].product_id) {
-          this.isLove = true;
+  ngAfterViewInit(): void {
+    this.loveService.love$.subscribe(love => {
+      // console.log("Co vao subscribe.......: ",this.product?.product_id);
+      let productLoves = love;
+      if (this.product != undefined) {
+        for (let i = 0; i < productLoves.length; i++) {
+          if (this.product.product_id == productLoves[i].product_id) {
+            // console.log("Co vaoooooooooooo: ",this.product.product_id);
+            this.isLove = true;
+          }
         }
       }
+    })
     }
+
+
+
+  ngOnInit(): void {
+    // let productLoves = this.loveService.love;
+    // if (this.product != undefined) {
+    //   for (let i = 0; i < productLoves.length; i++) {
+    //     if (this.product.product_id == productLoves[i].product_id) {
+    //       this.isLove = true;
+    //     }
+    //   }
+    // }
   }
+
 
   handleAddToCart() {
     if (this.product != undefined) {

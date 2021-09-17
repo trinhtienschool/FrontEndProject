@@ -1,6 +1,7 @@
 button {
   position: fixed;
-  bottom: 250px;
+  z-index: 1000000;
+  bottom: 50px;
   right: 50px;
   font-size: 20px;
   text-align: center;

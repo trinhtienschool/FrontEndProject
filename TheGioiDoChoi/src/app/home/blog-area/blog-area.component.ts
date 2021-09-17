@@ -53,7 +53,7 @@ export class BlogAreaComponent implements OnInit {
     "swipeToSlide":true,
     "responsive": [
       {
-        "breakpoint": 1200,
+        "breakpoint": 992,
         "settings": {
           "slidesToShow": 3
         }

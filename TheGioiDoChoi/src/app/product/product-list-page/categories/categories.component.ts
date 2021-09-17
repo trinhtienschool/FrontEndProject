@@ -19,7 +19,7 @@ export class CategoriesComponent implements OnInit, OnChanges {
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  @Input() page: string | undefined;
+  // @Input() page: string | undefined;
 
   dc_vandong: boolean = false;
   dc_tritue: boolean = false;
@@ -62,7 +62,8 @@ export class CategoriesComponent implements OnInit, OnChanges {
   filterByCategory(category: string){
     console.log(category);
   this.category = category;
-    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,this.page);
+  // this.page = '1';
+    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,undefined);
     this.router.navigateByUrl(link);
 
   }

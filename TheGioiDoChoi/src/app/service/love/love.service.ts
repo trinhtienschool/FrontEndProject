@@ -7,6 +7,7 @@ import {Product} from "../../model/product";
   providedIn: 'root'
 })
 export class LoveService {
+  public contain:boolean = false;
   public love: Product[] = [];
   behaviorSubject: BehaviorSubject<any> = new BehaviorSubject('');
   love$: Observable<any> = this.behaviorSubject.asObservable();
@@ -41,6 +42,16 @@ export class LoveService {
         this.behaviorSubject.next(this.love)
         return
       }
+    }
+  }
+  checkContainItemLove(loveItem: Product){
+    for(let i=0; i<this.love.length; i++){
+      if(this.love[i].name === loveItem.name){
+        this.contain=true;
+      }else {
+        this.contain=false;
+      }
+
     }
   }
 }

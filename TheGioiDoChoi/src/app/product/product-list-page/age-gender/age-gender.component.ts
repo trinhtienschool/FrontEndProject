@@ -20,7 +20,7 @@ export class AgeGenderComponent implements OnInit, OnChanges {
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  @Input() page: string|undefined;
+  // @Input() page: string|undefined;
 
   constructor(private productService: ProductService,
               private router: Router,
@@ -52,11 +52,14 @@ export class AgeGenderComponent implements OnInit, OnChanges {
     if (this.title != undefined && this.content !=undefined) {
       if (this.title == 'Độ tuổi') {
         if (this.age !=undefined) this.addChecked(this.content, this.age);
+        else this.deleteChecked(this.content);
       } else if (this.title == 'Giới tính') {
         if (this.gender !=undefined) this.addChecked(this.content, this.gender);
+        else  this.deleteChecked(this.content);
       }
-    }else if(this.title !=undefined && this.content !=undefined) this.deleteChecked(this.content);
-    console.log("content: ",this.content);
+    }
+    // else if(this.title !=undefined && this.content !=undefined) this.deleteChecked(this.content);
+    // console.log("content: ",this.content);
     }
 
   ngOnInit(): void {
@@ -84,7 +87,8 @@ export class AgeGenderComponent implements OnInit, OnChanges {
       } else if (this.title == 'Giới tính') {
         this.modifiedArr(value, this.gender, checkbox);
       }
-      let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort, this.page);
+      // this.page = '1';
+      let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort, undefined);
       console.log('Linkkkk',link);
       this.router.navigateByUrl(link);
     }

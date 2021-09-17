@@ -52,19 +52,36 @@
                   <span class="increase quantity-btn" (click)="increaseQuantity()">+</span>
                 </div>
               </div>
+<!--              <div class="col-lg-4 col-sm-4">-->
+<!--                <div class="product-cart">-->
+<!--                  <button type="button" class="btn-cart" style="width: 100%" (click)="handleAddToCart()">-->
+<!--                    {{title}}-->
+<!--                    <i class="fas fa-shopping-cart"></i>-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--              </div>-->
               <div class="col-lg-4 col-sm-4">
                 <div class="product-cart">
-                  <button type="button" class="btn-cart" (click)="handleAddToCart()">
-                    {{title}}
-                    <i class="fas fa-shopping-cart"></i>
+
+                  <button *ngIf="checkContainItemLove(product)==true" style="width: 100%" type="button" class="btn-cart btn-love" (click)="onClickLoveProduct(product)">
+                    Đã thêm yêu thích
+                    <i class="fas fa-heart"></i>
                   </button>
+                  <button *ngIf="checkContainItemLove(product)==false" style="width: 100%" type="button" class="btn-cart btn-love" (click)="onClickLoveProduct(product)">
+                    Thêm vào yêu thích
+                    <i class="fas fa-heart"></i>
+                  </button>
+<!--                  <button type="button" class="btn-cart btn-love" (click)="onClickLoveProduct(product)">-->
+<!--                    {{title2}}-->
+<!--                    <i class="fas fa-heart"></i>-->
+<!--                  </button>-->
                 </div>
               </div>
               <div class="col-lg-4 col-sm-4">
                 <div class="product-cart">
-                  <button type="button" class="btn-cart btn-love" (click)="onClickLoveProduct(product)">
-                    {{title2}}
-                    <i class="fas fa-heart"></i>
+                  <button type="button" class="btn-cart" style="width: 100%" (click)="handleAddToCart()">
+                    {{title}}
+                    <i class="fas fa-shopping-cart"></i>
                   </button>
                 </div>
               </div>

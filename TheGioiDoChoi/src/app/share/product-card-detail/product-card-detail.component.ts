@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Product} from "../../model/product";
 import {CartService} from "../../service/cart/cart.service";
 import {fade} from "../animation";
@@ -12,21 +12,23 @@ import {LoveService} from "../../service/love/love.service";
     fade
   ]
 })
+
 export class ProductCardDetailComponent implements OnInit, OnChanges {
-  @Input() productLove: Product|undefined;
   @Input() product: Product|undefined;
+  public contain:boolean = false;
+  public productlove: Product[]=[];
   public imgZoom: string | undefined
   public quantity: number = 1
   public title: string = 'Thêm vào giỏ hàng'
-  public title2: string = 'Thêm vào yêu thích'
-
+  // public title2:string='Thêm vào yêu thích'
   constructor( private cartService: CartService,private loveService: LoveService) {
-
+    this.loveService.love$.subscribe(love =>{this.productlove=love});
   }
 
   ngOnInit(): void {
 
    }
+
   selectImg(img: string) {
     this.imgZoom = img;
   }
@@ -42,7 +44,8 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
   handleAddToCart(){
     if(this.product != undefined){
       this.cartService.addCart(this.product, this.quantity);
-      this.title = 'Đã thêm vào giỏ hàng'
+      this.title = 'Đã thêm giỏ hàng'
+      setTimeout(()=>this.title='Thêm vào giỏ hàng',1000);
     }
   }
 
@@ -53,6 +56,32 @@ export class ProductCardDetailComponent implements OnInit, OnChanges {
 
   onClickLoveProduct(product: Product) {
     this.loveService.addLove(product);
-    this.title2='Đã thêm vào yêu thích'
+
   }
+
+  // checkContainLove(product: Product) {
+  //  this.loveService.checkContainItemLove(product);
+  //  return this.loveService.contain;
+  // }
+  checkContainItemLove(product: Product){
+    for(let i=0; i<this.productlove.length; i++){
+      if(this.productlove[i].name === product.name){
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // ngDoCheck(): void {
+  //   console.log('da vaooooooooooooooooooooooooooooooooooooo')
+  //   this.title2='Thêm vào yêu thích';
+  //   let productLove=this.loveService.love;
+  //   if(this.product!=undefined){
+  //     for(let i=0;i<productLove.length;i++){
+  //       if(this.product.product_id==productLove[i].product_id){
+  //         this.title2='Đã thêm yêu thích';
+  //       }
+  //     }
+  //   }
+  // }
 }

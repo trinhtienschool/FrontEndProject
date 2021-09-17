@@ -23,14 +23,14 @@ export class FeatureHomeComponent implements OnInit{
     "slidesToShow": 4,
     "slidesToScroll": 1,
     "dots": true,
-    "autoplay": false,
+    "autoplay": true,
     "useCSS": true,
     "autoplaySpeed": 3000,
     "rows":2,
     "swipeToSlide":true,
     "responsive": [
       {
-        "breakpoint": 1000,
+        "breakpoint": 992,
         "settings": {
           "slidesToShow": 3
         }

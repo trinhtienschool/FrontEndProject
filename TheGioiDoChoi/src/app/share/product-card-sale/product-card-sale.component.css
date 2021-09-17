@@ -146,15 +146,21 @@
 .btn {
   margin-bottom: 10px; }
 
-@media (max-width: 576px) {
+.img-card {
+  height: 32px;
+  width: 32px;
+  left: 45%; }
+
+.img-adding-card {
+  height: 38px;
+  width: 38px;
+  left: 45%; }
+
+@media (max-width: 350px) {
   .img-card {
-    height: 32px;
-    width: 32px;
     left: 40%; }
 
   .img-adding-card {
-    height: 38px;
-    width: 35px;
     left: 40%; } }
 .eye-view {
   margin-bottom: -30px;
@@ -171,9 +177,9 @@
     margin-top: 2px;
     font-size: 20px; }
   .eye-view .fa-eye {
-    margin-left: 5px;
+    margin-left: 30px;
     color: #00afef; }
   .eye-view .fa-heart {
-    color: red; }
+    color: #bd0018; }
 
 /*# sourceMappingURL=product-card-sale.component.css.map */

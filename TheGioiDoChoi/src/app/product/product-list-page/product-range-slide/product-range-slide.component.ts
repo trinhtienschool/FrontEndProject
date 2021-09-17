@@ -19,7 +19,7 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  @Input() page: string|undefined;
+  // @Input() page: string|undefined;
   value: number = 10000;
   highValue: number = 4000000;
   options: Options = {
@@ -31,23 +31,26 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   ngOnInit(): void {
 
   }
-  click(from: string, to: string){
-    console.log("Có click");
-    console.log("Nhan: "+from+" : "+to);
-    console.log(Util.convertCurrencyToNumber(from));
-    console.log(Util.convertCurrencyToNumber(to));
-    // this.productService.filterByPrice(Util.convertCurrencyToNumber(from),Util.convertCurrencyToNumber(to));
-    this.startPrice = Util.convertCurrencyToNumber(from);
-    this.endPrice = Util.convertCurrencyToNumber(to);
-
-    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,this.page);
-    this.router.navigateByUrl(link);
-  }
+  // click(from: string, to: string){
+  //   console.log("Có click");
+  //   console.log("Nhan: "+from+" : "+to);
+  //   console.log(Util.convertCurrencyToNumber(from));
+  //   console.log(Util.convertCurrencyToNumber(to));
+  //   // this.productService.filterByPrice(Util.convertCurrencyToNumber(from),Util.convertCurrencyToNumber(to));
+  //   this.startPrice = Util.convertCurrencyToNumber(from);
+  //   this.endPrice = Util.convertCurrencyToNumber(to);
+  //
+  //   let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,this.page);
+  //   this.router.navigateByUrl(link);
+  // }
 
   ngOnChanges(changes: SimpleChanges): void {
     if(this.startPrice != undefined && this.endPrice != undefined){
       this.value = parseInt(this.startPrice);
       this.highValue = parseInt(this.endPrice);
+    }else{
+      this.value = 10000;
+      this.highValue = 4000000;
     }
 
   }
@@ -61,7 +64,8 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   }
   getValue(value: number, highValue: number) {
     // console.log("Value: "+value+" , highValue: "+highValue);
-    let link = Util.makeLinkProduc(this.category, this.value+"", this.highValue+"", this.age, this.gender, this.search, this.sort,this.page);
+    // this.page = '1';
+    let link = Util.makeLinkProduc(this.category, this.value+"", this.highValue+"", this.age, this.gender, this.search, this.sort,undefined);
     this.router.navigateByUrl(link);
   }
 }

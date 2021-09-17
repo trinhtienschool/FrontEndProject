@@ -55,16 +55,16 @@ export class HeaderComponent implements OnInit, OnChanges {
       this.loveItemHeader = love
     })
     this.activateRoute.queryParams.subscribe(params => {
-      this.category = params.category;
-      this.startPrice = params.startPrice;
-      this.endPrice = params.endPrice;
+      // this.category = params.category;
+      // this.startPrice = params.startPrice;
+      // this.endPrice = params.endPrice;
       this.search = params.search;
-      this.sort = params.sort;
-      this.page = params.page;
+      // this.sort = params.sort;
+      // this.page = params.page;
 
-      if (params.age != undefined) this.age = [].concat(params.age); else this.age = undefined;
-      if (params.gender != undefined) this.gender = [].concat(params.gender); else this.gender = undefined;
-      console.log("category header:====",this.category);
+      // if (params.age != undefined) this.age = [].concat(params.age); else this.age = undefined;
+      // if (params.gender != undefined) this.gender = [].concat(params.gender); else this.gender = undefined;
+      // console.log("category header:====",this.category);
     });
 
     //Lay duong Link
@@ -153,9 +153,20 @@ export class HeaderComponent implements OnInit, OnChanges {
   }
 
   searchRoute(text: string){
-    let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender,text, this.sort,this.page);
-    this.router.navigateByUrl(link);
-    console.log("Search neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",link);
+    console.log('text');
+    // this.page = '1';
+    // this.category = undefined;
+    // this.startPrice = undefined;
+    // this.endPrice = undefined;
+    // this.age = undefined;
+    // this.gender = undefined;
+    // this.sort = undefined;
+    text = text.trim();
+    if(text.length !=0) {
+      let link = Util.makeLinkProduc(undefined, undefined, undefined, undefined, undefined, text, undefined, undefined);
+      this.router.navigateByUrl(link);
+      console.log("Search neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", link);
+    }
   }
   category_click(text: string){
     this.router.navigateByUrl("/product?category="+text);

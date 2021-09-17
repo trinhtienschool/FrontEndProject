@@ -4,9 +4,11 @@
       <div class="coupon margin-img-tab" *ngIf="product.percentSale !=0">
         -{{product.percentSale}}%
       </div>
-      <div @fade class="eye-view" *ngIf="showQuickView" data-toggle="modal" data-target="#product-card-detail">
-        <button class="cursor-pointer d-inline-block" (click)="onClickLoveProduct(product)"> <i class="fas fa-heart"></i></button>
-        <button class="cursor-pointer d-inline-block" (click)="onClickProductQuickView()"> <i class="fas fa-eye"></i></button>
+      <div @fade class="eye-view" *ngIf="showQuickView" >
+        <button class="cursor-pointer d-inline-block" *ngIf="isLove"> <i class="fas fa-heart"></i></button>
+        <button class="cursor-pointer d-inline-block" *ngIf="!isLove" (click)="onClickLoveProduct(product)"><i class="far fa-heart"></i></button>
+        <button class="cursor-pointer d-inline-block" data-toggle="modal" data-target="#product-card-detail" (click)="onClickProductQuickView()"> <i class="fas fa-eye"></i></button>
+
 
       </div>
       <div id="add-cart-animate" *ngIf="!showCart" @fade>
@@ -56,10 +58,10 @@
           <p
             class="card-text font-weight-bold text-primary col-sm-9 col-12 size-16 text-center currency">{{product.price | currency:'VND':'symbol':'1.0-0':'vi-VN'}}</p>
 
-          <button class="btn col-sm-3 col-12 p-relative" (click)="handleAddToCart()">
+          <button @fade class="btn col-sm-3 col-12 p-relative" (click)="handleAddToCart()">
             <img @fade src="/assets/imgs/product/cart.png" class="shopping-cart-center p-absolute img-card" alt=""
                  *ngIf="showCart">
-            <img @fade src="/assets/imgs/product/resizeDulfinal.gif"
+            <img src="/assets/imgs/product/resizeDulfinal.gif"
                  class="shopping-cart-center p-absolute img-adding-card" alt="" *ngIf="!showCart">
           </button>
         </div>

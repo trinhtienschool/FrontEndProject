@@ -15,15 +15,7 @@ import {animationRoute} from "../share/animation";
 })
 export class ProductPageComponent implements OnInit {
   public category: string|undefined;
-  constructor(private activateRoute: ActivatedRoute) {
-    let params = this.activateRoute.queryParams.subscribe(params =>{console.log(params.sp)});
-    // console.log('params',params);
-    // let arr: string[] = [];
-    // let arr1 =['xoai','oi','tao'];
-    // arr = arr.concat(arr1);
-    // console.log(arr);
-
-
+  constructor() {
   }
 
   ngOnInit(): void {

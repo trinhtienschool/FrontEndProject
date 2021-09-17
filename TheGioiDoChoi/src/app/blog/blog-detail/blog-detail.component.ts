@@ -3,7 +3,6 @@ import {Blog} from "../../model/blog";
 import {ActivatedRoute, Router} from "@angular/router";
 import {map, switchMap} from "rxjs/operators";
 import {BlogService} from "../../service/blog/blog.service";
-// declare const onloadFunction: any;
 @Component({
   selector: 'app-blog-detail',
   templateUrl: './blog-detail.component.html',

@@ -10,7 +10,6 @@ import {fade} from "../share/animation";
 import {LoveService} from "../service/love/love.service";
 import {Product} from "../model/product";
 
-// declare const onloadFunction: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -55,16 +54,7 @@ export class HeaderComponent implements OnInit, OnChanges {
       this.loveItemHeader = love
     })
     this.activateRoute.queryParams.subscribe(params => {
-      // this.category = params.category;
-      // this.startPrice = params.startPrice;
-      // this.endPrice = params.endPrice;
       this.search = params.search;
-      // this.sort = params.sort;
-      // this.page = params.page;
-
-      // if (params.age != undefined) this.age = [].concat(params.age); else this.age = undefined;
-      // if (params.gender != undefined) this.gender = [].concat(params.gender); else this.gender = undefined;
-      // console.log("category header:====",this.category);
     });
 
     //Lay duong Link
@@ -147,9 +137,6 @@ export class HeaderComponent implements OnInit, OnChanges {
     return listImage[0];
   }
   ngOnInit(): void {
-    // onloadFunction();
-    // categoryExpandOnload()
-    console.log("routerrrrrrrrr: ",this.router.url)
   }
 
   searchRoute(text: string){

@@ -20,35 +20,14 @@ export class AgeGenderComponent implements OnInit, OnChanges {
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  // @Input() page: string|undefined;
 
   constructor(private productService: ProductService,
               private router: Router,
   ) {
-    // this.activateRoute.queryParams.subscribe(param => {
-    //   // this.age = param.age;
-    //   // this.gender = param.geder;
-    //   //get params
-    //   this.category = param.category;
-    //   this.startPrice = param.startPrice;
-    //   this.endPrice = param.endPrice;
-    //   this.search = param.search;
-    //   this.sort = param.sort;
-    //
-    //
-    //
-    //   if (param.age != undefined) this.age = this.age.concat(param.age);
-    //   if (param.gender != undefined) this.gender = this.gender.concat(param.gender);
-    // })
 
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-        // throw new Error('Method not implemented.');
-    console.log("chaangeeeee",changes);
-    // Util.onChange(changes,this.age,this.gender,this.category,this.startPrice,this.endPrice,this.search,this.sort,this.page);
-    console.log("Age-gender Age: "+this.title+": ",this.age);
-    console.log("Age-gender Gender:"+this.title+": ", this.gender);
     if (this.title != undefined && this.content !=undefined) {
       if (this.title == 'Độ tuổi') {
         if (this.age !=undefined) this.addChecked(this.content, this.age);
@@ -58,8 +37,6 @@ export class AgeGenderComponent implements OnInit, OnChanges {
         else  this.deleteChecked(this.content);
       }
     }
-    // else if(this.title !=undefined && this.content !=undefined) this.deleteChecked(this.content);
-    // console.log("content: ",this.content);
     }
 
   ngOnInit(): void {
@@ -77,8 +54,6 @@ export class AgeGenderComponent implements OnInit, OnChanges {
   }
 
   check(value: string, checkbox: any) {
-    console.log(checkbox);
-    console.log(checkbox.checked);
     if(this.age ==undefined) this.age=[];
     if(this.gender ==undefined)this.gender=[];
     if (this.title != undefined ) {
@@ -87,22 +62,17 @@ export class AgeGenderComponent implements OnInit, OnChanges {
       } else if (this.title == 'Giới tính') {
         this.modifiedArr(value, this.gender, checkbox);
       }
-      // this.page = '1';
       let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort, undefined);
-      console.log('Linkkkk',link);
       this.router.navigateByUrl(link);
     }
   }
 
   modifiedArr(value: string, arr: string[], checkbox: any) {
-    console.log("Includes: " + arr.includes(value));
-    console.log('ArrFirst: ',arr);
     if (checkbox.checked) {
       if (!arr.includes(value)) arr.push(value);
     } else if (arr.includes(value)) {
       const index = arr.indexOf(value);
       arr.splice(index, 1);
     }
-    console.log('arrrrrrrrModifierArr: ',arr);
   }
 }

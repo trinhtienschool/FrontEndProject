@@ -19,7 +19,6 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  // @Input() page: string|undefined;
   value: number = 10000;
   highValue: number = 4000000;
   options: Options = {
@@ -31,18 +30,7 @@ export class ProductRangeSlideComponent implements OnInit, OnChanges, AfterConte
   ngOnInit(): void {
 
   }
-  // click(from: string, to: string){
-  //   console.log("Có click");
-  //   console.log("Nhan: "+from+" : "+to);
-  //   console.log(Util.convertCurrencyToNumber(from));
-  //   console.log(Util.convertCurrencyToNumber(to));
-  //   // this.productService.filterByPrice(Util.convertCurrencyToNumber(from),Util.convertCurrencyToNumber(to));
-  //   this.startPrice = Util.convertCurrencyToNumber(from);
-  //   this.endPrice = Util.convertCurrencyToNumber(to);
-  //
-  //   let link = Util.makeLinkProduc(this.category, this.startPrice, this.endPrice, this.age, this.gender, this.search, this.sort,this.page);
-  //   this.router.navigateByUrl(link);
-  // }
+
 
   ngOnChanges(changes: SimpleChanges): void {
     if(this.startPrice != undefined && this.endPrice != undefined){

@@ -3,9 +3,7 @@ import {ProductService} from "../../service/product/product.service";
 import {ActivatedRoute} from "@angular/router";
 import {timer} from "rxjs";
 import {switchMap} from "rxjs/operators";
-import {PaginationService} from "../../service/pagination/pagination.service";
 
-declare const onloadFunction: any
 
 @Component({
   selector: 'app-product',
@@ -23,19 +21,7 @@ export class ProductComponent implements OnInit {
   public page: string|undefined;
 
   constructor(private productService: ProductService,
-              private activateRoute: ActivatedRoute,
-
-             ) {
-    // this.activateRoute.queryParams.subscribe(param => {
-    //   this.category = param.category;
-    //   this.startPrice = param.startPrice;
-    //   this.endPrice = param.endPrice;
-    //   this.search = param.search;
-    //   this.sort = param.sort;
-    //   this.page = param.page;
-    //   console.log('product.com param age: '+param.age);
-    //   if (param.age != undefined) this.age =[].concat(param.age);
-    //   if (param.gender != undefined) this.gender =[].concat(param.gender);
+              private activateRoute: ActivatedRoute) {
 
       timer(500).pipe(switchMap(_=>this.activateRoute.queryParams)).subscribe(params => {
         this.category = params.category;
@@ -47,19 +33,12 @@ export class ProductComponent implements OnInit {
 
         if (params.age != undefined) this.age =[].concat(params.age); else this.age = undefined;
         if (params.gender != undefined) this.gender =[].concat(params.gender); else this.gender = undefined;
-        console.log('Ageeeeeeeeeeeeeeeee: ',this.age);
-        console.log("Age pagram: ",params.age);
         this.productService.filter(params.category, params.startPrice, params.endPrice, params.age, params.gender, params.search, params.sort,params.page);
       });
 
-
-    // if(this.initCheckAge !=undefined) this.productService.ageFilter.push(this.initCheckAge);
-    // if(this.initCheckGender !=undefined) this.productService.genderFilter.push(this.initCheckGender);
-    // this.productService.filter();
   }
 
   ngOnInit(): void {
-    onloadFunction();
   }
 
 }

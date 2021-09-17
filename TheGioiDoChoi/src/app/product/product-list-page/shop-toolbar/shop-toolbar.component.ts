@@ -20,7 +20,7 @@ export class ShopToolbarComponent implements OnInit {
   @Input() endPrice: string | undefined;
   @Input() search: string | undefined;
   @Input() sort: string | undefined;
-  // @Input() page: string|undefined;
+
 
   constructor(private productService: ProductService, private router: Router,
               private paginationService: PaginationService) {

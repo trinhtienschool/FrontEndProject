@@ -4,8 +4,6 @@ import {isArray} from "rxjs/internal-compatibility";
 import {Product} from "../model/product";
 import {Blog} from "../model/blog";
 import {Util} from "../model/util";
-declare const onloadFunction: any;
-declare const preloader:any;
 
 
 @Component({
@@ -37,8 +35,6 @@ export class HomeComponent implements OnInit {
       Util.convertObj2ProArr(value.ptgt,this.ptgt,'khong-xac-dinh');
       Util.convertObj2BlogArr(value.blog,this.blog);
     })
-    onloadFunction();
-    preloader();
   }
 
 

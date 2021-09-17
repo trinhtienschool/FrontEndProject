@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {CartItem} from "../../model/cart-item";
 import {CartService} from "../../service/cart/cart.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-declare const onloadFunction: any;
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -39,7 +38,6 @@ export class CheckoutComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    onloadFunction();
   }
 
   get firstname(){return this.checkoutForm.get('firstname')}

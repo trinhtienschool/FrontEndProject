@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Product} from "../../../model/product";
 import {ProductService} from "../../../service/product/product.service";
 import {CartService} from "../../../service/cart/cart.service";
@@ -8,7 +8,7 @@ import {CartService} from "../../../service/cart/cart.service";
   templateUrl: './related-product.component.html',
   styleUrls: ['./related-product.component.scss']
 })
-export class RelatedProductComponent implements OnInit {
+export class RelatedProductComponent implements OnInit,AfterViewInit {
   public listProducts: Product[] =[];
   productQuickView: Product | undefined
   constructor(private productService: ProductService,
@@ -25,5 +25,10 @@ export class RelatedProductComponent implements OnInit {
 
   getQuickView($event: Product) {
     this.productQuickView = $event
+  }
+
+  ngAfterViewInit(): void {
+
+    console.log('random products: ',this.productService.getRandomProduct());
   }
 }

@@ -124,18 +124,18 @@ export class ProductService {
     if(currentPage !=undefined) this.notify(currentPage,products);
     else this.notify(1,products);
   }
-  getRandomProduct():Product[]{
+  getRandomProduct():Product[]|undefined{
     let randomProducts: Product[]=[];
     let i = 0;
     if(this.allProductsArr !=undefined){
       while(i<4){
-        let randomIndex = Math.random() * (this.allProductsArr.length-1) + 1;
+        let randomIndex =Math.floor(Math.random() * (this.allProductsArr.length-1) + 1);
         randomProducts.push(this.allProductsArr[randomIndex]);
         i++;
       }
       return randomProducts;
     }
-    return [];
+    return undefined;
   }
   // filterArr(arr: Product[]){
   //   let products : Product[] = [];

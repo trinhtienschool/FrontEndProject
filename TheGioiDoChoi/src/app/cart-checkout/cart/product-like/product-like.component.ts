@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Product} from "../../../model/product";
 import {ProductService} from "src/app/service/product/product.service";
 
@@ -7,9 +7,9 @@ import {ProductService} from "src/app/service/product/product.service";
   templateUrl: './product-like.component.html',
   styleUrls: ['./product-like.component.scss']
 })
-export class ProductLikeComponent implements OnInit {
+export class ProductLikeComponent implements OnInit, AfterViewInit {
   productQuickView: Product|undefined;
-  listProducts: Product[]=[]
+  listProducts: Product[] | undefined
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -18,5 +18,12 @@ export class ProductLikeComponent implements OnInit {
 
   getQuickView($event: Product) {
     this.productQuickView = $event
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(()=>{
+      console.log('random products: ',this.productService.getRandomProducts());
+      this.listProducts = this.productService.getRandomProducts();
+    },500)
   }
 }

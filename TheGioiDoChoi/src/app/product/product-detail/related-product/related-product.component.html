@@ -1,4 +1,5 @@
 <section class="related-product">
+  <div *ngIf="listProducts">
   <div class="container">
     <div class="related-title">
       <h2>Sản phẩm tương tự</h2>
@@ -43,5 +44,6 @@
       </div>
     </div>
     <app-product-card-quickview [product]="productQuickView"></app-product-card-quickview>
+  </div>
   </div>
 </section>

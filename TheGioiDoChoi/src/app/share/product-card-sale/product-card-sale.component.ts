@@ -30,9 +30,10 @@ export class ProductCardSaleComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.loveService.love$.subscribe(love => {
-      // console.log("Co vao subscribe.......: ",this.product?.product_id);
+      console.log("Co vao subscribe.......: ",this.product?.product_id);
       let productLoves = love;
       if (this.product != undefined) {
+        if(productLoves.length==0) this.isLove = false;
         for (let i = 0; i < productLoves.length; i++) {
           if (this.product.product_id == productLoves[i].product_id) {
             // console.log("Co vaoooooooooooo: ",this.product.product_id);
@@ -77,5 +78,11 @@ export class ProductCardSaleComponent implements OnInit, AfterViewInit {
     this.loveService.addLove(product);
     this.isLove = true;
     console.log('love', product);
+  }
+
+  onClickUnLoveProduct(product: Product) {
+    this.loveService.deleteItemLove(product);
+    this.isLove = false;
+
   }
 }

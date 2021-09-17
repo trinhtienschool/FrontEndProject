@@ -49,69 +49,11 @@ export class ProductService {
       Util.convertObj2ProArr(value.dodungnhabep, this.allProductsArr,'dodungnhabep');
       Util.convertObj2ProArr(value.xe, this.allProductsArr,'xe');
 
-      // this.notify(1,this.allProductsArr);
+
     })
   }
 
-  // search(searchTxt: string) {
-  //   this.currentProducts = [];
-  //   for (let p of this.allProductsArr) {
-  //     if (p.search(searchTxt)) this.currentProducts.push(p);
-  //   }
-  //   this.notify(this.currentProducts);
-  // }
-  //
-  // filterCategory(category: string) {
-  //   this.currentProducts = [];
-  //   switch (category) {
-  //     case 'lego':
-  //       this.currentProducts = this.lego;
-  //       break;
-  //     case 'puzzle':
-  //       this.currentProducts = this.puzzle;
-  //       break;
-  //     case 'smartgame':
-  //       this.currentProducts = this.smartgame;
-  //       break;
-  //     case 'bupbe':
-  //       this.currentProducts = this.bupbe;
-  //       break;
-  //     case 'robot':
-  //       this.currentProducts = this.robot;
-  //       break;
-  //     case 'maybaytenlua':
-  //       this.currentProducts = this.maybaytenlua;
-  //       break;
-  //     case 'mohinhxe':
-  //       this.currentProducts = this.mohinhxe;
-  //       break;
-  //     case 'xedieukhien':
-  //       this.currentProducts = this.xedieukhien;
-  //       break;
-  //     case 'dochoidangoai':
-  //       this.currentProducts = this.dochoidangoai;
-  //       break;
-  //     case 'dochoiduoinuoc':
-  //       this.currentProducts = this.dochoiduoinuoc;
-  //       break;
-  //     case 'dodungnhabep':
-  //       this.currentProducts = this.dodungnhabep;
-  //       break;
-  //     case 'xe':
-  //       this.currentProducts = this.xe;
-  //       break;
-  //     default:
-  //       this.currentProducts = [];
-  //       break;
-  //   }
-  //   this.filter();
-  //   // this.notify(this.currentProducts);
-  // }
 
-  // addCart(product: Product){
-  //   this.products.push(product);
-  //   this.behaviorSubject.next(this.products);
-  // }
   filter(category: string|undefined,startPrice: number|undefined,endPrice: number|undefined, age: string|string[]|undefined,gender: string|string[]|undefined, search:string|undefined, sort:string|undefined,currentPage: number|undefined){
     let products : Product[] = [];
     for (let p of this.allProductsArr) {

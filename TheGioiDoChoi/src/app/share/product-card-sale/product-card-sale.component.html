@@ -5,7 +5,7 @@
         -{{product.percentSale}}%
       </div>
       <div @fade class="eye-view" *ngIf="showQuickView" >
-        <button class="cursor-pointer d-inline-block" *ngIf="isLove"> <i class="fas fa-heart"></i></button>
+        <button class="cursor-pointer d-inline-block" *ngIf="isLove" (click)="onClickUnLoveProduct(product)"> <i class="fas fa-heart"></i></button>
         <button class="cursor-pointer d-inline-block" *ngIf="!isLove" (click)="onClickLoveProduct(product)"><i class="far fa-heart"></i></button>
         <button class="cursor-pointer d-inline-block" data-toggle="modal" data-target="#product-card-detail" (click)="onClickProductQuickView()"> <i class="fas fa-eye"></i></button>
 

@@ -33,11 +33,11 @@ export class BlogService {
     this.paginationService.setUpPagination(currentPage,this.blogs.length,12);
     this.behaviorSubject.next(this.blogs);
   }
-  private findProduct(id: string|null): Blog{
+  private findBlog(id: string|null): Blog{
     const blog = this.blogs.find(b=>b.id == id);
     return <Blog>blog;
   }
   public findBlogById(id: string|null):Observable<Blog>{
-    return timer(500).pipe(switchMap(_=>of(this.findProduct(id))));
+    return timer(500).pipe(switchMap(_=>of(this.findBlog(id))));
   }
 }

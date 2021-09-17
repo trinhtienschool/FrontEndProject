@@ -11,11 +11,11 @@ export class PaginationService {
   public pagination$: Observable<Pagination> = this.behaviorSubject.asObservable();
   constructor() { }
 
-  setCurrent(current: number){
-    this._pagination.current = current;
-    console.log(this._pagination.current);
-    this.behaviorSubject.next(this._pagination);
-  }
+  // setCurrent(current: number){
+  //   this._pagination.current = current;
+  //   console.log(this._pagination.current);
+  //   this.behaviorSubject.next(this._pagination);
+  // }
   setUpPagination(currentPage: number,sumOfItems: number,itemsPerPage: number){
     this._pagination.current = currentPage;
     this._pagination.itemsPerPage = itemsPerPage;

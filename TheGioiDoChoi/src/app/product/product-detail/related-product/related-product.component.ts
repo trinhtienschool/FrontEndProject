@@ -8,12 +8,12 @@ import {CartService} from "../../../service/cart/cart.service";
   templateUrl: './related-product.component.html',
   styleUrls: ['./related-product.component.scss']
 })
-export class RelatedProductComponent implements OnInit,AfterViewInit {
+export class RelatedProductComponent implements OnInit, AfterViewInit {
   public listProducts: Product[] =[];
   productQuickView: Product | undefined
   constructor(private productService: ProductService,
               private cartService: CartService) {
-    this.listProducts = productService.allProductsArr
+    // this.listProducts = productService.allProductsArr
   }
 
   ngOnInit(): void {
@@ -28,7 +28,8 @@ export class RelatedProductComponent implements OnInit,AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-
-    console.log('random products: ',this.productService.getRandomProduct());
+    setTimeout(() => {
+      this.listProducts = this.productService.getRandomProduct()
+    }, 500);
   }
 }

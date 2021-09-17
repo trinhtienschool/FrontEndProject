@@ -124,7 +124,7 @@ export class ProductService {
     if(currentPage !=undefined) this.notify(currentPage,products);
     else this.notify(1,products);
   }
-  getRandomProduct():Product[]|undefined{
+  getRandomProducts():Product[]|undefined{
     let randomProducts: Product[]=[];
     let i = 0;
     if(this.allProductsArr !=undefined){
